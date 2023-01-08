@@ -4,5 +4,29 @@
         <link>http://example.org/tags/</link>
         <description>Tags - Tag - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (越)</managingEditor>
-            <webMaster>my_ddup@163.com (越)</webMaster><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>git</title>
+    <link>http://example.org/tags/git/</link>
+    <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
+    <author>越</author>
+    <guid>http://example.org/tags/git/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>love it</title>
+    <link>http://example.org/tags/love-it/</link>
+    <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
+    <author>越</author>
+    <guid>http://example.org/tags/love-it/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>博客搭建</title>
+    <link>http://example.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
+    <author>越</author>
+    <guid>http://example.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

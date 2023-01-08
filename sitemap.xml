@@ -3,7 +3,11 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
             <loc>http://example.org/posts/1-1/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/categories/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/git/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/love-it/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url><url>
             <loc>http://example.org/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/categories/</loc></url><url>
-            <loc>http://example.org/tags/</loc></url></urlset>
+            <loc>http://example.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/categories/%E8%AE%B0%E5%BD%95/</loc><lastmod>2023-01-08T20:24:07&#43;08:00</lastmod></url></urlset>
