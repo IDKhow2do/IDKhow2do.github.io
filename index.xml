@@ -4,9 +4,17 @@
         <link>http://example.org/</link>
         <description>这是我啥也不会在别人那里偷来的网站模板</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (越)</managingEditor>
-            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Sun, 08 Jan 2023 18:46:39 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>1.1基于hugo搭建个人博客网站——（写完只想更名依托答辩）</title>
+    <link>http://example.org/posts/1-1/</link>
+    <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
+    <author>越</author>
+    <guid>http://example.org/posts/1-1/</guid>
+    <description><![CDATA[起因 最开始是我在网络上冲浪的时候，会看见很多大佬他们都有自己的个人网站，平时遇见的一些问题和心得体会，甚至是出去玩乐的内容都可以发在自己的个]]></description>
+</item>
+<item>
     <title>第四篇试试看上传正常不</title>
     <link>http://example.org/posts/%E7%AC%AC%E5%9B%9B%E7%AF%87%E8%AF%95%E8%AF%95%E7%9C%8B%E4%B8%8A%E4%BC%A0%E6%AD%A3%E5%B8%B8%E4%B8%8D/</link>
     <pubDate>Sun, 08 Jan 2023 18:46:39 &#43;0800</pubDate>
