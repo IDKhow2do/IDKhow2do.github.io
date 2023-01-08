@@ -4,9 +4,17 @@
         <link>http://example.org/</link>
         <description>这是我啥也不会在别人那里偷来的网站模板</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (越)</managingEditor>
-            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Sun, 08 Jan 2023 17:26:30 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Sun, 08 Jan 2023 18:46:39 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>第四篇试试看上传正常不</title>
+    <link>http://example.org/posts/%E7%AC%AC%E5%9B%9B%E7%AF%87%E8%AF%95%E8%AF%95%E7%9C%8B%E4%B8%8A%E4%BC%A0%E6%AD%A3%E5%B8%B8%E4%B8%8D/</link>
+    <pubDate>Sun, 08 Jan 2023 18:46:39 &#43;0800</pubDate>
+    <author>越</author>
+    <guid>http://example.org/posts/%E7%AC%AC%E5%9B%9B%E7%AF%87%E8%AF%95%E8%AF%95%E7%9C%8B%E4%B8%8A%E4%BC%A0%E6%AD%A3%E5%B8%B8%E4%B8%8D/</guid>
+    <description><![CDATA[没有内容 说了没有内容]]></description>
+</item>
+<item>
     <title>第三篇假装有点内容</title>
     <link>http://example.org/posts/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%81%87%E8%A3%85%E6%9C%89%E7%82%B9%E5%86%85%E5%AE%B9/</link>
     <pubDate>Sun, 08 Jan 2023 17:26:30 &#43;0800</pubDate>
