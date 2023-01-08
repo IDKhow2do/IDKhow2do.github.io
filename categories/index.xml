@@ -1,0 +1,8 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - 俺那简陋且普通的第一个网页</title>
+        <link>http://example.org/categories/</link>
+        <description>Categories - Category - 俺那简陋且普通的第一个网页</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (越)</managingEditor>
+            <webMaster>my_ddup@163.com (越)</webMaster><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /></channel>
+</rss>
