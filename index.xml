@@ -14,29 +14,5 @@
     <guid>http://example.org/posts/1-1/</guid>
     <description><![CDATA[起因 最开始是我在网络上冲浪的时候，会看见很多大佬他们都有自己的个人网站，平时遇见的一些问题和心得体会，甚至是出去玩乐的内容都可以发在自己的个]]></description>
 </item>
-<item>
-    <title>第四篇试试看上传正常不</title>
-    <link>http://example.org/posts/%E7%AC%AC%E5%9B%9B%E7%AF%87%E8%AF%95%E8%AF%95%E7%9C%8B%E4%B8%8A%E4%BC%A0%E6%AD%A3%E5%B8%B8%E4%B8%8D/</link>
-    <pubDate>Sun, 08 Jan 2023 18:46:39 &#43;0800</pubDate>
-    <author>越</author>
-    <guid>http://example.org/posts/%E7%AC%AC%E5%9B%9B%E7%AF%87%E8%AF%95%E8%AF%95%E7%9C%8B%E4%B8%8A%E4%BC%A0%E6%AD%A3%E5%B8%B8%E4%B8%8D/</guid>
-    <description><![CDATA[没有内容 说了没有内容]]></description>
-</item>
-<item>
-    <title>第三篇假装有点内容</title>
-    <link>http://example.org/posts/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%81%87%E8%A3%85%E6%9C%89%E7%82%B9%E5%86%85%E5%AE%B9/</link>
-    <pubDate>Sun, 08 Jan 2023 17:26:30 &#43;0800</pubDate>
-    <author>越</author>
-    <guid>http://example.org/posts/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%81%87%E8%A3%85%E6%9C%89%E7%82%B9%E5%86%85%E5%AE%B9/</guid>
-    <description><![CDATA[老师布置的这个论题还是挺让我惊喜的，作为一名理工科的学生，此前对与AI尤其是其中的深度神经网络，也就是此前AI领域最火的技术有一定的涉猎，我]]></description>
-</item>
-<item>
-    <title>第二篇博客_测试</title>
-    <link>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2_%E6%B5%8B%E8%AF%95/</link>
-    <pubDate>Sun, 08 Jan 2023 16:10:29 &#43;0800</pubDate>
-    <author>越</author>
-    <guid>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2_%E6%B5%8B%E8%AF%95/</guid>
-    <description><![CDATA[第一句话 我来鹅城，只为三件事 公平 公平 还是他妈的公平]]></description>
-</item>
 </channel>
 </rss>
