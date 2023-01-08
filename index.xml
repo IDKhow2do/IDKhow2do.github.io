@@ -38,13 +38,5 @@
     <guid>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2_%E6%B5%8B%E8%AF%95/</guid>
     <description><![CDATA[第一句话 我来鹅城，只为三件事 公平 公平 还是他妈的公平]]></description>
 </item>
-<item>
-    <title>First Post</title>
-    <link>http://example.org/posts/first-post/</link>
-    <pubDate>Sun, 08 Jan 2023 16:01:25 &#43;0800</pubDate>
-    <author>越</author>
-    <guid>http://example.org/posts/first-post/</guid>
-    <description><![CDATA[试试看 第一句话 第二句话 第三句话 第四句话]]></description>
-</item>
 </channel>
 </rss>
