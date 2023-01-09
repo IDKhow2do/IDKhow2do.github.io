@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>前置知识 - Tag - 俺那简陋且普通的第一个网页</title>
+        <link>http://example.org/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/</link>
+        <description>前置知识 - Tag - 俺那简陋且普通的第一个网页</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (越)</managingEditor>
+            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
+    <title>1-2-1:The Missing Semester第一集观看记录</title>
+    <link>http://example.org/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
+    <pubDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</pubDate>
+    <author>越</author>
+    <guid>http://example.org/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
+    <description><![CDATA[overview &amp; shell 链接第一集 介绍一些你必要学会的工具，而这些东西一般你在其他课程里是默认你会的 shell date echo echo $PATH which: show u the path of this program 讲解什么是path，绝对路径和相]]></description>
+</item>
+</channel>
+</rss>
