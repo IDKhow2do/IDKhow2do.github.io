@@ -3,12 +3,12 @@
         <title>Tags - Tag - 俺那简陋且普通的第一个网页</title>
         <link>http://example.org/tags/</link>
         <description>Tags - Tag - 俺那简陋且普通的第一个网页</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (越)</managingEditor>
-            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
     <title>linux</title>
     <link>http://example.org/tags/linux/</link>
     <pubDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</pubDate>
-    <author>越</author>
+    <author>天天睡到十二点</author>
     <guid>http://example.org/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -16,7 +16,7 @@
     <title>前置知识</title>
     <link>http://example.org/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/</link>
     <pubDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</pubDate>
-    <author>越</author>
+    <author>天天睡到十二点</author>
     <guid>http://example.org/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -24,7 +24,7 @@
     <title>基础命令</title>
     <link>http://example.org/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
     <pubDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</pubDate>
-    <author>越</author>
+    <author>天天睡到十二点</author>
     <guid>http://example.org/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -32,7 +32,7 @@
     <title>git</title>
     <link>http://example.org/tags/git/</link>
     <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
-    <author>越</author>
+    <author>天天睡到十二点</author>
     <guid>http://example.org/tags/git/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -40,7 +40,7 @@
     <title>love it</title>
     <link>http://example.org/tags/love-it/</link>
     <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
-    <author>越</author>
+    <author>天天睡到十二点</author>
     <guid>http://example.org/tags/love-it/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -48,7 +48,7 @@
     <title>博客搭建</title>
     <link>http://example.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
     <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
-    <author>越</author>
+    <author>天天睡到十二点</author>
     <guid>http://example.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
     <description><![CDATA[]]></description>
 </item>

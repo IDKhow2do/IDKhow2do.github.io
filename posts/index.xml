@@ -3,12 +3,12 @@
         <title>All Posts - 俺那简陋且普通的第一个网页</title>
         <link>http://example.org/posts/</link>
         <description>All Posts | 俺那简陋且普通的第一个网页</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (越)</managingEditor>
-            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
     <title>1-2-1:The Missing Semester第一集观看记录</title>
     <link>http://example.org/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</pubDate>
-    <author>越</author>
+    <author>天天睡到十二点</author>
     <guid>http://example.org/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
     <description><![CDATA[overview &amp; shell 链接第一集 介绍一些你必要学会的工具，而这些东西一般你在其他课程里是默认你会的 shell date echo echo $PATH which: show u the path of this program 讲解什么是path，绝对路径和相]]></description>
 </item>
@@ -16,7 +16,7 @@
     <title>1.1基于hugo搭建个人博客网站——（写完只想更名依托答辩）</title>
     <link>http://example.org/posts/1-1/</link>
     <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
-    <author>越</author>
+    <author>天天睡到十二点</author>
     <guid>http://example.org/posts/1-1/</guid>
     <description><![CDATA[起因 最开始是我在网络上冲浪的时候，会看见很多大佬他们都有自己的个人网站，平时遇见的一些问题和心得体会，甚至是出去玩乐的内容都可以发在自己的个]]></description>
 </item>
