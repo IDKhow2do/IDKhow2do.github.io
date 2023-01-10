@@ -4,7 +4,15 @@
         <link>http://example.org/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/</link>
         <description>前置知识 - Tag - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 10 Jan 2023 22:18:26 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
+    <title>1-2-2:TMS第二集观看记录</title>
+    <link>http://example.org/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
+    <pubDate>Tue, 10 Jan 2023 22:18:26 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://example.org/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
+    <description><![CDATA[shell tools &amp;scripting 链接 youtube插件推荐 之前一直是用的油猴双语字幕脚本，昨天了解到原来有一个youtube双语插件，YouTube双字幕 不仅可以拖动]]></description>
+</item>
+<item>
     <title>1-2-1:The Missing Semester第一集观看记录</title>
     <link>http://example.org/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</pubDate>
