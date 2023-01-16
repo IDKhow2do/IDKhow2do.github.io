@@ -4,7 +4,15 @@
         <link>http://example.org/tags/git/</link>
         <description>git - Tag - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/git/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 17 Jan 2023 00:07:54 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/git/" rel="self" type="application/rss+xml" /><item>
+    <title>1-2-5,6:TMS观看记录5&#43;6</title>
+    <link>http://example.org/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</link>
+    <pubDate>Tue, 17 Jan 2023 00:07:54 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://example.org/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</guid>
+    <description><![CDATA[The_Missing_Semester观看记录5 Command-line Environment job control sleep :sleep 20,sleep后面跟一个数字表示休眠的时间，这个时候shell将会发送一个S]]></description>
+</item>
+<item>
     <title>1.1基于hugo搭建个人博客网站——（写完只想更名依托答辩）</title>
     <link>http://example.org/posts/1-1/</link>
     <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
