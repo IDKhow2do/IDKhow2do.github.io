@@ -4,7 +4,15 @@
         <link>http://example.org/categories/the-missing-semester/</link>
         <description>The Missing Semester - Category - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 17 Jan 2023 00:07:54 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/the-missing-semester/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Thu, 26 Jan 2023 01:53:05 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/the-missing-semester/" rel="self" type="application/rss+xml" /><item>
+    <title>1-2-7TMS观看记录7</title>
+    <link>http://example.org/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</link>
+    <pubDate>Thu, 26 Jan 2023 01:53:05 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://example.org/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</guid>
+    <description><![CDATA[Debugging and Profiling debugging printf log，可以通过设置重要级来筛选你要看的内容 debugger python -m ipdb bubble.py 打开python调试器 l:list s:step restart c:continue p arr:print array q:quit b:breakpoint(设置断点) G]]></description>
+</item>
+<item>
     <title>1-2-5,6:TMS观看记录5&#43;6</title>
     <link>http://example.org/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</link>
     <pubDate>Tue, 17 Jan 2023 00:07:54 &#43;0800</pubDate>
