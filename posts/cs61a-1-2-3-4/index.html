@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>1.3.1:自学CS61A的1、2、3、4节课程笔记 - 俺那简陋且普通的第一个网页</title><meta name="Description" content=""><meta property="og:title" content="1.3.1:自学CS61A的1、2、3、4节课程笔记" />
+<meta property="og:description" content="CS61A-1:computer_science 计算机科学是一个很宏大的命题，每个人可能只是从事其中的一小块儿内容，但行业工作者都有一个共同的敌人，那就是复杂性，而我们的武器便是抽象 对于" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/cs61a-1-2-3-4/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-28T01:51:32+08:00" />
+<meta property="article:modified_time" content="2023-01-28T01:51:32+08:00" /><meta property="og:site_name" content="我的个人网站" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="1.3.1:自学CS61A的1、2、3、4节课程笔记"/>
+<meta name="twitter:description" content="CS61A-1:computer_science 计算机科学是一个很宏大的命题，每个人可能只是从事其中的一小块儿内容，但行业工作者都有一个共同的敌人，那就是复杂性，而我们的武器便是抽象 对于"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/cs61a-1-2-3-4/" /><link rel="prev" href="http://example.org/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "1.3.1:自学CS61A的1、2、3、4节课程笔记",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/cs61a-1-2-3-4\/"
+        },"genre": "posts","keywords": "python, 基础知识","wordcount":  1823 ,
+        "url": "http:\/\/example.org\/posts\/cs61a-1-2-3-4\/","datePublished": "2023-01-28T01:51:32+08:00","dateModified": "2023-01-28T01:51:32+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "天天睡到十二点"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="俺那简陋且普通的第一个网页"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="想写什么就写什么的文章"> 文章 </a><a class="menu-item" href="/tags/" title="不知道我会不会记得区分标签"> 标签 </a><a class="menu-item" href="/categories/" title="分类和标签，傻傻分不清楚"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="俺那简陋且普通的第一个网页"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="想写什么就写什么的文章">文章</a><a class="menu-item" href="/tags/" title="不知道我会不会记得区分标签">标签</a><a class="menu-item" href="/categories/" title="分类和标签，傻傻分不清楚">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">1.3.1:自学CS61A的1、2、3、4节课程笔记</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>天天睡到十二点</a></span>&nbsp;<span class="post-category">included in <a href="/categories/cs61a/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>CS61A</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-28">2023-01-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1823 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#disc-00lab-00">disc 00&amp;lab 00</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#announcements">Announcements</a></li>
+    <li><a href="#environment-diagrams">Environment Diagrams</a></li>
+    <li><a href="#defining-functions">Defining Functions</a></li>
+    <li><a href="#ch1112">CH1.1&amp;1.2</a></li>
+    <li><a href="#homework">HOMEWORK</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#announcements-1">Announcements</a></li>
+    <li><a href="#print--none">print &amp; none</a></li>
+    <li><a href="#multiple-environment">Multiple environment</a></li>
+    <li><a href="#miscellaneous-python-features">Miscellaneous Python Features</a></li>
+    <li><a href="#conditional-statement">Conditional statement</a></li>
+    <li><a href="#iteration">Iteration</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#announcements-2">Announcements</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="cs61a-1computer_science">CS61A-1:computer_science</h1>
+<p>计算机科学是一个很宏大的命题，每个人可能只是从事其中的一小块儿内容，但行业工作者都有一个共同的敌人，那就是复杂性，而我们的武器便是<strong>抽象</strong>
+对于完全没有编程经验的人建议CS10课程
+课程的目标是学习，而不是让人们去show off what they already know
+第一节课相当于是导论，最后以莎士比亚的所有文章作为数据内容，向我们展示了一下一些有趣的对于数据的操作</p>
+<p>一个难受的问题就是似乎不能注册，难受了，不过不影响，操作可以本地进行。</p>
+<h2 id="disc-00lab-00">disc 00&amp;lab 00</h2>
+<p>其实就相当于是环境搭建和一些基础的命令
+感觉cs61a里面的这个全自动评分系统挺好的，而且还可以离线进行，真的很适合我们这种不是伯克利的学生<em>偷学</em>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_1.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_1.png, /photos/1_3_1CS61A-1%2c2_image_1.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_1.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_1.png"
+        title="/photos/1_3_1CS61A-1,2_image_1.png" /></p>
+<h1 id="cs61a-2functions">CS61A-2:functions</h1>
+<h2 id="announcements">Announcements</h2>
+<ul>
+<li></li>
+</ul>
+<h2 id="environment-diagrams">Environment Diagrams</h2>
+<p>在online python tutor中你可以一行一行的查看代码运行结果，形成paragram
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_4.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_4.png, /photos/1_3_1CS61A-1%2c2_image_4.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_4.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_4.png"
+        title="/photos/1_3_1CS61A-1,2_image_4.png" /></p>
+<h2 id="defining-functions">Defining Functions</h2>
+<p>在def和:中间的是，函数签名，它告诉你函数的名字和参数
+函数体，定义了函数的作用，最简单的函数体就是一个return表达式
+在执行过程中，对于def，它会将函数名和函数体绑定在一起
+环境是一系列frame，frame是一系列的函数名和函数体的绑定，环境可以是local frame或者global frame
+寻找frame的时候先在本地然后在全局环境
+这个代码如何运行的
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_5.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_5.png, /photos/1_3_1CS61A-1%2c2_image_5.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_5.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_5.png"
+        title="/photos/1_3_1CS61A-1,2_image_5.png" /></p>
+<h2 id="ch1112">CH1.1&amp;1.2</h2>
+<p><a href="http://composingprograms.com/pages/11-getting-started.html" target="_blank" rel="noopener noreffer ">SICP</a></p>
+<h2 id="homework">HOMEWORK</h2>
+<p><a href="https://cs61a.org/hw/hw01/" target="_blank" rel="noopener noreffer ">HW 01:functions,control</a></p>
+<hr>
+<h1 id="cs61a-3control">CS61A-3:control</h1>
+<h2 id="announcements-1">Announcements</h2>
+<p>我好羡慕啊，国外的老师真的是想让你狠狠的学会，连如何去办公室的路线都给你规划好了，并且专门留出了工作人员专门解决作业问题，专门的空间供大家讨论学习。当然，还是得主动参加才有效果。</p>
+<h2 id="print--none">print &amp; none</h2>
+<p>函数分为pure function和side effect function，一般来说函数最后会return一个值，便是pure function
+side effect比如print函数就是将输入作为输出，返回的值是none，none是python里的空函数，这个值在解释器里不会被作为结果输出
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_6.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_6.png, /photos/1_3_1CS61A-1%2c2_image_6.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_6.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_6.png"
+        title="/photos/1_3_1CS61A-1,2_image_6.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_7.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_7.png, /photos/1_3_1CS61A-1%2c2_image_7.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_7.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_7.png"
+        title="/photos/1_3_1CS61A-1,2_image_7.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="1_3_1CS61A-1,2_image_8.png"
+        data-srcset="1_3_1CS61A-1%2c2_image_8.png, 1_3_1CS61A-1%2c2_image_8.png 1.5x, 1_3_1CS61A-1%2c2_image_8.png 2x"
+        data-sizes="auto"
+        alt="1_3_1CS61A-1,2_image_8.png"
+        title="运行原理图" /></p>
+<h2 id="multiple-environment">Multiple environment</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_9.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_9.png, /photos/1_3_1CS61A-1%2c2_image_9.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_9.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_9.png"
+        title="/photos/1_3_1CS61A-1,2_image_9.png" />
+def定义一个函数，但它并不会运行，在函数被call（调用）时用参数替换形参，会创建出一个新的frame，然后在新的环境下运行
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_10.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_10.png, /photos/1_3_1CS61A-1%2c2_image_10.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_10.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_10.png"
+        title="/photos/1_3_1CS61A-1,2_image_10.png" />
+调用的时候会在一个global frame下面生成几个不同的local frame也就是不同的环境来运行程序</p>
+<h2 id="miscellaneous-python-features">Miscellaneous Python Features</h2>
+<p>目前还没有讲过python的内建函数，这实际上很复杂，以后会进行讲解，目前只是讲解一下add和mul
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_11.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_11.png, /photos/1_3_1CS61A-1%2c2_image_11.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_11.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_11.png"
+        title="/photos/1_3_1CS61A-1,2_image_11.png" />
+为什么需要有 整数除法，保留商和余数可以始终保留准确的解
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_12.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_12.png, /photos/1_3_1CS61A-1%2c2_image_12.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_12.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_12.png"
+        title="/photos/1_3_1CS61A-1,2_image_12.png" />
+-i 参数交互式解释器，可以查看变量值
+运行python3 -i ex.py后，运行，其中r被占位符默认为10,如果没有赋值就为10
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_13.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_13.png, /photos/1_3_1CS61A-1%2c2_image_13.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_13.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_13.png"
+        title="/photos/1_3_1CS61A-1,2_image_13.png" /></p>
+<h2 id="conditional-statement">Conditional statement</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_14.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_14.png, /photos/1_3_1CS61A-1%2c2_image_14.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_14.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_14.png"
+        title="/photos/1_3_1CS61A-1,2_image_14.png" />
+后面简单介绍了一下布尔函数</p>
+<h2 id="iteration">Iteration</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/photos/1_3_1CS61A-1,2_image_15.png"
+        data-srcset="/photos/1_3_1CS61A-1%2c2_image_15.png, /photos/1_3_1CS61A-1%2c2_image_15.png 1.5x, /photos/1_3_1CS61A-1%2c2_image_15.png 2x"
+        data-sizes="auto"
+        alt="/photos/1_3_1CS61A-1,2_image_15.png"
+        title="/photos/1_3_1CS61A-1,2_image_15.png" />
+在语句中评估header是否为真，然后执行并返回步骤1，会在一个body中重复很多次步骤</p>
+<h1 id="cs61a-4high-order-functions">CS61A-4:high-order functions</h1>
+<h2 id="announcements-2">Announcements</h2>
+<ul>
+<li>
+<p>&ldquo;&ldquo;&ldquo;print the prime factors of n in non-decreasing order.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>prime_factors(8)
+2
+2
+2
+prime_factors(10)
+2
+5
+prime_factors(11)
+11
+prime_factors(12)
+2
+2
+3
+prime_factors(858)
+2
+3
+11
+13
+&quot;&rdquo;&rdquo;
+while n &gt; 1:
+k = smallest_prime_factor(n)
+n = n // k
+print(k)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<p>def smallest_prime_factor(n):
+&ldquo;&ldquo;&ldquo;Return the smallest k&gt;1 that evenly divides n.&rdquo;&rdquo;&rdquo;
+k = 2
+while n % k != 0:
+k = k + 1
+return k</p>
+<pre tabindex="0"><code>我们进入这个网站看它的运行框架图[](https://pythontutor.com/)
+可以一步一步查看这个代码是如何运行起来的
+其中再写代码的时候，先不管底层如何实现，先写顶层代码，假装我们有这样的一个函数，它可以做某件事，这实际上就是一种**抽象**，然后在后续的代码中我们再写出smallest_prime_factor()
+其实上面的代码可以写成一个函数，只是两个函数会有更好的易读性，它是一种高层次描述的算法
+## Iteration Example
+迭代的一个例子：斐波那契数列
+![](/photos/1_3_1CS61A-1,2_image_17.png)
+![](/photos/1_3_1CS61A-1,2_image_18.png)当我们对代码进行了如上改变之后，它依旧是正确的，因为在运行后还是会进入正确的轨道，它甚至更好，因为它可以算出第一个斐波那契的值
+## Designing Functions
+这一小节向我们介绍了函数的作用，如何设计一个好的函数
+	在以前没有函数的时候，人们用声明去编程，这常常导致很混乱，后面函数出现了，人们只需要关注函数本身的作用，而不需要去管那些详细的声明
+在写函数的时候，我们应该尽量让他保持简单易读，或者有详细的文档讲解如何使用，尽量写出通用的一般函数，这样我们可以一次编写，到处调用。
+我们尽量写出剪刀函数，而不是瑞士军刀，这也是linux哲学里的一个工具只做一件事，然后把这件事做到极致。
+## Higher-Order Functions
+![](/photos/1_3_1CS61A-1,2_image_19.png)
+找到共同的可以复用的点，然后进行代码设计
+![](/photos/1_3_1CS61A-1,2_image_20.png)
+这里就是一个高阶函数，将另一个函数作为参数传入高阶函数![[1_3_1CS61A-1,2_image_21.png]]
+## Functions as return values
+![](/photos/1_3_1CS61A-1,2_image_22.png)
+在local def 的语句中，可以引用enclosing函数的参数，将函数作为返回的值
+![](/photos/1_3_1CS61A-1,2_image_23.png)
+它可以做的事情
+![](/photos/1_3_1CS61A-1,2_image_24.png)
+higher-order function的好处
+- [ ] 📅 2023-01-28 敲代码在网站里查看是如何运行的
+
+## Lab1 Office Hours
+</code></pre></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-28</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/posts/cs61a-1-2-3-4/" data-title="1.3.1:自学CS61A的1、2、3、4节课程笔记" data-via="这不是我" data-hashtags="python,基础知识"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/posts/cs61a-1-2-3-4/" data-hashtag="python"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/cs61a-1-2-3-4/" data-title="1.3.1:自学CS61A的1、2、3、4节课程笔记"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/posts/cs61a-1-2-3-4/" data-title="1.3.1:自学CS61A的1、2、3、4节课程笔记"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/posts/cs61a-1-2-3-4/" data-title="1.3.1:自学CS61A的1、2、3、4节课程笔记"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/" class="prev" rel="prev" title="1-2-7TMS观看记录7"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>1-2-7TMS观看记录7</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">天天睡到十二点</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer><a href="https://info.flagcounter.com/qhiN"><img src="https://s01.flagcounter.com/mini/qhiN/bg_FCF7FF/txt_000000/border_278FCC/flags_0/" alt="Flag Counter" border="0"></a>
+</div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"一夔的小窝","id-2":"一夔的小窝"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
