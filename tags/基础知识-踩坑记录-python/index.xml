@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>‘基础知识’， ‘踩坑记录’， ‘python’ - Tag - 俺那简陋且普通的第一个网页</title>
+        <link>http://example.org/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95-python/</link>
+        <description>‘基础知识’， ‘踩坑记录’， ‘python’ - Tag - 俺那简陋且普通的第一个网页</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95-python/" rel="self" type="application/rss+xml" /><item>
+    <title>1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)</title>
+    <link>http://example.org/posts/1_3_2cs61a-5678/</link>
+    <pubDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://example.org/posts/1_3_2cs61a-5678/</guid>
+    <description><![CDATA[CS61A-5:Environments Environments for Higher-Order 这里讲解了一下它们新推出的diagram特性,比如这里定义了一个global frame然后在调用的时候又创建了一个frame1,讲解]]></description>
+</item>
+</channel>
+</rss>
