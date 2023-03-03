@@ -4,7 +4,15 @@
         <link>http://example.org/categories/</link>
         <description>Categories - Category - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Fri, 03 Mar 2023 20:47:39 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>周报</title>
+    <link>http://example.org/categories/%E5%91%A8%E6%8A%A5/</link>
+    <pubDate>Fri, 03 Mar 2023 20:47:39 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://example.org/categories/%E5%91%A8%E6%8A%A5/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>CS61A</title>
     <link>http://example.org/categories/cs61a/</link>
     <pubDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</pubDate>
