@@ -4,9 +4,17 @@
         <link>http://example.org/</link>
         <description>俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Fri, 03 Mar 2023 20:47:39 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 21 Mar 2023 23:40:14 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>周报2：瞎记霸写</title>
+    <link>http://example.org/posts/%E5%91%A8%E6%8A%A52%E7%9E%8E%E8%AE%B0%E9%9C%B8%E5%86%99/</link>
+    <pubDate>Tue, 21 Mar 2023 23:40:14 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://example.org/posts/%E5%91%A8%E6%8A%A52%E7%9E%8E%E8%AE%B0%E9%9C%B8%E5%86%99/</guid>
+    <description><![CDATA[我好像不会写周报，算了就这样吧 我真的好喜欢拖延啊，上一次写周报的时候我就想着自己一定要养成这个习惯，结果根本没有坚持下来 AI总结 这周在学习和]]></description>
+</item>
+<item>
     <title>周报1：年度总结（上）</title>
     <link>http://example.org/posts/%E5%91%A8%E6%8A%A51%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%E4%B8%8A/</link>
     <pubDate>Fri, 03 Mar 2023 20:47:39 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>天天睡到十二点</author>
     <guid>http://example.org/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
     <description><![CDATA[shell tools &amp;scripting 链接 第一次学会插入视频，要把我最近最爱的歌放上去 youtube插件推荐 之前一直是用的油猴双语字幕脚本，昨天了解到原来有一个youtub]]></description>
-</item>
-<item>
-    <title>1-2-1:The Missing Semester观看记录1</title>
-    <link>http://example.org/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
-    <pubDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://example.org/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
-    <description><![CDATA[overview &amp; shell 链接第一集 介绍一些你必要学会的工具，而这些东西一般你在其他课程里是默认你会的 shell date echo echo $PATH which: show u the path of this program 讲解什么是path，绝对路径和相]]></description>
 </item>
 </channel>
 </rss>
