@@ -4,9 +4,17 @@
         <link>http://example.org/</link>
         <description>俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 21 Mar 2023 23:40:14 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 26 Mar 2023 00:59:50 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>周报3：过去一周的大小事记</title>
+    <link>http://example.org/posts/%E5%91%A8%E6%8A%A53%E8%BF%87%E5%8E%BB%E4%B8%80%E5%91%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%BA%8B%E8%AE%B0/</link>
+    <pubDate>Sun, 26 Mar 2023 00:59:50 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://example.org/posts/%E5%91%A8%E6%8A%A53%E8%BF%87%E5%8E%BB%E4%B8%80%E5%91%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%BA%8B%E8%AE%B0/</guid>
+    <description><![CDATA[周报3：过去一周的大小事记 AI总结 这篇博文主要包括以下几个部分： 1. 博主分享了自己关于路由器的经历，一个学生咨询价格后尝试跟着教程自己搞定。这]]></description>
+</item>
+<item>
     <title>周报2：瞎记霸写</title>
     <link>http://example.org/posts/%E5%91%A8%E6%8A%A52%E7%9E%8E%E8%AE%B0%E9%9C%B8%E5%86%99/</link>
     <pubDate>Tue, 21 Mar 2023 23:40:14 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>天天睡到十二点</author>
     <guid>http://example.org/posts/1-2-3tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%953/</guid>
     <description><![CDATA[Editors(vim) 久仰vim大名，Carrie Anne老师口中的，“你不能否认，vim是世界上最好用的编辑器” vim 是一种mode editor，当你打开vim的]]></description>
-</item>
-<item>
-    <title>1-2-2:TMS观看记录2</title>
-    <link>http://example.org/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
-    <pubDate>Tue, 10 Jan 2023 22:18:26 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://example.org/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
-    <description><![CDATA[shell tools &amp;scripting 链接 第一次学会插入视频，要把我最近最爱的歌放上去 youtube插件推荐 之前一直是用的油猴双语字幕脚本，昨天了解到原来有一个youtub]]></description>
 </item>
 </channel>
 </rss>

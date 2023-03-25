@@ -4,7 +4,15 @@
         <link>http://example.org/categories/%E5%91%A8%E6%8A%A5/</link>
         <description>周报 - Category - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 21 Mar 2023 23:40:14 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/%E5%91%A8%E6%8A%A5/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 26 Mar 2023 00:59:50 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/%E5%91%A8%E6%8A%A5/" rel="self" type="application/rss+xml" /><item>
+    <title>周报3：过去一周的大小事记</title>
+    <link>http://example.org/posts/%E5%91%A8%E6%8A%A53%E8%BF%87%E5%8E%BB%E4%B8%80%E5%91%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%BA%8B%E8%AE%B0/</link>
+    <pubDate>Sun, 26 Mar 2023 00:59:50 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://example.org/posts/%E5%91%A8%E6%8A%A53%E8%BF%87%E5%8E%BB%E4%B8%80%E5%91%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%BA%8B%E8%AE%B0/</guid>
+    <description><![CDATA[周报3：过去一周的大小事记 AI总结 这篇博文主要包括以下几个部分： 1. 博主分享了自己关于路由器的经历，一个学生咨询价格后尝试跟着教程自己搞定。这]]></description>
+</item>
+<item>
     <title>周报2：瞎记霸写</title>
     <link>http://example.org/posts/%E5%91%A8%E6%8A%A52%E7%9E%8E%E8%AE%B0%E9%9C%B8%E5%86%99/</link>
     <pubDate>Tue, 21 Mar 2023 23:40:14 &#43;0800</pubDate>
