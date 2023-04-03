@@ -1,39 +1,47 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>闲谈 - Tag - 俺那简陋且普通的第一个网页</title>
-        <link>http://example.org/tags/%E9%97%B2%E8%B0%88/</link>
+        <link>http://maequeen.top/tags/%E9%97%B2%E8%B0%88/</link>
         <description>闲谈 - Tag - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 26 Mar 2023 00:59:50 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/%E9%97%B2%E8%B0%88/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Mon, 03 Apr 2023 15:19:17 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E9%97%B2%E8%B0%88/" rel="self" type="application/rss+xml" /><item>
+    <title>周报4:影音、回忆、思考与骂街</title>
+    <link>http://maequeen.top/posts/%E5%91%A8%E6%8A%A54%E5%BD%B1%E9%9F%B3%E5%9B%9E%E5%BF%86%E6%80%9D%E8%80%83%E4%B8%8E%E9%AA%82%E8%A1%97/</link>
+    <pubDate>Mon, 03 Apr 2023 15:19:17 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://maequeen.top/posts/%E5%91%A8%E6%8A%A54%E5%BD%B1%E9%9F%B3%E5%9B%9E%E5%BF%86%E6%80%9D%E8%80%83%E4%B8%8E%E9%AA%82%E8%A1%97/</guid>
+    <description><![CDATA[AI总结 这段文本主要回忆了作者在高中时期的一些经历。作者提到，在高中时，他认为自己没有明确的目标和计划，没有好的学习方法，但在复读一年后，变]]></description>
+</item>
+<item>
     <title>周报3：过去一周的大小事记</title>
-    <link>http://example.org/posts/%E5%91%A8%E6%8A%A53%E8%BF%87%E5%8E%BB%E4%B8%80%E5%91%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%BA%8B%E8%AE%B0/</link>
+    <link>http://maequeen.top/posts/%E5%91%A8%E6%8A%A53%E8%BF%87%E5%8E%BB%E4%B8%80%E5%91%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%BA%8B%E8%AE%B0/</link>
     <pubDate>Sun, 26 Mar 2023 00:59:50 &#43;0800</pubDate>
     <author>天天睡到十二点</author>
-    <guid>http://example.org/posts/%E5%91%A8%E6%8A%A53%E8%BF%87%E5%8E%BB%E4%B8%80%E5%91%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%BA%8B%E8%AE%B0/</guid>
+    <guid>http://maequeen.top/posts/%E5%91%A8%E6%8A%A53%E8%BF%87%E5%8E%BB%E4%B8%80%E5%91%A8%E7%9A%84%E5%A4%A7%E5%B0%8F%E4%BA%8B%E8%AE%B0/</guid>
     <description><![CDATA[周报3：过去一周的大小事记 AI总结 这篇博文主要包括以下几个部分： 1. 博主分享了自己关于路由器的经历，一个学生咨询价格后尝试跟着教程自己搞定。这]]></description>
 </item>
 <item>
     <title>周报2：瞎记霸写</title>
-    <link>http://example.org/posts/%E5%91%A8%E6%8A%A52%E7%9E%8E%E8%AE%B0%E9%9C%B8%E5%86%99/</link>
+    <link>http://maequeen.top/posts/%E5%91%A8%E6%8A%A52%E7%9E%8E%E8%AE%B0%E9%9C%B8%E5%86%99/</link>
     <pubDate>Tue, 21 Mar 2023 23:40:14 &#43;0800</pubDate>
     <author>天天睡到十二点</author>
-    <guid>http://example.org/posts/%E5%91%A8%E6%8A%A52%E7%9E%8E%E8%AE%B0%E9%9C%B8%E5%86%99/</guid>
+    <guid>http://maequeen.top/posts/%E5%91%A8%E6%8A%A52%E7%9E%8E%E8%AE%B0%E9%9C%B8%E5%86%99/</guid>
     <description><![CDATA[我好像不会写周报，算了就这样吧 我真的好喜欢拖延啊，上一次写周报的时候我就想着自己一定要养成这个习惯，结果根本没有坚持下来 AI总结 这周在学习和]]></description>
 </item>
 <item>
     <title>周报1：年度总结（上）</title>
-    <link>http://example.org/posts/%E5%91%A8%E6%8A%A51%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%E4%B8%8A/</link>
+    <link>http://maequeen.top/posts/%E5%91%A8%E6%8A%A51%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%E4%B8%8A/</link>
     <pubDate>Fri, 03 Mar 2023 20:47:39 &#43;0800</pubDate>
     <author>天天睡到十二点</author>
-    <guid>http://example.org/posts/%E5%91%A8%E6%8A%A51%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%E4%B8%8A/</guid>
+    <guid>http://maequeen.top/posts/%E5%91%A8%E6%8A%A51%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%E4%B8%8A/</guid>
     <description><![CDATA[周报1：年度总结 没想到吧，居然有人搁置年度总结，然后以周报的形式更新 可以看出我还是挺懒的，现在才来弄什么年度总结，之前也很想写来着，但是想来]]></description>
 </item>
 <item>
     <title>关于少儿编程</title>
-    <link>http://example.org/posts/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/</link>
+    <link>http://maequeen.top/posts/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/</link>
     <pubDate>Wed, 11 Jan 2023 22:04:45 &#43;0800</pubDate>
     <author>天天睡到十二点</author>
-    <guid>http://example.org/posts/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/</guid>
+    <guid>http://maequeen.top/posts/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/</guid>
     <description><![CDATA[xx，你上次问你们家小孩该不该上幼儿编程我没怎么敢妄下定论，首先这个事情本身就是有利有弊，再加上我的专业相对的是硬件方面的，软件编程方面只是]]></description>
 </item>
 </channel>
