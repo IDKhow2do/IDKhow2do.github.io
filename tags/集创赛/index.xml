@@ -1,24 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>记录 - Category - 俺那简陋且普通的第一个网页</title>
-        <link>http://maequeen.top/categories/%E8%AE%B0%E5%BD%95/</link>
-        <description>记录 - Category - 俺那简陋且普通的第一个网页</description>
+        <title>集创赛 - Tag - 俺那简陋且普通的第一个网页</title>
+        <link>http://maequeen.top/tags/%E9%9B%86%E5%88%9B%E8%B5%9B/</link>
+        <description>集创赛 - Tag - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 16 Apr 2023 23:59:53 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/categories/%E8%AE%B0%E5%BD%95/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 16 Apr 2023 23:59:53 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E9%9B%86%E5%88%9B%E8%B5%9B/" rel="self" type="application/rss+xml" /><item>
     <title>1_4_1：VCS和verdi安装与破解18版本（ubuntu）</title>
     <link>http://maequeen.top/posts/1_4_1vcs%E5%92%8Cverdi%E5%AE%89%E8%A3%85%E4%B8%8E%E7%A0%B4%E8%A7%A318%E7%89%88%E6%9C%ACubuntu/</link>
     <pubDate>Sun, 16 Apr 2023 23:59:53 &#43;0800</pubDate>
     <author>天天睡到十二点</author>
     <guid>http://maequeen.top/posts/1_4_1vcs%E5%92%8Cverdi%E5%AE%89%E8%A3%85%E4%B8%8E%E7%A0%B4%E8%A7%A318%E7%89%88%E6%9C%ACubuntu/</guid>
     <description><![CDATA[（失败版本）VCS和Verdi的安装及破解 这是失败的版本，可以直接查看第二个大标题的再次尝试部分提供的链接 相关链接 https://blog.csdn.net/qq_41717683/article/details/122267191#t7 （最有用链接 https://www.rvmcu.com/community-topic-id-1015.html https://zhouyuqian.com/2022/05/05/uvm-1/ https://blog.csdn.net/huayangshiboqi/article/details/89525723 （ma]]></description>
-</item>
-<item>
-    <title>1.1基于hugo搭建个人博客网站——（写完只想更名依托答辩）</title>
-    <link>http://maequeen.top/posts/1-1/</link>
-    <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/1-1/</guid>
-    <description><![CDATA[起因 最开始是我在网络上冲浪的时候，会看见很多大佬他们都有自己的个人网站，平时遇见的一些问题和心得体会，甚至是出去玩乐的内容都可以发在自己的个]]></description>
 </item>
 </channel>
 </rss>

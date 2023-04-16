@@ -4,7 +4,15 @@
         <link>http://maequeen.top/posts/</link>
         <description>All Posts | 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Mon, 03 Apr 2023 15:19:17 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 16 Apr 2023 23:59:53 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>1_4_1：VCS和verdi安装与破解18版本（ubuntu）</title>
+    <link>http://maequeen.top/posts/1_4_1vcs%E5%92%8Cverdi%E5%AE%89%E8%A3%85%E4%B8%8E%E7%A0%B4%E8%A7%A318%E7%89%88%E6%9C%ACubuntu/</link>
+    <pubDate>Sun, 16 Apr 2023 23:59:53 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://maequeen.top/posts/1_4_1vcs%E5%92%8Cverdi%E5%AE%89%E8%A3%85%E4%B8%8E%E7%A0%B4%E8%A7%A318%E7%89%88%E6%9C%ACubuntu/</guid>
+    <description><![CDATA[（失败版本）VCS和Verdi的安装及破解 这是失败的版本，可以直接查看第二个大标题的再次尝试部分提供的链接 相关链接 https://blog.csdn.net/qq_41717683/article/details/122267191#t7 （最有用链接 https://www.rvmcu.com/community-topic-id-1015.html https://zhouyuqian.com/2022/05/05/uvm-1/ https://blog.csdn.net/huayangshiboqi/article/details/89525723 （ma]]></description>
+</item>
+<item>
     <title>周报4:影音、回忆、思考与骂街</title>
     <link>http://maequeen.top/posts/%E5%91%A8%E6%8A%A54%E5%BD%B1%E9%9F%B3%E5%9B%9E%E5%BF%86%E6%80%9D%E8%80%83%E4%B8%8E%E9%AA%82%E8%A1%97/</link>
     <pubDate>Mon, 03 Apr 2023 15:19:17 &#43;0800</pubDate>
@@ -75,14 +83,6 @@
     <author>天天睡到十二点</author>
     <guid>http://maequeen.top/posts/1-2-4%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%954/</guid>
     <description><![CDATA[xxxxxxxxxxxxxxxxxxxx 秋雅，这题太难了，我不会做 用到好多正则表达式，听的一头雾水，先占个萝卜坑，以后补充 Data Wrangling-正则表达式 这一集youtube不能]]></description>
-</item>
-<item>
-    <title>关于少儿编程</title>
-    <link>http://maequeen.top/posts/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/</link>
-    <pubDate>Wed, 11 Jan 2023 22:04:45 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/</guid>
-    <description><![CDATA[xx，你上次问你们家小孩该不该上幼儿编程我没怎么敢妄下定论，首先这个事情本身就是有利有弊，再加上我的专业相对的是硬件方面的，软件编程方面只是]]></description>
 </item>
 </channel>
 </rss>
