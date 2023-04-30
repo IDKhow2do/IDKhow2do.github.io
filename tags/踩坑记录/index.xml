@@ -4,7 +4,15 @@
         <link>http://maequeen.top/tags/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
         <description>踩坑记录 - Tag - 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 16 Apr 2023 23:59:53 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 30 Apr 2023 23:59:53 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" rel="self" type="application/rss+xml" /><item>
+    <title>1_5_1：解放github pages 终于还是接触图床了</title>
+    <link>http://maequeen.top/posts/1_5_1%E5%9B%BE%E5%BA%8A/</link>
+    <pubDate>Sun, 30 Apr 2023 23:59:53 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://maequeen.top/posts/1_5_1%E5%9B%BE%E5%BA%8A/</guid>
+    <description><![CDATA[缘起 我是在github pages上搭建的博客，然后域名做了个重定向，之前一股脑的把图片也上传上去，现在发现图片影响了网站的加载速度，所以想着]]></description>
+</item>
+<item>
     <title>1_4_1：VCS和verdi安装与破解18版本（ubuntu）</title>
     <link>http://maequeen.top/posts/1_4_1vcs%E5%92%8Cverdi%E5%AE%89%E8%A3%85%E4%B8%8E%E7%A0%B4%E8%A7%A318%E7%89%88%E6%9C%ACubuntu/</link>
     <pubDate>Sun, 16 Apr 2023 23:59:53 &#43;0800</pubDate>
