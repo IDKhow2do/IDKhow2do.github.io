@@ -4,7 +4,15 @@
         <link>http://maequeen.top/posts/</link>
         <description>All Posts | 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 30 Apr 2023 23:59:53 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 07 May 2023 01:49:43 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>周报5：不立flag啦</title>
+    <link>http://maequeen.top/posts/%E5%91%A8%E6%8A%A55%E4%B8%8D%E7%AB%8Bflag%E5%95%A6/</link>
+    <pubDate>Sun, 07 May 2023 01:49:43 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://maequeen.top/posts/%E5%91%A8%E6%8A%A55%E4%B8%8D%E7%AB%8Bflag%E5%95%A6/</guid>
+    <description><![CDATA[AI总结 在这篇博客文章中，作者分享了自己最近的一些生活体验和感悟。 首先，作者谈到了最近观看的一部电影《宇宙探索编辑部》，虽然观后感受难以言表]]></description>
+</item>
+<item>
     <title>1_5_1：解放github pages 终于还是接触图床了</title>
     <link>http://maequeen.top/posts/1_5_1%E5%9B%BE%E5%BA%8A/</link>
     <pubDate>Sun, 30 Apr 2023 23:59:53 &#43;0800</pubDate>
@@ -75,14 +83,6 @@
     <author>天天睡到十二点</author>
     <guid>http://maequeen.top/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</guid>
     <description><![CDATA[Debugging and Profiling debugging printf log，可以通过设置重要级来筛选你要看的内容 debugger python -m ipdb bubble.py 打开python调试器 l:list s:step restart c:continue p arr:print array q:quit b:breakpoint(设置断点) G]]></description>
-</item>
-<item>
-    <title>1-2-5,6:TMS观看记录5&#43;6</title>
-    <link>http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</link>
-    <pubDate>Tue, 17 Jan 2023 00:07:54 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</guid>
-    <description><![CDATA[Command-line Environment job control sleep :sleep 20,sleep后面跟一个数字表示休眠的时间，这个时候shell将会发送一个SIGINT的指令给当前的程序，means signal interrupt ^c发]]></description>
 </item>
 </channel>
 </rss>
