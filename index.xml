@@ -4,9 +4,17 @@
         <link>http://maequeen.top/</link>
         <description>俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 07 May 2023 01:49:43 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 23 May 2023 01:03:47 &#43;0800</lastBuildDate>
             <atom:link href="http://maequeen.top/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>周报6：爱国小子之疯狂的北京与大梦初醒的迷失</title>
+    <link>http://maequeen.top/posts/%E5%91%A8%E6%8A%A56%E7%88%B1%E5%9B%BD%E5%B0%8F%E5%AD%90%E4%B9%8B%E7%96%AF%E7%8B%82%E7%9A%84%E5%8C%97%E4%BA%AC%E4%B8%8E%E5%A4%A7%E6%A2%A6%E5%88%9D%E9%86%92%E7%9A%84%E8%BF%B7%E5%A4%B1/</link>
+    <pubDate>Tue, 23 May 2023 01:03:47 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://maequeen.top/posts/%E5%91%A8%E6%8A%A56%E7%88%B1%E5%9B%BD%E5%B0%8F%E5%AD%90%E4%B9%8B%E7%96%AF%E7%8B%82%E7%9A%84%E5%8C%97%E4%BA%AC%E4%B8%8E%E5%A4%A7%E6%A2%A6%E5%88%9D%E9%86%92%E7%9A%84%E8%BF%B7%E5%A4%B1/</guid>
+    <description><![CDATA[AI总结 claude总结能力让我震惊 活动总结: - 影音娱乐: - 电影:《银河护卫队3》《末代皇帝》 - 《银河护卫队3》:带着一种熟悉亲切的感觉,展]]></description>
+</item>
+<item>
     <title>周报5：不立flag啦</title>
     <link>http://maequeen.top/posts/%E5%91%A8%E6%8A%A55%E4%B8%8D%E7%AB%8Bflag%E5%95%A6/</link>
     <pubDate>Sun, 07 May 2023 01:49:43 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>天天睡到十二点</author>
     <guid>http://maequeen.top/posts/1_3_1cs61a-1-2-3-4/</guid>
     <description><![CDATA[CS61A-1:computer_science 计算机科学是一个很宏大的命题，每个人可能只是从事其中的一小块儿内容，但行业工作者都有一个共同的敌人，那就是复杂性，而我们的武器便是抽象 对于]]></description>
-</item>
-<item>
-    <title>1-2-7TMS观看记录7</title>
-    <link>http://maequeen.top/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</link>
-    <pubDate>Thu, 26 Jan 2023 01:53:05 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</guid>
-    <description><![CDATA[Debugging and Profiling debugging printf log，可以通过设置重要级来筛选你要看的内容 debugger python -m ipdb bubble.py 打开python调试器 l:list s:step restart c:continue p arr:print array q:quit b:breakpoint(设置断点) G]]></description>
 </item>
 </channel>
 </rss>
