@@ -4,9 +4,17 @@
         <link>http://maequeen.top/</link>
         <description>俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sat, 15 Jul 2023 01:12:06 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Thu, 20 Jul 2023 01:52:30 &#43;0800</lastBuildDate>
             <atom:link href="http://maequeen.top/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>1-6:我与whisper打架到半夜</title>
+    <link>http://maequeen.top/posts/1-6-fought-with-whisper-until-midnight/</link>
+    <pubDate>Thu, 20 Jul 2023 01:52:30 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://maequeen.top/posts/1-6-fought-with-whisper-until-midnight/</guid>
+    <description><![CDATA[AI总结 # 起因 1. 最近我通过ChatGPT的iOS端语音输入功能,发现它的语音识别准确度非常高。 2. 我很想知道它为什么识别这么准确,经过了解,是]]></description>
+</item>
+<item>
     <title>周报8：流水账（周报应该是反思，所以这篇没什么好看的，单纯记录）</title>
     <link>http://maequeen.top/posts/weekly-8-journal-the-weekly-report-should-be-a-reflection-so-there-is-nothing-interesting-in-this-article-just-a-record-/</link>
     <pubDate>Sat, 15 Jul 2023 01:12:06 &#43;0800</pubDate>
@@ -40,18 +48,18 @@
 </item>
 <item>
     <title>1_5_1：解放github pages 终于还是接触图床了</title>
-    <link>http://maequeen.top/posts/1_5_1%E5%9B%BE%E5%BA%8A/</link>
+    <link>http://maequeen.top/posts/1-5-1%E5%9B%BE%E5%BA%8A/</link>
     <pubDate>Sun, 30 Apr 2023 23:59:53 &#43;0800</pubDate>
     <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/1_5_1%E5%9B%BE%E5%BA%8A/</guid>
+    <guid>http://maequeen.top/posts/1-5-1%E5%9B%BE%E5%BA%8A/</guid>
     <description><![CDATA[缘起 我是在github pages上搭建的博客，然后域名做了个重定向，之前一股脑的把图片也上传上去，现在发现图片影响了网站的加载速度，所以想着]]></description>
 </item>
 <item>
     <title>1_4_1：VCS和verdi安装与破解18版本（ubuntu）</title>
-    <link>http://maequeen.top/posts/1_4_1vcs%E5%92%8Cverdi%E5%AE%89%E8%A3%85%E4%B8%8E%E7%A0%B4%E8%A7%A318%E7%89%88%E6%9C%ACubuntu/</link>
+    <link>http://maequeen.top/posts/1-4-1vcs-and-verdi-installation-and-crack-version-18-ubuntu/</link>
     <pubDate>Sun, 16 Apr 2023 23:59:53 &#43;0800</pubDate>
     <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/1_4_1vcs%E5%92%8Cverdi%E5%AE%89%E8%A3%85%E4%B8%8E%E7%A0%B4%E8%A7%A318%E7%89%88%E6%9C%ACubuntu/</guid>
+    <guid>http://maequeen.top/posts/1-4-1vcs-and-verdi-installation-and-crack-version-18-ubuntu/</guid>
     <description><![CDATA[（失败版本）VCS和Verdi的安装及破解 这是失败的版本，可以直接查看第二个大标题的再次尝试部分提供的链接 相关链接 https://blog.csdn.net/qq_41717683/article/details/122267191#t7 （最有用链接 https://www.rvmcu.com/community-topic-id-1015.html https://zhouyuqian.com/2022/05/05/uvm-1/ https://blog.csdn.net/huayangshiboqi/article/details/89525723 （ma]]></description>
 </item>
 <item>
@@ -77,14 +85,6 @@
     <author>天天睡到十二点</author>
     <guid>http://maequeen.top/posts/weekly-2-blind-memorization-and-tyrannical-writing/</guid>
     <description><![CDATA[我好像不会写周报，算了就这样吧 我真的好喜欢拖延啊，上一次写周报的时候我就想着自己一定要养成这个习惯，结果根本没有坚持下来 AI总结 这周在学习和]]></description>
-</item>
-<item>
-    <title>周报1：年度总结（上）</title>
-    <link>http://maequeen.top/posts/weekly-1annual-summary-part-1/</link>
-    <pubDate>Fri, 03 Mar 2023 20:47:39 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/weekly-1annual-summary-part-1/</guid>
-    <description><![CDATA[周报1：年度总结 没想到吧，居然有人搁置年度总结，然后以周报的形式更新 可以看出我还是挺懒的，现在才来弄什么年度总结，之前也很想写来着，但是想来]]></description>
 </item>
 </channel>
 </rss>
