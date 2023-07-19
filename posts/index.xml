@@ -4,7 +4,15 @@
         <link>http://maequeen.top/posts/</link>
         <description>All Posts | 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Thu, 20 Jul 2023 01:52:30 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Thu, 20 Jul 2023 02:11:08 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>1-7:HDLBits刷题记录(持续更新中)</title>
+    <link>http://maequeen.top/posts/1-7hdlbits_record_1/</link>
+    <pubDate>Thu, 20 Jul 2023 02:11:08 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://maequeen.top/posts/1-7hdlbits_record_1/</guid>
+    <description><![CDATA[前几天想要通过HDLBits刷题来熟练使用verilog语音，这几天想清楚一件事情，很多事情浅尝辄止都是只能停留在表面的很多东西也都不能深入]]></description>
+</item>
+<item>
     <title>1-6:我与whisper打架到半夜</title>
     <link>http://maequeen.top/posts/1-6-fought-with-whisper-until-midnight/</link>
     <pubDate>Thu, 20 Jul 2023 01:52:30 &#43;0800</pubDate>
@@ -75,14 +83,6 @@
     <author>天天睡到十二点</author>
     <guid>http://maequeen.top/posts/weekly-3-the-events-of-the-past-week/</guid>
     <description><![CDATA[周报3：过去一周的大小事记 AI总结 这篇博文主要包括以下几个部分： 博主分享了自己关于路由器的经历，一个学生咨询价格后尝试跟着教程自己搞定。这让]]></description>
-</item>
-<item>
-    <title>周报2：瞎记霸写</title>
-    <link>http://maequeen.top/posts/weekly-2-blind-memorization-and-tyrannical-writing/</link>
-    <pubDate>Tue, 21 Mar 2023 23:40:14 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/weekly-2-blind-memorization-and-tyrannical-writing/</guid>
-    <description><![CDATA[我好像不会写周报，算了就这样吧 我真的好喜欢拖延啊，上一次写周报的时候我就想着自己一定要养成这个习惯，结果根本没有坚持下来 AI总结 这周在学习和]]></description>
 </item>
 </channel>
 </rss>
