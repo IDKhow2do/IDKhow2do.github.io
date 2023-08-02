@@ -10,7 +10,6 @@
 <meta property="og:url" content="http://maequeen.top/posts/1-3-1cs61a-1-2-3-4/" /><meta property="og:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-28T01:51:32+08:00" />
 <meta property="article:modified_time" content="2023-01-28T01:51:32+08:00" /><meta property="og:site_name" content="我的个人网站" />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png"/>
 
@@ -30,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/maequeen.top\/posts\/1-3-1cs61a-1-2-3-4\/"
-        },"genre": "posts","keywords": "python, 基础知识, 踩坑记录","wordcount":  2196 ,
+        },"genre": "posts","keywords": "python, 基础知识, 踩坑记录","wordcount":  2107 ,
         "url": "http:\/\/maequeen.top\/posts\/1-3-1cs61a-1-2-3-4\/","datePublished": "2023-01-28T01:51:32+08:00","dateModified": "2023-01-28T01:51:32+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -86,7 +85,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">1.3.1:自学CS61A的1、2、3、4节课程笔记</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>天天睡到十二点</a></span>&nbsp;<span class="post-category">included in <a href="/categories/cs61a/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>CS61A</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-28">2023-01-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2196 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-28">2023-01-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2107 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -100,6 +99,8 @@
 
   <ul>
     <li><a href="#announcements">Announcements</a></li>
+    <li><a href="#expressions">Expressions</a></li>
+    <li><a href="#nameassignmentand-user-defined-functions">Name,Assignment,and User-Defined Functions</a></li>
     <li><a href="#environment-diagrams">Environment Diagrams</a></li>
     <li><a href="#defining-functions">Defining Functions</a></li>
     <li><a href="#ch1112">CH1.1&amp;1.2</a></li>
@@ -117,6 +118,12 @@
 
   <ul>
     <li><a href="#announcements-2">Announcements</a></li>
+    <li><a href="#example-prime-factorization质因数分解">Example: Prime Factorization(质因数分解)</a></li>
+    <li><a href="#iteration-example">Iteration Example</a></li>
+    <li><a href="#designing-functions">Designing Functions</a></li>
+    <li><a href="#higher-order-functions">Higher-Order Functions</a></li>
+    <li><a href="#functions-as-return-values">Functions as return values</a></li>
+    <li><a href="#lab1-office-hours">Lab1 Office Hours</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="cs61a-1computer_science">CS61A-1:computer_science</h1>
@@ -141,6 +148,28 @@
 <ul>
 <li></li>
 </ul>
+<h2 id="expressions">Expressions</h2>
+<p>所有表达式都能用函数表示，然后调用函数来使用——call
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_2.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_2.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_2.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_2.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_2.png"
+        title="1_3_1CS61A-1,2_image_2" />
+这里展示了程序是如何call这些函数来调用的</p>
+<h2 id="nameassignmentand-user-defined-functions">Name,Assignment,and User-Defined Functions</h2>
+<p>对于函数的名字进行了讲解，最后的一个例子很有意思<em>反正我错了</em>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_3.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_3.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_3.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_3.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_3.png"
+        title="1_3_1CS61A-1,2_image_3" />
+The answer is : min(max(2, min(max(1, 5),3)), 4) =&gt;min(max(2, 3), 4) =&gt; min(3,4)</p>
 <h2 id="environment-diagrams">Environment Diagrams</h2>
 <p>在online python tutor中你可以一行一行的查看代码运行结果，形成paragram
 <img
@@ -265,79 +294,156 @@ def定义一个函数，但它并不会运行，在函数被call（调用）时�
 <h1 id="cs61a-4high-order-functions">CS61A-4:high-order functions</h1>
 <h2 id="announcements-2">Announcements</h2>
 <ul>
-<li>
-<p>&ldquo;&ldquo;&ldquo;print the prime factors of n in non-decreasing order.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>prime_factors(8)
-2
-2
-2
-prime_factors(10)
-2
-5
-prime_factors(11)
-11
-prime_factors(12)
-2
-2
-3
-prime_factors(858)
-2
-3
-11
-13
-&quot;&rdquo;&rdquo;
-while n &gt; 1:
-k = smallest_prime_factor(n)
-n = n // k
-print(k)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</li>
+<li></li>
 </ul>
-<p>def smallest_prime_factor(n):
-&ldquo;&ldquo;&ldquo;Return the smallest k&gt;1 that evenly divides n.&rdquo;&rdquo;&rdquo;
-k = 2
-while n % k != 0:
-k = k + 1
-return k</p>
-<pre tabindex="0"><code>我们进入这个网站看它的运行框架图[[https://pythontutor.com/]]
+<h2 id="example-prime-factorization质因数分解">Example: Prime Factorization(质因数分解)</h2>
+<p>质因数分解，是大于1的每一个整数被证明只能由一组从小到大排列的质数相乘得到。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_16.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_16.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_16.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_16.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_16.png"
+        title="1_3_1CS61A-1,2_image_16" /></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">prime_factors</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;print the prime factors of n in non-decreasing order.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &gt;&gt;&gt;prime_factors(8)
+</span></span></span><span class="line"><span class="cl"><span class="s2">    2
+</span></span></span><span class="line"><span class="cl"><span class="s2">    2
+</span></span></span><span class="line"><span class="cl"><span class="s2">    2
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &gt;&gt;&gt;prime_factors(10)
+</span></span></span><span class="line"><span class="cl"><span class="s2">    2
+</span></span></span><span class="line"><span class="cl"><span class="s2">    5
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &gt;&gt;&gt;prime_factors(11)
+</span></span></span><span class="line"><span class="cl"><span class="s2">    11
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &gt;&gt;&gt;prime_factors(12)
+</span></span></span><span class="line"><span class="cl"><span class="s2">    2
+</span></span></span><span class="line"><span class="cl"><span class="s2">    2
+</span></span></span><span class="line"><span class="cl"><span class="s2">    3
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &gt;&gt;&gt;prime_factors(858)
+</span></span></span><span class="line"><span class="cl"><span class="s2">    2
+</span></span></span><span class="line"><span class="cl"><span class="s2">    3
+</span></span></span><span class="line"><span class="cl"><span class="s2">    11
+</span></span></span><span class="line"><span class="cl"><span class="s2">    13
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">=</span> <span class="n">smallest_prime_factor</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="n">k</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">smallest_prime_factor</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Return the smallest k&gt;1 that evenly divides n.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">n</span> <span class="o">%</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">k</span>
+</span></span></code></pre></div><p>我们进入这个网站看它的运行框架图[[https://pythontutor.com/]]
 可以一步一步查看这个代码是如何运行起来的
-其中再写代码的时候，先不管底层如何实现，先写顶层代码，假装我们有这样的一个函数，它可以做某件事，这实际上就是一种**抽象**，然后在后续的代码中我们再写出smallest_prime_factor()
-其实上面的代码可以写成一个函数，只是两个函数会有更好的易读性，它是一种高层次描述的算法
-## Iteration Example
-迭代的一个例子：斐波那契数列
-![1_3_1CS61A-1,2_image_17](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_17.png)
-![1_3_1CS61A-1,2_image_18](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_18.png)当我们对代码进行了如上改变之后，它依旧是正确的，因为在运行后还是会进入正确的轨道，它甚至更好，因为它可以算出第一个斐波那契的值
-## Designing Functions
-这一小节向我们介绍了函数的作用，如何设计一个好的函数
-	在以前没有函数的时候，人们用声明去编程，这常常导致很混乱，后面函数出现了，人们只需要关注函数本身的作用，而不需要去管那些详细的声明
+其中再写代码的时候，先不管底层如何实现，先写顶层代码，假装我们有这样的一个函数，它可以做某件事，这实际上就是一种<strong>抽象</strong>，然后在后续的代码中我们再写出smallest_prime_factor()
+其实上面的代码可以写成一个函数，只是两个函数会有更好的易读性，它是一种高层次描述的算法</p>
+<h2 id="iteration-example">Iteration Example</h2>
+<p>迭代的一个例子：斐波那契数列
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_17.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_17.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_17.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_17.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_17.png"
+        title="1_3_1CS61A-1,2_image_17" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_18.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_18.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_18.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_18.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_18.png"
+        title="1_3_1CS61A-1,2_image_18" />当我们对代码进行了如上改变之后，它依旧是正确的，因为在运行后还是会进入正确的轨道，它甚至更好，因为它可以算出第一个斐波那契的值</p>
+<h2 id="designing-functions">Designing Functions</h2>
+<p>这一小节向我们介绍了函数的作用，如何设计一个好的函数
+在以前没有函数的时候，人们用声明去编程，这常常导致很混乱，后面函数出现了，人们只需要关注函数本身的作用，而不需要去管那些详细的声明
 在写函数的时候，我们应该尽量让他保持简单易读，或者有详细的文档讲解如何使用，尽量写出通用的一般函数，这样我们可以一次编写，到处调用。
-我们尽量写出剪刀函数，而不是瑞士军刀，这也是linux哲学里的一个工具只做一件事，然后把这件事做到极致。
-## Higher-Order Functions
-![1_3_1CS61A-1,2_image_19](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_19.png)
+我们尽量写出剪刀函数，而不是瑞士军刀，这也是linux哲学里的一个工具只做一件事，然后把这件事做到极致。</p>
+<h2 id="higher-order-functions">Higher-Order Functions</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_19.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_19.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_19.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_19.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_19.png"
+        title="1_3_1CS61A-1,2_image_19" />
 找到共同的可以复用的点，然后进行代码设计
-![1_3_1CS61A-1,2_image_20](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_20.png)
-这里就是一个高阶函数，将另一个函数作为参数传入高阶函数![1_3_1CS61A-1,2_image_21](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_21.png)
-## Functions as return values
-![1_3_1CS61A-1,2_image_22](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_22.png)
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_20.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_20.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_20.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_20.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_20.png"
+        title="1_3_1CS61A-1,2_image_20" />
+这里就是一个高阶函数，将另一个函数作为参数传入高阶函数<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_21.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_21.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_21.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_21.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_21.png"
+        title="1_3_1CS61A-1,2_image_21" /></p>
+<h2 id="functions-as-return-values">Functions as return values</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_22.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_22.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_22.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_22.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_22.png"
+        title="1_3_1CS61A-1,2_image_22" />
 在local def 的语句中，可以引用enclosing函数的参数，将函数作为返回的值
-![1_3_1CS61A-1,2_image_23](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_23.png)
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_23.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_23.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_23.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_23.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_23.png"
+        title="1_3_1CS61A-1,2_image_23" />
 它可以做的事情
-![1_3_1CS61A-1,2_image_24](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_24.png)
-higher-order function的好处
-- [x] 📅 2023-01-28 敲代码在网站里查看是如何运行的 ✅ 2023-01-28
-![1_3_1CS61A-1,2_image_25](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_25.png)
-
-从图中逐步分解步骤，我们可以看出，这段代码是以函数adder作为make_adder返回的值，所以我们的f = make_adder(2000)运行后其实就相当于是，f = adder(2000),而这个2000就是adder的参数k的值
-![1_3_1CS61A-1,2_image_26](https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_26.png) ^32405e
-
-可以看出ai可以说出原因，但是原因并不是从ai这里找到的，只是理解之后发现它这样说没问题，我们还是不能完全依靠ai
-
-## Lab1 Office Hours</code></pre></div><div class="post-footer" id="post-footer">
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_24.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_24.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_24.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_24.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_24.png"
+        title="1_3_1CS61A-1,2_image_24" />
+higher-order function的好处</p>
+<ul>
+<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 📅 2023-01-28 敲代码在网站里查看是如何运行的 ✅ 2023-01-28
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_25.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_25.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_25.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_25.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_25.png"
+        title="1_3_1CS61A-1,2_image_25" /></li>
+</ul>
+<p>从图中逐步分解步骤，我们可以看出，这段代码是以函数adder作为make_adder返回的值，所以我们的f = make_adder(2000)运行后其实就相当于是，f = adder(2000),而这个2000就是adder的参数k的值
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_26.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_26.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_26.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1%2c2_image_26.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_1CS61A-1,2_image_26.png"
+        title="1_3_1CS61A-1,2_image_26" /> ^32405e</p>
+<p>可以看出ai可以说出原因，但是原因并不是从ai这里找到的，只是理解之后发现它这样说没问题，我们还是不能完全依靠ai</p>
+<h2 id="lab1-office-hours">Lab1 Office Hours</h2>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

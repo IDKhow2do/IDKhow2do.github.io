@@ -10,7 +10,6 @@
 <meta property="og:url" content="http://maequeen.top/posts/1-3-2cs61a-5678/" /><meta property="og:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-31T16:36:38+08:00" />
 <meta property="article:modified_time" content="2023-01-31T16:36:38+08:00" /><meta property="og:site_name" content="我的个人网站" />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png"/>
 
@@ -225,44 +224,44 @@ def的函数有一个固有名称</p>
 <h2 id="function-examplesound">Function Example:Sound</h2>
 <p>为什么需要higher-order function?而不是依次输入参数到函数里
 这里讲到一个关于声音的例子，创建了一系列的函数，并且利用这些函数来论证原因。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">wave</span> <span class="kn">import</span> <span class="nb">open</span>
-<span class="kn">from</span> <span class="nn">struct</span> <span class="kn">import</span> <span class="n">Struct</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">floor</span>
-
-<span class="n">frame_rate</span> <span class="o">=</span> <span class="mi">11025</span>
-
-<span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;Encode float x bewteen -1 and 1 as two bytes.
-</span><span class="s2">    (See https://docs.python.org/3/library/struct.html)
-</span><span class="s2">    &#34;&#34;&#34;</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">16384</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">Struct</span><span class="p">(</span><span class="s1">&#39;h&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="n">sampler</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;song.wav&#39;</span><span class="p">,</span> <span class="n">seconds</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;Write the output of a sampler function as a wav file.
-</span><span class="s2">    &#34;&#34;&#34;</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span>
-    <span class="n">out</span><span class="o">.</span><span class="n">setnchannels</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">out</span><span class="o">.</span><span class="n">setsampwidth</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">out</span><span class="o">.</span><span class="n">setframerate</span><span class="p">(</span><span class="n">frame_rate</span><span class="p">)</span>
-    <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">seconds</span> <span class="o">*</span> <span class="n">frame_rate</span><span class="p">:</span>
-        <span class="n">sample</span> <span class="o">=</span> <span class="n">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-        <span class="n">out</span><span class="o">.</span><span class="n">writeframes</span><span class="p">(</span><span class="n">encode</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
-        <span class="n">t</span> <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="n">out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">tri</span><span class="p">(</span><span class="n">frequency</span><span class="p">,</span> <span class="n">amplitute</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;A continuous triangle wave&#34;&#34;&#34;</span>
-    <span class="n">period</span> <span class="o">=</span> <span class="n">frame_rate</span> <span class="o">//</span> <span class="n">frequency</span>
-    <span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
-        <span class="n">saw_wave</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">period</span> <span class="o">-</span> <span class="n">floor</span><span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">period</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
-        <span class="n">tri_wave</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">saw_wave</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-        <span class="k">return</span> <span class="n">amplitute</span> <span class="o">*</span> <span class="n">tri_wave</span>
-    <span class="k">return</span> <span class="n">sampler</span>
-    
-<span class="n">c_freq</span> <span class="o">=</span> <span class="mf">261.63</span>
-</code></pre></div><p><img
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">wave</span> <span class="kn">import</span> <span class="nb">open</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">struct</span> <span class="kn">import</span> <span class="n">Struct</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">floor</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">frame_rate</span> <span class="o">=</span> <span class="mi">11025</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Encode float x bewteen -1 and 1 as two bytes.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    (See https://docs.python.org/3/library/struct.html)
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">16384</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Struct</span><span class="p">(</span><span class="s1">&#39;h&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="n">sampler</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;song.wav&#39;</span><span class="p">,</span> <span class="n">seconds</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Write the output of a sampler function as a wav file.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">setnchannels</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">setsampwidth</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">setframerate</span><span class="p">(</span><span class="n">frame_rate</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">seconds</span> <span class="o">*</span> <span class="n">frame_rate</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sample</span> <span class="o">=</span> <span class="n">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">out</span><span class="o">.</span><span class="n">writeframes</span><span class="p">(</span><span class="n">encode</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">t</span> <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">tri</span><span class="p">(</span><span class="n">frequency</span><span class="p">,</span> <span class="n">amplitute</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;A continuous triangle wave&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">period</span> <span class="o">=</span> <span class="n">frame_rate</span> <span class="o">//</span> <span class="n">frequency</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">saw_wave</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">period</span> <span class="o">-</span> <span class="n">floor</span><span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">period</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tri_wave</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">saw_wave</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">amplitute</span> <span class="o">*</span> <span class="n">tri_wave</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">sampler</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">c_freq</span> <span class="o">=</span> <span class="mf">261.63</span>
+</span></span></code></pre></div><p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_10.png"
@@ -275,47 +274,47 @@ def的函数有一个固有名称</p>
 我们添加其他的音调
 <code>c_freq, e_freq, g_freq = 261.63, 329.63, 392.00</code>
 接着添加代码来创造声音</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">both</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">g</span><span class="p">)</span>
-	<span class="k">return</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">g</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-
-<span class="n">play</span><span class="p">(</span><span class="n">both</span><span class="p">(</span><span class="n">tri</span><span class="p">(</span><span class="n">c_freq</span><span class="p">),</span><span class="n">tri</span><span class="p">(</span><span class="n">e_freq</span><span class="p">)))</span>
-</code></pre></div><p>现在我们得到了c和e的复合声音
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">both</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">g</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">g</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">play</span><span class="p">(</span><span class="n">both</span><span class="p">(</span><span class="n">tri</span><span class="p">(</span><span class="n">c_freq</span><span class="p">),</span><span class="n">tri</span><span class="p">(</span><span class="n">e_freq</span><span class="p">)))</span>
+</span></span></code></pre></div><p>现在我们得到了c和e的复合声音
 ![[1_3_2CS61A-5,6,7,8_audio_2.wav]]
 我们还想要一个函数，只需要再规定的时间内播放声音,添加代码</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">note</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
-	<span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
-		<span class="n">seconds</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">frame_rate</span>
-		<span class="k">if</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span><span class="p">:</span>
-			<span class="k">return</span> <span class="mi">0</span>
-		<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span><span class="p">:</span>
-			<span class="k">return</span> <span class="mi">0</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-	<span class="k">return</span> <span class="n">sampler</span>
-
-<span class="n">c</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">c_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">e_freq</span><span class="p">)</span>
-
-<span class="n">play</span><span class="p">(</span><span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
-</code></pre></div><p>我们得到了一个只播放1/4 s的声音
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">note</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">		<span class="n">seconds</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">frame_rate</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">sampler</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">c_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">e_freq</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">play</span><span class="p">(</span><span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span></code></pre></div><p>我们得到了一个只播放1/4 s的声音
 ![[1_3_2CS61A-5,6,7,8_audio_3.wav]]
 我们如果想要两个哔声，把play的代码改成<code>play(both(note(c, 0, 1/4),note(e,1/2,1)))</code> ，现在我们得到了一个c和一个e
 ![[1_3_2CS61A-5,6,7,8_audio_4.wav]]
 它听起来有一点刺耳，因为不像是正常发出来的声音，所以我们添加一个淡入淡出的功能,将note函数改为</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">note</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">fade</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
-	<span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
-		<span class="n">seconds</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">frame_rate</span>
-		<span class="k">if</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span><span class="p">:</span>
-			<span class="k">return</span> <span class="mi">0</span>
-		<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span><span class="p">:</span>
-			<span class="k">return</span> <span class="mi">0</span>
-        	<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span> <span class="o">+</span> <span class="n">fade</span><span class="p">:</span>
-            		<span class="k">return</span> <span class="p">(</span><span class="n">seconds</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span> <span class="o">/</span> <span class="n">fade</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-        	<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span> <span class="o">-</span> <span class="n">fade</span><span class="p">:</span>
-           		<span class="k">return</span> <span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">seconds</span><span class="p">)</span> <span class="o">/</span> <span class="n">fade</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-	<span class="k">return</span> <span class="n">sampler</span>
-</code></pre></div><p>这里遇到问题，缩进在vscode里面和vim显示不同，<img
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">note</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">fade</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">		<span class="n">seconds</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">frame_rate</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        	<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span> <span class="o">+</span> <span class="n">fade</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            		<span class="k">return</span> <span class="p">(</span><span class="n">seconds</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span> <span class="o">/</span> <span class="n">fade</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        	<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span> <span class="o">-</span> <span class="n">fade</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">           		<span class="k">return</span> <span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">seconds</span><span class="p">)</span> <span class="o">/</span> <span class="n">fade</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">sampler</span>
+</span></span></code></pre></div><p>这里遇到问题，缩进在vscode里面和vim显示不同，<img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_11.png"
@@ -337,95 +336,95 @@ def的函数有一个固有名称</p>
 好了运行结果出来![[1_3_2CS61A-5,6,7,8_audio_5.wav]]
 竟然有一种吹奏乐器的感觉了</p>
 <p>我们再添加一些内容，制作一个2s的音乐</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">g</span><span class="p">,</span> <span class="n">low_g</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">g_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">g_freq</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="c1">#z来判断我们播放到哪里</span>
-
-<span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">low_g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
-
-  
-
-<span class="n">play</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-</code></pre></div><p>这是结果![[1_3_2CS61A-5,6,7,8_audio_6.wav]]
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">g</span><span class="p">,</span> <span class="n">low_g</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">g_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">g_freq</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#z来判断我们播放到哪里</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">low_g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">play</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
+</span></span></code></pre></div><p>这是结果![[1_3_2CS61A-5,6,7,8_audio_6.wav]]
 打包函数并调用</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">mario_at</span><span class="p">(</span><span class="n">octave</span><span class="p">):</span>
-
-<span class="n">c</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">c_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">e_freq</span><span class="p">)</span>
-
-<span class="n">g</span><span class="p">,</span> <span class="n">low_g</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">g_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">g_freq</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="k">return</span> <span class="n">mario</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">low_g</span><span class="p">)</span>
-
-  
-
-<span class="k">def</span> <span class="nf">mario</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">low_g</span><span class="p">):</span>
-
-<span class="c1">#z来判断我们播放到哪里</span>
-
-<span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
-
-<span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">low_g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
-
-<span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
-
-<span class="k">return</span> <span class="n">song</span>
-
-  
-
-<span class="n">play</span><span class="p">(</span><span class="n">mario_at</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
-</code></pre></div><p>![[1_3_2CS61A-5,6,7,8_audio_7.wav]]</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">mario_at</span><span class="p">(</span><span class="n">octave</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">c_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">e_freq</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">g</span><span class="p">,</span> <span class="n">low_g</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">g_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">g_freq</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">mario</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">low_g</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">mario</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">low_g</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#z来判断我们播放到哪里</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">low_g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">song</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">play</span><span class="p">(</span><span class="n">mario_at</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+</span></span></code></pre></div><p>![[1_3_2CS61A-5,6,7,8_audio_7.wav]]</p>
 <h1 id="cs61a-7functional-abstraction">CS61A-7:Functional Abstraction</h1>
 <h2 id="lambda-function-environments">Lambda Function Environments</h2>
 <p><img
@@ -498,12 +497,12 @@ lambda函数的作用域是它所在的创建的地方，所以上面的a=2仅�
         title="1_3_2CS61A-5,6,7,8_image_17" />
 print得到的效果</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">delay</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
-	<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;delayed&#39;</span><span class="p">)</span>
-	<span class="k">def</span> <span class="nf">g</span><span class="p">():</span>
-		<span class="k">return</span> <span class="n">arg</span>
-	<span class="k">return</span> <span class="n">g</span>
-</code></pre></div><p><img
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">delay</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;delayed&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">def</span> <span class="nf">g</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="n">arg</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">g</span>
+</span></span></code></pre></div><p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_18.png"
