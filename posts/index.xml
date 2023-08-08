@@ -4,7 +4,15 @@
         <link>http://maequeen.top/posts/</link>
         <description>All Posts | 俺那简陋且普通的第一个网页</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Thu, 20 Jul 2023 02:11:08 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Tue, 08 Aug 2023 14:04:57 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Wiritten_by_yn</title>
+    <link>http://maequeen.top/posts/written_by_yn/</link>
+    <pubDate>Tue, 08 Aug 2023 14:04:57 &#43;0800</pubDate>
+    <author>天天睡到十二点</author>
+    <guid>http://maequeen.top/posts/written_by_yn/</guid>
+    <description><![CDATA[李亚男打的字]]></description>
+</item>
+<item>
     <title>1-7:HDLBits刷题记录(持续更新中)</title>
     <link>http://maequeen.top/posts/1-7hdlbits_record_1/</link>
     <pubDate>Thu, 20 Jul 2023 02:11:08 &#43;0800</pubDate>
@@ -75,14 +83,6 @@
     <author>天天睡到十二点</author>
     <guid>http://maequeen.top/posts/weekly-4-audio-visual-memory-thinking-and-cursing/</guid>
     <description><![CDATA[AI总结 这段文本主要回忆了作者在高中时期的一些经历。作者提到，在高中时，他认为自己没有明确的目标和计划，没有好的学习方法，但在复读一年后，变]]></description>
-</item>
-<item>
-    <title>周报3：过去一周的大小事记</title>
-    <link>http://maequeen.top/posts/weekly-3-the-events-of-the-past-week/</link>
-    <pubDate>Sun, 26 Mar 2023 00:59:50 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
-    <guid>http://maequeen.top/posts/weekly-3-the-events-of-the-past-week/</guid>
-    <description><![CDATA[周报3：过去一周的大小事记 AI总结 这篇博文主要包括以下几个部分： 博主分享了自己关于路由器的经历，一个学生咨询价格后尝试跟着教程自己搞定。这让]]></description>
 </item>
 </channel>
 </rss>
