@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - Category - 俺那简陋且普通的第一个网页</title>
+        <title>Categories - Category - 一夔的小窝</title>
         <link>http://maequeen.top/categories/</link>
-        <description>Categories - Category - 俺那简陋且普通的第一个网页</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (天天睡到十二点)</managingEditor>
-            <webMaster>my_ddup@163.com (天天睡到十二点)</webMaster><lastBuildDate>Sun, 03 Sep 2023 02:11:19 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/categories/" rel="self" type="application/rss+xml" /><item>
+        <description>Categories - Category - 一夔的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (越)</managingEditor>
+            <webMaster>my_ddup@163.com (越)</webMaster><lastBuildDate>Sun, 03 Sep 2023 02:11:19 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/categories/" rel="self" type="application/rss+xml" /><item>
     <title>记录</title>
     <link>http://maequeen.top/categories/%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Sun, 03 Sep 2023 02:11:19 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
+    <author>越</author>
     <guid>http://maequeen.top/categories/%E8%AE%B0%E5%BD%95/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -16,7 +16,7 @@
     <title>周报</title>
     <link>http://maequeen.top/categories/%E5%91%A8%E6%8A%A5/</link>
     <pubDate>Sat, 15 Jul 2023 01:12:06 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
+    <author>越</author>
     <guid>http://maequeen.top/categories/%E5%91%A8%E6%8A%A5/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -24,7 +24,7 @@
     <title>CS61A</title>
     <link>http://maequeen.top/categories/cs61a/</link>
     <pubDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
+    <author>越</author>
     <guid>http://maequeen.top/categories/cs61a/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -32,7 +32,7 @@
     <title>The Missing Semester</title>
     <link>http://maequeen.top/categories/the-missing-semester/</link>
     <pubDate>Thu, 26 Jan 2023 01:53:05 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
+    <author>越</author>
     <guid>http://maequeen.top/categories/the-missing-semester/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -40,7 +40,7 @@
     <title>烂尾</title>
     <link>http://maequeen.top/categories/%E7%83%82%E5%B0%BE/</link>
     <pubDate>Thu, 12 Jan 2023 23:12:31 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
+    <author>越</author>
     <guid>http://maequeen.top/categories/%E7%83%82%E5%B0%BE/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -48,7 +48,7 @@
     <title>生活杂记</title>
     <link>http://maequeen.top/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/</link>
     <pubDate>Wed, 11 Jan 2023 22:04:45 &#43;0800</pubDate>
-    <author>天天睡到十二点</author>
+    <author>越</author>
     <guid>http://maequeen.top/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/</guid>
     <description><![CDATA[]]></description>
 </item>
