@@ -4,9 +4,17 @@
         <link>http://maequeen.top/</link>
         <description>一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 21 Jan 2024 16:44:57 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 05 Mar 2024 15:48:37 &#43;0800</lastBuildDate>
             <atom:link href="http://maequeen.top/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>2-2 快说感谢赛博活菩萨ehco，用上免费的gpt4了</title>
+    <link>http://maequeen.top/posts/2-2say-thank-you-to-ehco-the-free-gpt4/</link>
+    <pubDate>Tue, 05 Mar 2024 15:48:37 &#43;0800</pubDate>
+    <author>龙山</author>
+    <guid>http://maequeen.top/posts/2-2say-thank-you-to-ehco-the-free-gpt4/</guid>
+    <description><![CDATA[感谢 首先让我们说感谢ehco，让我们免费用上了gpt4 教程 好了，接下来是教程，希望大家都能在学习和生活上体验gpt带来的便利 注册 首先是访问这]]></description>
+</item>
+<item>
     <title>2-1 回老家，享受观影自由</title>
     <link>http://maequeen.top/posts/2-1-go-home-and-enjoy-movies-freely/</link>
     <pubDate>Sun, 21 Jan 2024 16:44:57 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>龙山</author>
     <guid>http://maequeen.top/posts/weekly-5-no-flag/</guid>
     <description><![CDATA[AI总结 在这篇博客文章中，作者分享了自己最近的一些生活体验和感悟。 首先，作者谈到了最近观看的一部电影《宇宙探索编辑部》，虽然观后感受难以言表]]></description>
-</item>
-<item>
-    <title>1_5_1：解放github pages 终于还是接触图床了</title>
-    <link>http://maequeen.top/posts/1-5-1%E5%9B%BE%E5%BA%8A/</link>
-    <pubDate>Sun, 30 Apr 2023 23:59:53 &#43;0800</pubDate>
-    <author>龙山</author>
-    <guid>http://maequeen.top/posts/1-5-1%E5%9B%BE%E5%BA%8A/</guid>
-    <description><![CDATA[缘起 我是在github pages上搭建的博客，然后域名做了个重定向，之前一股脑的把图片也上传上去，现在发现图片影响了网站的加载速度，所以想着]]></description>
 </item>
 </channel>
 </rss>
