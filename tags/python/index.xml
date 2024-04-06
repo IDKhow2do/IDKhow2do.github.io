@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>python - Tag - 一夔的小窝</title>
+        <title>Python - Tag - 一夔的小窝</title>
         <link>http://maequeen.top/tags/python/</link>
-        <description>python - Tag - 一夔的小窝</description>
+        <description>Python - Tag - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
             <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/python/" rel="self" type="application/rss+xml" /><item>
     <title>1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)</title>

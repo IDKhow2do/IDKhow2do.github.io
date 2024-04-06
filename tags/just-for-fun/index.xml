@@ -1,15 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>just for fun - Tag - 一夔的小窝</title>
+        <title>Just for Fun - Tag - 一夔的小窝</title>
         <link>http://maequeen.top/tags/just-for-fun/</link>
-        <description>just for fun - Tag - 一夔的小窝</description>
+        <description>Just for Fun - Tag - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 05 Mar 2024 15:48:37 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/just-for-fun/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 07 Apr 2024 01:11:34 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/just-for-fun/" rel="self" type="application/rss+xml" /><item>
+    <title>2-5 为笨蛋朋友的决策买单：清明游武当山</title>
+    <link>http://maequeen.top/posts/2-5-qingming-in-wudangs-not-a-good-idea/</link>
+    <pubDate>Sun, 07 Apr 2024 01:11:34 &#43;0800</pubDate>
+    <author>龙山</author>
+    <guid>http://maequeen.top/posts/2-5-qingming-in-wudangs-not-a-good-idea/</guid>
+    <description><![CDATA[AI总结 ### 迷迷糊糊的决定 原本以为是与朋友共赴道教圣地的旅程，因一场误会，变成了与女朋友独享的武当山之行。这场开始于迷雾，充满意外转折的旅程，]]></description>
+</item>
+<item>
     <title>2-2 快说感谢赛博活菩萨ehco，用上免费的gpt4了</title>
-    <link>http://maequeen.top/posts/2-2say-thank-you-to-ehco-the-free-gpt4/</link>
+    <link>http://maequeen.top/posts/2-2-say-thank-you-to-ehco-the-free-gpt4/</link>
     <pubDate>Tue, 05 Mar 2024 15:48:37 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-2say-thank-you-to-ehco-the-free-gpt4/</guid>
+    <guid>http://maequeen.top/posts/2-2-say-thank-you-to-ehco-the-free-gpt4/</guid>
     <description><![CDATA[感谢 首先让我们说感谢ehco，让我们免费用上了gpt4 教程 好了，接下来是教程，希望大家都能在学习和生活上体验gpt带来的便利 注册 首先是访问这]]></description>
 </item>
 <item>
