@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/maequeen.top\/posts\/2-4digitaliclearning\/"
-        },"genre": "posts","wordcount":  184 ,
+        },"genre": "posts","wordcount":  7720 ,
         "url": "http:\/\/maequeen.top\/posts\/2-4digitaliclearning\/","datePublished": "2024-04-03T01:49:23+08:00","dateModified": "2024-04-03T01:49:23+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -84,8 +84,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">2 4DigitalICLearning</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>龙山</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-04-03">2024-04-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;184 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-04-03">2024-04-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;7720 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;16 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -99,6 +99,55 @@
         <li><a href="#组合逻辑电路-1">组合逻辑电路</a></li>
       </ul>
     </li>
+    <li><a href="#时序逻辑电路">时序逻辑电路</a>
+      <ul>
+        <li><a href="#触发器">触发器</a></li>
+        <li><a href="#寄存器">寄存器</a></li>
+        <li><a href="#计数器">计数器</a></li>
+        <li><a href="#有限状态机">有限状态机</a></li>
+      </ul>
+    </li>
+    <li><a href="#导论到verilog-hdl">导论到Verilog HDL</a>
+      <ul>
+        <li><a href="#verilog-hdl的基础知识">verilog HDL的基础知识</a></li>
+        <li><a href="#抽象级别和建模的概念">抽象级别和建模的概念</a></li>
+        <li><a href="#基础语法规定">基础语法规定</a></li>
+        <li><a href="#数据类型">数据类型</a></li>
+        <li><a href="#testbench-概念">testbench 概念</a></li>
+      </ul>
+    </li>
+    <li><a href="#verilog中的编程技术">Verilog中的编程技术</a>
+      <ul>
+        <li></li>
+        <li><a href="#组合逻辑电路-2">组合逻辑电路</a></li>
+      </ul>
+    </li>
+    <li><a href="#verilog-中的编程技术2">Verilog 中的编程技术2</a>
+      <ul>
+        <li><a href="#verilog中的编程技术2">verilog中的编程技术2</a></li>
+        <li><a href="#电路的数据流模型">电路的数据流模型</a></li>
+        <li><a href="#组合电路的数据流类型">组合电路的数据流类型</a></li>
+        <li><a href="#多路复用器">多路复用器</a></li>
+      </ul>
+    </li>
+    <li><a href="#verilog中的编程技术3">verilog中的编程技术3</a>
+      <ul>
+        <li><a href="#组合电路的行为模型">组合电路的行为模型</a></li>
+        <li><a href="#时序电路的行为模型">时序电路的行为模型</a></li>
+        <li><a href="#d触发器的行为建模">D触发器的行为建模</a></li>
+        <li><a href="#jk触发器的行为建模">JK触发器的行为建模</a></li>
+        <li><a href="#使用jk触发器来完成d触发器的行为建模">使用JK触发器来完成D触发器的行为建模</a></li>
+        <li><a href="#使用jk触发器来完成t触发器的行为建模">使用JK触发器来完成T触发器的行为建模</a></li>
+        <li><a href="#使用jk触发器对sr触发器建模">使用JK触发器对SR触发器建模</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用开关进行数字设计">使用开关进行数字设计</a>
+      <ul>
+        <li><a href="#开关门建模">开关门建模</a></li>
+        <li><a href="#使用cmos技术的数字设计">使用CMOS技术的数字设计</a></li>
+      </ul>
+    </li>
+    <li><a href="#cmos-反相器">CMOS 反相器</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="组合逻辑电路">组合逻辑电路</h2>
@@ -112,7 +161,7 @@
         data-srcset="https://tg-image.com/file/adf293f8ae710cf01cb93.png, https://tg-image.com/file/adf293f8ae710cf01cb93.png 1.5x, https://tg-image.com/file/adf293f8ae710cf01cb93.png 2x"
         data-sizes="auto"
         alt="https://tg-image.com/file/adf293f8ae710cf01cb93.png"
-        title="truth table|118" /></p>
+        title="truth table|543" /></p>
 <ul>
 <li>或门</li>
 <li>非门</li>
@@ -143,8 +192,8 @@
 &amp;= A \oplus B \
 \text{Carry} &amp;= AB
 \end{align*}
-$$</li>
-<li><img
+$$
+<img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://tg-image.com/file/2556609120423ce5d1fe2.png"
@@ -152,11 +201,8 @@ $$</li>
         data-sizes="auto"
         alt="https://tg-image.com/file/2556609120423ce5d1fe2.png"
         title="电路图" /></li>
-</ul>
-</li>
 <li>全加法器：这里就是有三个输入了，因为多了一个cin的进位输入信号。
-<ul>
-<li><img
+<img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://tg-image.com/file/f494d893dffd61531256b.png"
@@ -168,18 +214,1105 @@ $$</li>
 \text{Sum} &amp;= A \oplus B \oplus \text{Cin} \
 \text{Cout} &amp;= AB + BCin + CinA
 \end{align*}
-$$</li>
-<li><img
+$$
+<img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://tg-image.com/file/86be444d674355f99f7b1.png"
         data-srcset="https://tg-image.com/file/86be444d674355f99f7b1.png, https://tg-image.com/file/86be444d674355f99f7b1.png 1.5x, https://tg-image.com/file/86be444d674355f99f7b1.png 2x"
         data-sizes="auto"
         alt="https://tg-image.com/file/86be444d674355f99f7b1.png"
-        title="电路图" /></li>
+        title="电路图|300" /></li>
+<li>半减法器</li>
+<li>全减法器</li>
+</ul>
+</li>
+<li>mux多路复用器，根据选择信号，将指定的输入信号给到输出，只有一个输出信号，如果有2的n次方的信号，则需要n个选择信号。
+<ul>
+<li>电路图
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/cbc9988ac5383c447ea18.png"
+        data-srcset="https://tg-image.com/file/cbc9988ac5383c447ea18.png, https://tg-image.com/file/cbc9988ac5383c447ea18.png 1.5x, https://tg-image.com/file/cbc9988ac5383c447ea18.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/cbc9988ac5383c447ea18.png"
+        title="https://tg-image.com/file/cbc9988ac5383c447ea18.png" /></li>
+<li>可以用来实现具体的逻辑（也是FPGA的LUT的原理来源）</li>
+<li>De-mux，将选择信号选中的输入信号到指定的输出信号输出。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/e70b62ac0e89bcb167f19.png"
+        data-srcset="https://tg-image.com/file/e70b62ac0e89bcb167f19.png, https://tg-image.com/file/e70b62ac0e89bcb167f19.png 1.5x, https://tg-image.com/file/e70b62ac0e89bcb167f19.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/e70b62ac0e89bcb167f19.png"
+        title="https://tg-image.com/file/e70b62ac0e89bcb167f19.png" /></li>
+<li>decoder译码器：将输入的信号译码为独热的输出信号。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/23bf375512a3dd92f7b17.png"
+        data-srcset="https://tg-image.com/file/23bf375512a3dd92f7b17.png, https://tg-image.com/file/23bf375512a3dd92f7b17.png 1.5x, https://tg-image.com/file/23bf375512a3dd92f7b17.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/23bf375512a3dd92f7b17.png"
+        title="https://tg-image.com/file/23bf375512a3dd92f7b17.png" /></li>
+</ul>
+</li>
+<li>乘法器multiplier:</li>
+<li><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/2b91f28f31609460c2150.png"
+        data-srcset="https://tg-image.com/file/2b91f28f31609460c2150.png, https://tg-image.com/file/2b91f28f31609460c2150.png 1.5x, https://tg-image.com/file/2b91f28f31609460c2150.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/2b91f28f31609460c2150.png"
+        title="https://tg-image.com/file/2b91f28f31609460c2150.png" />
+<ul>
+<li>流程图：这是一个两位乘法器的结果，用到两个半加器。如图所示流程。</li>
+</ul>
+</li>
+<li>比较器
+<ul>
+<li>一般是通过写出真值表来完成设计的，两位比较器的真值表和逻辑表达式如下
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/29b6463456749a81abe83.png"
+        data-srcset="https://tg-image.com/file/29b6463456749a81abe83.png, https://tg-image.com/file/29b6463456749a81abe83.png 1.5x, https://tg-image.com/file/29b6463456749a81abe83.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/29b6463456749a81abe83.png"
+        title="https://tg-image.com/file/29b6463456749a81abe83.png" /></li>
+</ul>
+</li>
+<li>Code Converters 编码转换器
+<ul>
+<li>真值表设计</li>
+<li>十进制2BCD</li>
 </ul>
 </li>
 </ul>
+<h2 id="时序逻辑电路">时序逻辑电路</h2>
+<h3 id="触发器">触发器</h3>
+<p>触发器是一种可以存储二进制比特位数据的器件，有两种状态，一种是预置，一种是清零。有两个互补的输出，</p>
+<ul>
+<li>3个控制信号
+<ul>
+<li>时钟：用于同步电路一般</li>
+<li>set</li>
+<li>reset</li>
+</ul>
+</li>
+</ul>
+<h4 id="sr触发器">SR触发器</h4>
+<p>是基本的电路，其他的触发器可以用SR触发器来实现。SR != 1，否则会出现不定状态。时钟边沿触发，此处为上升沿。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/93b48bc6f2c73d3f4db05.png"
+        data-srcset="https://tg-image.com/file/93b48bc6f2c73d3f4db05.png, https://tg-image.com/file/93b48bc6f2c73d3f4db05.png 1.5x, https://tg-image.com/file/93b48bc6f2c73d3f4db05.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/93b48bc6f2c73d3f4db05.png"
+        title="https://tg-image.com/file/93b48bc6f2c73d3f4db05.png" /></p>
+<ul>
+<li>D触发器：其实就是把SR触发器的输入信号连在一起加了一个反相器。输出的下一个状态就是输入，也叫做延迟时钟输出器。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/6645965d308034a39a9a6.png"
+        data-srcset="https://tg-image.com/file/6645965d308034a39a9a6.png, https://tg-image.com/file/6645965d308034a39a9a6.png 1.5x, https://tg-image.com/file/6645965d308034a39a9a6.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/6645965d308034a39a9a6.png"
+        title="https://tg-image.com/file/6645965d308034a39a9a6.png" /></li>
+<li>JK触发器：不存在JK != 1的限制，在这个条件下，输出反转。但是因为输出频繁切换容易导致竞争，因此应该尽量保持时钟周期低于JK触发器的输出延迟。（还有主从JK触发器的电路上的实现）</li>
+<li><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/4350ba0d79e16a2f45dd7.png"
+        data-srcset="https://tg-image.com/file/4350ba0d79e16a2f45dd7.png, https://tg-image.com/file/4350ba0d79e16a2f45dd7.png 1.5x, https://tg-image.com/file/4350ba0d79e16a2f45dd7.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/4350ba0d79e16a2f45dd7.png"
+        title="https://tg-image.com/file/4350ba0d79e16a2f45dd7.png" /></li>
+<li>T触发器：输入为1是反转信号，否则保持。</li>
+</ul>
+<h3 id="寄存器">寄存器</h3>
+<p>一组触发器被称之为寄存器，可以用来存储数据，也可以拿来做计数器。时钟是寄存器常用的控制信号。</p>
+<h4 id="串行输入和串行输出">串行输入和串行输出</h4>
+<p>寄存器串联的方式存入数据和取出</p>
+<h4 id="串行输入和并行输出">串行输入和并行输出</h4>
+<p>串联的方式输入信号，当最后一位信号输入完毕的时候，每一个组成寄存器的触发器将数据输出，构成并行输出。</p>
+<h4 id="并行输入和并行输出">并行输入和并行输出</h4>
+<p>数据并行输入又输出，花费一个时钟周期的时间，因此又被称之为，缓冲器。</p>
+<h4 id="并行输入和串行输出">并行输入和串行输出</h4>
+<p>这里的电路图给出了外围的驱动，并行输入可以大幅提升工作效率，但是设计的复杂程度也会提高，其中两个块，一个是加载数据，一个是移位控制信号，通过一个2选1的mux来进行加载/移位的模式控制
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/ce56f858d72b63b04f2b1.png"
+        data-srcset="https://tg-image.com/file/ce56f858d72b63b04f2b1.png, https://tg-image.com/file/ce56f858d72b63b04f2b1.png 1.5x, https://tg-image.com/file/ce56f858d72b63b04f2b1.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/ce56f858d72b63b04f2b1.png"
+        title="https://tg-image.com/file/ce56f858d72b63b04f2b1.png" /></p>
+<h3 id="计数器">计数器</h3>
+<h4 id="同步计数器">同步计数器</h4>
+<p>同步计数器的时钟被同时应用在了所有的触发器上，一般T和JK触发器经常被用来设计同步计数器，当它们被断言为1时，会反转状态为之前的状态，
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/e145721dc91c9ba04e67a.png"
+        data-srcset="https://tg-image.com/file/e145721dc91c9ba04e67a.png, https://tg-image.com/file/e145721dc91c9ba04e67a.png 1.5x, https://tg-image.com/file/e145721dc91c9ba04e67a.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/e145721dc91c9ba04e67a.png"
+        title="https://tg-image.com/file/e145721dc91c9ba04e67a.png" /></p>
+<p>一个简单的3位JK同步计数器</p>
+<p>D0是2分频，D1是4分频，D2是8分频，按照递增的顺序计数脉冲，</p>
+<h4 id="异步计数器">异步计数器</h4>
+<p>异步计数器的时钟输入来自前一个触发器的输出</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/79ebbd03cd1c689d23fc5.png"
+        data-srcset="https://tg-image.com/file/79ebbd03cd1c689d23fc5.png, https://tg-image.com/file/79ebbd03cd1c689d23fc5.png 1.5x, https://tg-image.com/file/79ebbd03cd1c689d23fc5.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/79ebbd03cd1c689d23fc5.png"
+        title="https://tg-image.com/file/79ebbd03cd1c689d23fc5.png" /></p>
+<h4 id="环形计数器">环形计数器</h4>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/926340d6f5715065eaf1a.png"
+        data-srcset="https://tg-image.com/file/926340d6f5715065eaf1a.png, https://tg-image.com/file/926340d6f5715065eaf1a.png 1.5x, https://tg-image.com/file/926340d6f5715065eaf1a.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/926340d6f5715065eaf1a.png"
+        title="https://tg-image.com/file/926340d6f5715065eaf1a.png" /></p>
+<p>环形计数器将D触发器的首尾相连，在这里，计数器必须以任何非零值开始。假设给定的初始值是 0001，则序列将是 1000、0100、0010、0001，并且将再次重复相同的序列。</p>
+<h4 id="约翰逊计数器">约翰逊计数器</h4>
+<p>一般用于检测特定序列</p>
+<h3 id="有限状态机">有限状态机</h3>
+<p>是一种数学模型，任意时间提取一个状态数，包括状态图，状态表，激励表和电路图。</p>
+<h4 id="mealy型和moore型">mealy型和moore型</h4>
+<p>Mealy有限状态机的输出取决于外部的输入和反馈。用于检测的序列位数和状态位数相等。通常要比同样逻辑的Moore有限状态机状态数目少一个。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/199747b1bb9525b57d816.png"
+        data-srcset="https://tg-image.com/file/199747b1bb9525b57d816.png, https://tg-image.com/file/199747b1bb9525b57d816.png 1.5x, https://tg-image.com/file/199747b1bb9525b57d816.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/199747b1bb9525b57d816.png"
+        title="https://tg-image.com/file/199747b1bb9525b57d816.png" /></p>
+<p>这是一个典型的Mealy状态机的结构图，</p>
+<ul>
+<li>下一状态的组合逻辑
+<ul>
+<li>基于当前的状态和外部的输入计算出下一个状态</li>
+</ul>
+</li>
+<li>状态寄存器
+<ul>
+<li>存储元件用于保持当前的状态信息</li>
+<li>在市中心好的控制下更新值，输出给输出组合逻辑来确定输出，同时也反馈给下一状态的组合逻辑来计算下一状态</li>
+</ul>
+</li>
+<li>输出的组合逻辑
+<ul>
+<li>基于当前的状态和外部输入来产生输出信号</li>
+<li>输出可能在输入改变时立即改变，不需要等待到下一个时钟周期（与Moore状态机仅依赖于当前状态不同）</li>
+</ul>
+</li>
+</ul>
+<p>Moore有限状态机与meely型不同的地方就是，Moore型的输出不受输入信号影响，只和当前状态有关</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/dd2d9491740e4fec83329.png"
+        data-srcset="https://tg-image.com/file/dd2d9491740e4fec83329.png, https://tg-image.com/file/dd2d9491740e4fec83329.png 1.5x, https://tg-image.com/file/dd2d9491740e4fec83329.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/dd2d9491740e4fec83329.png"
+        title="https://tg-image.com/file/dd2d9491740e4fec83329.png" /></p>
+<ul>
+<li>下一状态的组合逻辑
+<ul>
+<li>当前状态和输入来决定下一状态</li>
+</ul>
+</li>
+<li>状态寄存器
+<ul>
+<li>存储元件用于保持当前的状态信息</li>
+<li>可以直接决定输出组合逻辑的值</li>
+</ul>
+</li>
+<li>输出的组合逻辑
+<ul>
+<li>输出仅依赖于当前状态，与当前的输入无关，只会在状态发生转换的时候输出发生变化，不会因为输入的变化而变化，moore的输出相对于mealy来说有更小的延迟，因为输出的改变仅在状态的变化的时候发生。</li>
+</ul>
+</li>
+</ul>
+<h4 id="模式或序列检测器">模式或序列检测器</h4>
+<p>通常情况下，mealy要比moore完成同样状态的逻辑任务的状态数少1，如果模式或序列中的比特数为 N，那么在 Mealy 中所需的状态数将为 N，在 Moore 序列检测器中为 N+1。</p>
+<p>比如这里要检测011的数字序列，先绘制出状态转换图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/0e1265e6ec4ba1df5aeaf.png"
+        data-srcset="https://tg-image.com/file/0e1265e6ec4ba1df5aeaf.png, https://tg-image.com/file/0e1265e6ec4ba1df5aeaf.png 1.5x, https://tg-image.com/file/0e1265e6ec4ba1df5aeaf.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/0e1265e6ec4ba1df5aeaf.png"
+        title="https://tg-image.com/file/0e1265e6ec4ba1df5aeaf.png" /></p>
+<p>然后这里可以根据状态转换图列出状态转换表</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/62935309f12f25a2a5099.png"
+        data-srcset="https://tg-image.com/file/62935309f12f25a2a5099.png, https://tg-image.com/file/62935309f12f25a2a5099.png 1.5x, https://tg-image.com/file/62935309f12f25a2a5099.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/62935309f12f25a2a5099.png"
+        title="https://tg-image.com/file/62935309f12f25a2a5099.png" /></p>
+<p>然后融入具体的器件，这里是D触发器，在同一个表格中化简，绘制卡诺图，最终化简出D1和D2的表达式，以及Y输出，最后根据公示绘制出我们需要的电路</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/2f8072f012d4d605b1f36.png"
+        data-srcset="https://tg-image.com/file/2f8072f012d4d605b1f36.png, https://tg-image.com/file/2f8072f012d4d605b1f36.png 1.5x, https://tg-image.com/file/2f8072f012d4d605b1f36.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/2f8072f012d4d605b1f36.png"
+        title="https://tg-image.com/file/2f8072f012d4d605b1f36.png" /></p>
+<h2 id="导论到verilog-hdl">导论到Verilog HDL</h2>
+<h3 id="verilog-hdl的基础知识">verilog HDL的基础知识</h3>
+<p>verilog是一种硬件描述语言，，用于描述硬件进行仿真、综合和实现。</p>
+<p>verilog 将电路描述为基本的开关到复杂的集成电路，如ROM、RAM、微控制器、微处理器以及其他的组合和时序逻辑电路。</p>
+<h4 id="引入vlsi超大规模集成电路">引入VLSI超大规模集成电路</h4>
+<p>是一种集成的类型，相较于分立的器件，在这一个集成类别下，数百万个晶体管被制造在单一的集成电路中，微处理器和微控制器也属于这一个VLSI类别，由于电路的复杂性，所以不可能进行验证、制造或者面包板的实验，需要使用CAD来进行验证和制造。</p>
+<h4 id="模拟和数字vlsi">模拟和数字VLSI</h4>
+<p>VLSI也是一种HDL，它用于模拟数字和模拟信号，但是在这里，我们只讨论数字设计。</p>
+<h4 id="机器语言和hdls">机器语言和HDLs</h4>
+<p>我们知道在数字系统中所有的操作都是由机器语言所执行的，机器语言和HDL在数字系统设计中起着非常重要的作用，这两种语言也在设计高频合成器的通信中被广泛使用。</p>
+<h4 id="设计方法论">设计方法论</h4>
+<p>主要有两种设计方法，</p>
+<ul>
+<li>自上而下设计方法
+<ul>
+<li>定义顶层设计块，然后是子级块，此外，子块被划分为叶子单元，无法在进一步划分，这种设计方法被称之为自顶向下设计方法</li>
+</ul>
+</li>
+<li>自下向上设计方法
+<ul>
+<li>定义底层设计块，借助叶子单元，构建更大的宏单元，可以用于设计更高级别的块，被称之为自底向上设计方法</li>
+</ul>
+</li>
+</ul>
+<h4 id="设计流程">设计流程</h4>
+<ol>
+<li>
+<p><strong>Specifications of Design</strong></p>
+<ul>
+<li>定义整个设计的要求和目标。</li>
+</ul>
+</li>
+<li>
+<p><strong>Behavioral Description</strong></p>
+<ul>
+<li>用高层次的硬件描述语言来表达设计的行为。</li>
+</ul>
+</li>
+<li>
+<p><strong>RTL Description</strong></p>
+<ul>
+<li>描述寄存器传输级别（Register Transfer Level）的设计，用于细化行为描述。</li>
+</ul>
+</li>
+<li>
+<p><strong>Functional Verification</strong></p>
+<ul>
+<li>通过模拟检查RTL设计是否满足行为规格。</li>
+</ul>
+</li>
+<li>
+<p><strong>Testing</strong></p>
+<ul>
+<li>对功能验证过程中的设计进行测试，确保没有错误。</li>
+</ul>
+</li>
+<li>
+<p><strong>Logic Synthesis</strong></p>
+<ul>
+<li>将RTL描述转换成门级网表。</li>
+</ul>
+</li>
+<li>
+<p><strong>Gate-Level Analysis</strong></p>
+<ul>
+<li>分析门级网表来确保满足时序和功耗要求。</li>
+</ul>
+</li>
+<li>
+<p><strong>Verification and Testing</strong></p>
+<ul>
+<li>在门级阶段对设计进行验证和测试。</li>
+</ul>
+</li>
+<li>
+<p><strong>Floor Planning</strong></p>
+<ul>
+<li>对芯片的物理结构进行初步规划，包括模块布局和互连。</li>
+</ul>
+</li>
+<li>
+<p><strong>Physical Layout</strong></p>
+<ul>
+<li>根据floor planning，创建设计的详细物理布局。</li>
+</ul>
+</li>
+<li>
+<p><strong>Layout Verification</strong></p>
+<ul>
+<li>使用DRC（Design Rule Check）、LVS（Layout vs. Schematic Check）等工具验证布局。</li>
+</ul>
+</li>
+<li>
+<p><strong>Final Implementation</strong></p>
+<ul>
+<li>最终实现，准备设计用于制造。</li>
+</ul>
+</li>
+</ol>
+<h3 id="抽象级别和建模的概念">抽象级别和建模的概念</h3>
+<p>verilog是一种行为、结构描述语言，内部的抽象级别可以分为四种级别</p>
+<h4 id="门电路级">门电路级</h4>
+<p>模块使用逻辑门来设计，通过网络来相互连接，类似于焖鸡图，电路简单的时候可以用于设计</p>
+<h4 id="数据流级">数据流级</h4>
+<p>数据抽象层，用特定的数据流来进行设计，我们知道硬件寄存器之间的数据流和在电路中的数据的处理方式</p>
+<h4 id="行为级">行为级</h4>
+<p>也称之为算法级，是最高级别的抽象层，可以使用所需的算法设计模块，而不需要担心硬件的细节，类似于使用C语言来编程，但是两者的本质完全不同，不可混淆。</p>
+<h4 id="开关级">开关级</h4>
+<p>是最低的抽象，设计在开关、存储节点、互联的线之间实现，可以了解verilog VS的开关级别的实现，但是设计复杂电路很困难，通常用于设计低功耗设备。</p>
+<h3 id="基础语法规定">基础语法规定</h3>
+<ul>
+<li>注释</li>
+<li>占位符</li>
+<li>标志符</li>
+<li>转义字符</li>
+<li>关键字（小写）</li>
+<li>字符串</li>
+<li>运算符</li>
+<li>数字</li>
+</ul>
+<h3 id="数据类型">数据类型</h3>
+<ul>
+<li>值</li>
+<li>线网wire</li>
+<li>寄存器reg</li>
+<li>向量
+<ul>
+<li>多个位宽的可以表示为向量，寄存器或者网络也可以表示为向量，左侧的数字将是向量的最高有效位</li>
+</ul>
+</li>
+<li>整数数据类型integer</li>
+<li>实数数据类型real</li>
+<li>时间数据类型$time</li>
+<li>数组</li>
+<li>memory
+<ul>
+<li>可以在verilog中表示为一组寄存器，每个单元被称之为一个字，一个字可能是1或者很多bits</li>
+</ul>
+</li>
+</ul>
+<h3 id="testbench-概念">testbench 概念</h3>
+<p>也被称之为激发信号，main module用于生成设计的RTL，testbench用于生成波形来验证设计的输出是否达到要求，设计可以根据抽象的程度不同来发生更改，但是测试的建模都是相通的。</p>
+<h2 id="verilog中的编程技术">Verilog中的编程技术</h2>
+<p>Verilog描述硬件，C语言描述软件，在Verliog中，语句是并行执行的，而在其他语句中是顺序执行的。基本的结构是在module中构建的，定义了输入和输出，最后被映射到电路的实际的硬件逻辑门。</p>
+<h4 id="电路的门级模型">电路的门级模型</h4>
+<p>通常直接从Verilog的可用库调用，逻辑门与硬件原理图有一一对应的关系，被认为是设计模型的最低级别。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/7dd480bd5caa9705bef0f.png"
+        data-srcset="https://tg-image.com/file/7dd480bd5caa9705bef0f.png, https://tg-image.com/file/7dd480bd5caa9705bef0f.png 1.5x, https://tg-image.com/file/7dd480bd5caa9705bef0f.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/7dd480bd5caa9705bef0f.png"
+        title="https://tg-image.com/file/7dd480bd5caa9705bef0f.png" /></p>
+<p>一个带有与、或、非门的逻辑电路</p>
+<h3 id="组合逻辑电路-2">组合逻辑电路</h3>
+<p>输出取决于当前输入的组合，而不取决于先前的输入的电路称之为组合逻辑电路，由逻辑门、输入变量和输出变量组成。</p>
+<h4 id="加法器和减法器">加法器和减法器</h4>
+<h5 id="加法器">加法器</h5>
+<h6 id="半加器">半加器</h6>
+<p>$$S = A \overline{B} + \overline{A} B = A \oplus B \text{ and } C = AB
+$$
+两个输入A、B，两个输出，S和C，分别为和以及进位标志</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">HA</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">output</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">xor</span> <span class="n">X_2</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span> <span class="c1">//实例化异或
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">and</span> <span class="n">A_2</span><span class="err">（</span><span class="n">C</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><p>也可以使用NAND来构建半加器。如图所示</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/301229c74db56a36a0ce6.png"
+        data-srcset="https://tg-image.com/file/301229c74db56a36a0ce6.png, https://tg-image.com/file/301229c74db56a36a0ce6.png 1.5x, https://tg-image.com/file/301229c74db56a36a0ce6.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/301229c74db56a36a0ce6.png"
+        title="https://tg-image.com/file/301229c74db56a36a0ce6.png" /></p>
+<p>代码实现如图</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">HA</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">W1</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">nand</span> <span class="n">N_1</span><span class="p">(</span><span class="n">W1</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">nand</span> <span class="n">N_2</span><span class="p">(</span><span class="n">W2</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">W1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">nand</span> <span class="n">N_3</span><span class="p">(</span><span class="n">W3</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">nand</span> <span class="n">N_4</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">nand</span> <span class="n">N_5</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="n">W1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><p>也可以使用NOR，如图，</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/3ba9176ba32b7daf4345b.png"
+        data-srcset="https://tg-image.com/file/3ba9176ba32b7daf4345b.png, https://tg-image.com/file/3ba9176ba32b7daf4345b.png 1.5x, https://tg-image.com/file/3ba9176ba32b7daf4345b.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/3ba9176ba32b7daf4345b.png"
+        title="https://tg-image.com/file/3ba9176ba32b7daf4345b.png" /></p>
+<p>代码实现如下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">HA</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">W1</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">nor</span> <span class="n">N_1</span><span class="p">(</span><span class="n">W1</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">nor</span> <span class="n">N_2</span><span class="p">(</span><span class="n">W2</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">nor</span> <span class="n">N_3</span><span class="p">(</span><span class="n">W3</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">nor</span> <span class="n">N_4</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="n">W2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">nor</span> <span class="n">N_5</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">W3</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h6 id="全加器">全加器</h6>
+<p>多了一个进位输入Cin相较于半加器，通过真值表可以得出表达式化简
+$$\begin{align*}
+S &amp;= A\overline{B}C_{\text{in}} + A\overline{B}C_{\text{in}}&rsquo; + AB&rsquo;C_{\text{in}}&rsquo; + ABC_{\text{in}} \
+&amp;= A \oplus B \oplus C_{\text{in}} \
+\text{and } Co &amp;= A\overline{B}C_{\text{in}} + AB&rsquo;C_{\text{in}}&rsquo; + ABC_{\text{in}} \
+&amp;= AB + BC_{\text{in}} + AC_{\text{in}}
+\end{align*}
+$$</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/84c0a3ca62d7ce4a8d2d2.png"
+        data-srcset="https://tg-image.com/file/84c0a3ca62d7ce4a8d2d2.png, https://tg-image.com/file/84c0a3ca62d7ce4a8d2d2.png 1.5x, https://tg-image.com/file/84c0a3ca62d7ce4a8d2d2.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/84c0a3ca62d7ce4a8d2d2.png"
+        title="https://tg-image.com/file/84c0a3ca62d7ce4a8d2d2.png" /></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">FA</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">Cin</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">Co</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">Cin</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">S</span><span class="p">,</span> <span class="n">Co</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">W1</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">xor</span> <span class="n">X_1</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">Cin</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="n">A_1</span><span class="p">(</span><span class="n">W1</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="n">A_2</span><span class="p">(</span><span class="n">W2</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">Cin</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="n">A_3</span><span class="p">(</span><span class="n">W3</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">Cin</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">or</span> <span class="n">O_1</span><span class="p">(</span><span class="n">Co</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h5 id="减法器subtractor">减法器subtractor</h5>
+<h6 id="半减器">半减器</h6>
+<p>同上</p>
+<h6 id="全减器">全减器</h6>
+<p>根据真值表得出表达式并化简
+$$\begin{align*}
+D &amp;= A\overline{B}C_{\text{in}} + A\overline{B}C_{\text{in}}&rsquo; + AB&rsquo;C_{\text{in}}&rsquo; + ABC_{\text{in}} \
+&amp;= A \oplus B \oplus C_{\text{in}} \
+\text{and } Bo &amp;= A\overline{B}C_{\text{in}} + A\overline{B}C_{\text{in}}&rsquo; + ABC_{\text{in}} \
+&amp;= A\overline{B} + BC_{\text{in}} + AC_{\text{in}}
+\end{align*}
+$$
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/520d45c485de8b846c96a.png"
+        data-srcset="https://tg-image.com/file/520d45c485de8b846c96a.png, https://tg-image.com/file/520d45c485de8b846c96a.png 1.5x, https://tg-image.com/file/520d45c485de8b846c96a.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/520d45c485de8b846c96a.png"
+        title="https://tg-image.com/file/520d45c485de8b846c96a.png" /></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">FS</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">Bo</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">D</span><span class="p">,</span> <span class="n">Bo</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">W1</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">,</span> <span class="n">W4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">xor</span> <span class="n">X_1</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">not</span> <span class="n">n_1</span><span class="p">(</span><span class="n">W1</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="n">A_1</span><span class="p">(</span><span class="n">W2</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="n">A_2</span><span class="p">(</span><span class="n">W3</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="n">A_3</span><span class="p">(</span><span class="n">W4</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">or</span> <span class="n">O_1</span><span class="p">(</span><span class="n">Bo</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">,</span> <span class="n">W4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h4 id="多路复用器mux和解多路复用器">多路复用器mux和解多路复用器</h4>
+<h5 id="多路复用器mux">多路复用器mux</h5>
+<p>选择信号将选择唯一的输入信号作为输出信号输出，</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/06141d0dae11e4be49547.png"
+        data-srcset="https://tg-image.com/file/06141d0dae11e4be49547.png, https://tg-image.com/file/06141d0dae11e4be49547.png 1.5x, https://tg-image.com/file/06141d0dae11e4be49547.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/06141d0dae11e4be49547.png"
+        title="https://tg-image.com/file/06141d0dae11e4be49547.png" />
+一个2选1 mux电路逻辑图</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">mux_2x1</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">S</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">S</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">W1</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">not</span> <span class="p">(</span><span class="n">W1</span><span class="p">,</span> <span class="n">S</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">W2</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">W1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">W3</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">S</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">or</span> <span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">W3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><p>4选1 的mux电路图</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/22e2ff0b54fa2fb15cea1.png"
+        data-srcset="https://tg-image.com/file/22e2ff0b54fa2fb15cea1.png, https://tg-image.com/file/22e2ff0b54fa2fb15cea1.png 1.5x, https://tg-image.com/file/22e2ff0b54fa2fb15cea1.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/22e2ff0b54fa2fb15cea1.png"
+        title="https://tg-image.com/file/22e2ff0b54fa2fb15cea1.png" /></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">mux_4x1</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">I2</span><span class="p">,</span> <span class="n">I3</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">S0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">I2</span><span class="p">,</span> <span class="n">I3</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">S0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">,</span> <span class="n">w3</span><span class="p">,</span> <span class="n">w4</span><span class="p">,</span> <span class="n">w5</span><span class="p">,</span> <span class="n">w6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">not</span> <span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">S1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">not</span> <span class="p">(</span><span class="n">w2</span><span class="p">,</span> <span class="n">S0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">w3</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">w4</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">S0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">w5</span><span class="p">,</span> <span class="n">I2</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">w2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">w6</span><span class="p">,</span> <span class="n">I3</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">S0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">or</span> <span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">w3</span><span class="p">,</span> <span class="n">w4</span><span class="p">,</span> <span class="n">w5</span><span class="p">,</span> <span class="n">w6</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h5 id="解多路复用器">解多路复用器</h5>
+<p>1*2 解多路复用器
+一个输入，一个选择线，两个输出线，根据选择线，将输入在输出端反映
+电路图
+verilog代码</p>
+<h4 id="解码器和编码器">解码器和编码器</h4>
+<h5 id="解码器">解码器</h5>
+<p>也称为译码器，
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/df8f835dc307c2ea19fa9.png"
+        data-srcset="https://tg-image.com/file/df8f835dc307c2ea19fa9.png, https://tg-image.com/file/df8f835dc307c2ea19fa9.png 1.5x, https://tg-image.com/file/df8f835dc307c2ea19fa9.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/df8f835dc307c2ea19fa9.png"
+        title="https://tg-image.com/file/df8f835dc307c2ea19fa9.png" /></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">Dec_2to4</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">D0</span><span class="p">,</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span><span class="p">,</span> <span class="n">D3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">D0</span><span class="p">,</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span><span class="p">,</span> <span class="n">D3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">not</span> <span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">not</span> <span class="p">(</span><span class="n">w2</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">D0</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">D1</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">D2</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">w2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">and</span> <span class="p">(</span><span class="n">D3</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h5 id="编码器">编码器</h5>
+<p>电路图
+代码表达</p>
+<h4 id="比较器">比较器</h4>
+<p>一个1位比较器，有两个输入A，B和三个输出，大于、小、和于等于。
+电路图
+代码</p>
+<h2 id="verilog-中的编程技术2">Verilog 中的编程技术2</h2>
+<h3 id="verilog中的编程技术2">verilog中的编程技术2</h3>
+<p>本章描述电路的数据流模型</p>
+<h3 id="电路的数据流模型">电路的数据流模型</h3>
+<p>数据流模型用运算符描述输出变量的布尔函数，数据从寄存器流向寄存器（所以这个是RTL级？）</p>
+<p>可以用更少的设计步骤，一般用多个运算符来产生期望的结果，用assign 来进行连续赋值。</p>
+<h3 id="组合电路的数据流类型">组合电路的数据流类型</h3>
+<h4 id="加法器和减法器-1">加法器和减法器</h4>
+<p>半加器代码</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">Half_Add</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">assign</span> <span class="n">S</span> <span class="o">=</span> <span class="n">X</span> <span class="o">^</span> <span class="n">Y</span><span class="p">;</span>  <span class="c1">// 异或操作，计算和
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">assign</span> <span class="n">C</span> <span class="o">=</span> <span class="n">X</span> <span class="o">&amp;</span> <span class="n">Y</span><span class="p">;</span>  <span class="c1">// 与操作，计算进位
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><p>半减器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">Half_Subtractor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">D</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">assign</span> <span class="n">D</span> <span class="o">=</span> <span class="n">X</span> <span class="o">^</span> <span class="n">Y</span><span class="p">;</span>  <span class="c1">// 异或操作，计算差值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">assign</span> <span class="n">B</span> <span class="o">=</span> <span class="o">~</span><span class="n">X</span> <span class="o">&amp;</span> <span class="n">Y</span><span class="p">;</span> <span class="c1">// 与非操作，计算借位
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h3 id="多路复用器">多路复用器</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">mux_2x1_df</span><span class="p">(</span><span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">Y</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">S</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">assign</span> <span class="n">Y</span> <span class="o">=</span> <span class="p">(</span><span class="o">~</span><span class="n">S</span> <span class="o">&amp;</span> <span class="n">I0</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">S</span> <span class="o">&amp;</span> <span class="n">I1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><p>4to1 mux</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">mux_4x1</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">i0</span><span class="p">,</span> <span class="n">i1</span><span class="p">,</span> <span class="n">i2</span><span class="p">,</span> <span class="n">i3</span><span class="p">,</span> <span class="n">s0</span><span class="p">,</span> <span class="n">s1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">i0</span><span class="p">,</span> <span class="n">i1</span><span class="p">,</span> <span class="n">i2</span><span class="p">,</span> <span class="n">i3</span><span class="p">,</span> <span class="n">s0</span><span class="p">,</span> <span class="n">s1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">assign</span> <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="o">~</span><span class="n">s0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">s1</span> <span class="o">&amp;</span> <span class="n">i0</span><span class="p">)</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">               <span class="p">(</span><span class="n">s0</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">s1</span> <span class="o">&amp;</span> <span class="n">i1</span><span class="p">)</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">               <span class="p">(</span><span class="o">~</span><span class="n">s0</span> <span class="o">&amp;</span> <span class="n">s1</span> <span class="o">&amp;</span> <span class="n">i2</span><span class="p">)</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">               <span class="p">(</span><span class="n">s0</span> <span class="o">&amp;</span> <span class="n">s1</span> <span class="o">&amp;</span> <span class="n">i3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><p>条件运算符也可以用来描述多路复用器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"></code></pre></div><p>4to1 mux</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"></code></pre></div><h4 id="译码器">译码器</h4>
+<p>根据公式用verilog写出表达式</p>
+<h4 id="比较器-1">比较器</h4>
+<p>同上</p>
+<h4 id="testbench">testbench</h4>
+<p>testbench的目的是仿真，不需要有物理的实现。仿真器把一系列的输入信号应用在verilog编写的电路设计上。testbench被纳入verilog的module块来进行测试，initial来定义输入，模拟的时候，要把中间的值用reg来写符号，输入和输出用wire来定义。仿真结束的时候需要用到$finish 或者 $stop 来决定。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">ckt_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 假设模块名称为Module_nameCKT，需要替换成实际使用的模块名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">Module_nameCKT</span> <span class="n">inst</span> <span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="n">A</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span> <span class="n">C</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">100</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">A</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span> <span class="n">C</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">100</span> <span class="nb">$stop</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h4 id="半加器和testbench-的数据流模型">半加器和testbench 的数据流模型</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="c1">// Testbench for Half adder
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">HA_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the Half Adder module, assuming it is named Half_Add
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">Half_Add</span> <span class="n">Half</span> <span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="n">A</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">A</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">A</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">A</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="nb">$stop</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><p><strong>输入的A, B 需要在initial块内被赋予新的值来定义输入，所以这里被定义为reg类型，而输出不需要被定义输出，是用来测试模块输出结果的，所以定义为wire型。</strong></p>
+<h4 id="半减法器的testbench和数据流">半减法器的testbench和数据流</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">HS_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">reg</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">wire</span> <span class="n">D</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Half_S</span> <span class="n">Half</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">initial</span>
+</span></span><span class="line"><span class="cl">	<span class="k">begin</span>
+</span></span><span class="line"><span class="cl">		<span class="n">X</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">Y</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">#</span><span class="mh">5</span> <span class="n">X</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">Y</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">#</span><span class="mh">5</span> <span class="n">X</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">Y</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">#</span><span class="mh">5</span> <span class="n">X</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">Y</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">#</span><span class="mh">5</span> <span class="nb">$stop</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span> 
+</span></span></code></pre></div><h4 id="21-mux的数据流模型和testbench">2*1 mux的数据流模型和testbench</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="c1">// Testbench of 2 x 1 mux
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">mux_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">S</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the 2x1 multiplexer module, assuming its name is mux_2x1_df
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">mux_2x1_df</span> <span class="n">Mux</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">S</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Test sequence
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">I0</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span> <span class="n">I1</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span> <span class="c1">// Set inputs
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">#</span><span class="mh">5</span> <span class="n">S</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>          <span class="c1">// Set select to choose I0
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">#</span><span class="mh">5</span> <span class="n">S</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span>          <span class="c1">// Set select to choose I1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">#</span><span class="mh">5</span> <span class="nb">$stop</span><span class="p">;</span>             <span class="c1">// Stop simulation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h4 id="41-mux的数据流模型和testbench">4*1 mux的数据流模型和testbench</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="c1">// Testbench of 4 x 1 mux
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">mux_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">I2</span><span class="p">,</span> <span class="n">I3</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">S0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the 4x1 multiplexer module
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">mux_4x1</span> <span class="n">Mux</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">I0</span><span class="p">,</span> <span class="n">I1</span><span class="p">,</span> <span class="n">I2</span><span class="p">,</span> <span class="n">I3</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">S0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Initialize inputs
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">I0</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">I1</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">I2</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">I3</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">S1</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">S0</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">S1</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">S0</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">S1</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">S0</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">S1</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">S0</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="nb">$finish</span><span class="p">;</span> <span class="c1">// End simulation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h4 id="2-4译码器数据流模型和testbench">2-4译码器数据流模型和testbench</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="c1">// Testbench of 2-to-4 Decoder
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">Dec_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">D0</span><span class="p">,</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span><span class="p">,</span> <span class="n">D3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the 2-to-4 Decoder module, assuming it is named Dec_2to4
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">Dec_2to4</span> <span class="n">Dec</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">D0</span><span class="p">,</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span><span class="p">,</span> <span class="n">D3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="n">A</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">A</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">A</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">A</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="nb">$finish</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h2 id="verilog中的编程技术3">verilog中的编程技术3</h2>
+<p>行为级描述可以进行组合和时序电路的设计，每个语句的执行都是通过触发信号来实现的，是通过always或者initial来启动语句执行的，所以又称为过程语句。</p>
+<p>initial在仿真期间只执行一次，从时间0开始执行，always也是从一开始执行，但是会重复循环执行直至时间结束。</p>
+<p>在always或者initial中的多个语句都是在关键字begin和end之间分组的。</p>
+<p>一个时钟的例子, 每5个时间单位一个翻转信号</p>
+<pre tabindex="0"><code>always @posedgeclk
+#5 clk &lt;= ~ clk;
+</code></pre><p>使用 <code>&lt;=</code> 是创建一个非阻塞赋值（Non-Blocking Assignment, NBA），这通常在 <code>always</code> 块中用于模拟时钟或其他时序行为。而连续赋值语句，使用 <code>assign</code> 关键字和 <code>=</code> 操作符，是用于描述组合逻辑的，不应该用于在 <code>always</code> 块中描述时钟信号。
+<strong>阻塞赋值（<code>=</code>）</strong>：</p>
+<ul>
+<li>在执行时，会立即更新右侧表达式的值到左侧的变量。</li>
+<li>如果在同一个过程块中连续使用多个阻塞赋值，后一个赋值会看到前一个赋值的结果。</li>
+<li>这种立即执行的特性使得阻塞赋值像软件编程中的顺序执行。</li>
+</ul>
+<p><strong>非阻塞赋值（<code>&lt;=</code>）</strong>：</p>
+<ul>
+<li>在当前时刻计算右侧表达式的值，但是直到当前过程块的所有操作都计算完毕后，才会在过程块结束时同时更新所有左侧的变量。</li>
+<li>这种延迟更新的特性使得多个非阻塞赋值可以模拟硬件中并行的行为。</li>
+</ul>
+<h3 id="组合电路的行为模型">组合电路的行为模型</h3>
+<h4 id="使用if-else的半加器行为模型">使用if-else的半加器行为模型</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">half_adder</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">always</span> <span class="p">@(</span><span class="n">A</span> <span class="k">or</span> <span class="n">B</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">A</span> <span class="o">==</span> <span class="mh">1</span> <span class="o">&amp;&amp;</span> <span class="n">B</span> <span class="o">==</span> <span class="mh">1</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">C</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">end</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">A</span> <span class="o">==</span> <span class="mh">1</span> <span class="o">||</span> <span class="n">B</span> <span class="o">==</span> <span class="mh">1</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span> <span class="n">C</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">end</span> <span class="k">else</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">            <span class="n">S</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">C</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">end</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h4 id="用半加器组成的全加器行为建模代码">用半加器组成的全加器行为建模代码</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">fulladder</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">S</span><span class="p">,</span> <span class="n">C</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">S1</span><span class="p">,</span> <span class="n">D1</span><span class="p">,</span> <span class="n">D2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the half adders
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">halfadder</span> <span class="n">HA1</span><span class="p">(</span><span class="n">S1</span><span class="p">,</span> <span class="n">D1</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">halfadder</span> <span class="n">HA2</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">D2</span><span class="p">,</span> <span class="n">S1</span><span class="p">,</span> <span class="n">z</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">or</span> <span class="n">g1</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">D2</span><span class="p">,</span> <span class="n">D1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h4 id="4位全加器的行为建模代码">4位全加器的行为建模代码</h4>
+<p>纹波加法器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">bit_adder</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">C4</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="p">[</span><span class="mh">3</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">C0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="p">[</span><span class="mh">3</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">S</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">C4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">C1</span><span class="p">,</span> <span class="n">C2</span><span class="p">,</span> <span class="n">C3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the full adder modules
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">fulladder</span> <span class="n">FA0</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mh">0</span><span class="p">],</span> <span class="n">C1</span><span class="p">,</span> <span class="n">A</span><span class="p">[</span><span class="mh">0</span><span class="p">],</span> <span class="n">B</span><span class="p">[</span><span class="mh">0</span><span class="p">],</span> <span class="n">C0</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">              <span class="n">FA1</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mh">1</span><span class="p">],</span> <span class="n">C2</span><span class="p">,</span> <span class="n">A</span><span class="p">[</span><span class="mh">1</span><span class="p">],</span> <span class="n">B</span><span class="p">[</span><span class="mh">1</span><span class="p">],</span> <span class="n">C1</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">              <span class="n">FA2</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mh">2</span><span class="p">],</span> <span class="n">C3</span><span class="p">,</span> <span class="n">A</span><span class="p">[</span><span class="mh">2</span><span class="p">],</span> <span class="n">B</span><span class="p">[</span><span class="mh">2</span><span class="p">],</span> <span class="n">C2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">              <span class="n">FA3</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mh">3</span><span class="p">],</span> <span class="n">C4</span><span class="p">,</span> <span class="n">A</span><span class="p">[</span><span class="mh">3</span><span class="p">],</span> <span class="n">B</span><span class="p">[</span><span class="mh">3</span><span class="p">],</span> <span class="n">C3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h4 id="多路复用器的行为模型">多路复用器的行为模型</h4>
+<p>多路复用器也被称为数据选择器</p>
+<h5 id="21-多路复用器的行为代码">2*\1 多路复用器的行为代码</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="c1">//if-else
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">mux2x1_bh</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">OUT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">select</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">OUT</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">always</span> <span class="p">@(</span><span class="n">select</span> <span class="k">or</span> <span class="n">A</span> <span class="k">or</span> <span class="n">B</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">select</span> <span class="o">==</span> <span class="mh">1</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">OUT</span> <span class="o">=</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> 
+</span></span><span class="line"><span class="cl">            <span class="n">OUT</span> <span class="o">=</span> <span class="n">A</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//case
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">mux2x1</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">out</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">select</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">out</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">always</span> <span class="p">@(</span><span class="n">A</span> <span class="k">or</span> <span class="n">B</span> <span class="k">or</span> <span class="n">select</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="p">(</span><span class="n">select</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">1</span><span class="mb">&#39;b0</span><span class="o">:</span> <span class="n">out</span> <span class="o">=</span> <span class="n">A</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">1</span><span class="mb">&#39;b1</span><span class="o">:</span> <span class="n">out</span> <span class="o">=</span> <span class="n">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">endcase</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h5 id="41-mux的行为代码">4*1 mux的行为代码</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="c1">// instantiate 3 2-1muxs into 1 4to1 mux
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">Mux_4X1</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">Y</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="p">[</span><span class="mh">3</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">I</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="p">[</span><span class="mh">1</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">S</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">C1</span><span class="p">,</span> <span class="n">C2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate 2x1 multiplexers
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">mux2x1_bh</span> <span class="n">M0</span><span class="p">(</span><span class="n">I</span><span class="p">[</span><span class="mh">0</span><span class="p">],</span> <span class="n">I</span><span class="p">[</span><span class="mh">1</span><span class="p">],</span> <span class="n">S</span><span class="p">[</span><span class="mh">0</span><span class="p">],</span> <span class="n">C1</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">              <span class="n">M1</span><span class="p">(</span><span class="n">I</span><span class="p">[</span><span class="mh">2</span><span class="p">],</span> <span class="n">I</span><span class="p">[</span><span class="mh">3</span><span class="p">],</span> <span class="n">S</span><span class="p">[</span><span class="mh">0</span><span class="p">],</span> <span class="n">C2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">              <span class="n">M2</span><span class="p">(</span><span class="n">C1</span><span class="p">,</span> <span class="n">C2</span><span class="p">,</span> <span class="n">S</span><span class="p">[</span><span class="mh">1</span><span class="p">],</span> <span class="n">Y</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// case
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">mux4x1</span><span class="p">(</span><span class="n">i0</span><span class="p">,</span> <span class="n">i1</span><span class="p">,</span> <span class="n">i2</span><span class="p">,</span> <span class="n">i3</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">i0</span><span class="p">,</span> <span class="n">i1</span><span class="p">,</span> <span class="n">i2</span><span class="p">,</span> <span class="n">i3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="p">[</span><span class="mh">1</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">S</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">always</span> <span class="p">@(</span><span class="n">i0</span> <span class="k">or</span> <span class="n">i1</span> <span class="k">or</span> <span class="n">i2</span> <span class="k">or</span> <span class="n">i3</span> <span class="k">or</span> <span class="n">S</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="p">(</span><span class="n">S</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">2</span><span class="mb">&#39;b00</span><span class="o">:</span> <span class="n">y</span> <span class="o">=</span> <span class="n">i0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">2</span><span class="mb">&#39;b01</span><span class="o">:</span> <span class="n">y</span> <span class="o">=</span> <span class="n">i1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">2</span><span class="mb">&#39;b10</span><span class="o">:</span> <span class="n">y</span> <span class="o">=</span> <span class="n">i2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">2</span><span class="mb">&#39;b11</span><span class="o">:</span> <span class="n">y</span> <span class="o">=</span> <span class="n">i3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">endcase</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h4 id="2-4译码器的行为模型">2-4译码器的行为模型</h4>
+<p>分别用if-else和case两种方式表达</p>
+<h4 id="4-2编码器的行为模型">4-2编码器的行为模型</h4>
+<p>分别用if-else和case两种方式表达</p>
+<h3 id="时序电路的行为模型">时序电路的行为模型</h3>
+<h4 id="d锁存器的行为建模">D锁存器的行为建模</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="c1">// D-latch verilog
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">d_latch</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">en</span><span class="p">,</span> <span class="n">q</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">d</span><span class="p">,</span> <span class="n">en</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">always</span> <span class="p">@(</span><span class="n">en</span> <span class="k">or</span> <span class="n">d</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">en</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">&lt;=</span> <span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">end</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// D-latch testbench
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">d_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">d</span><span class="p">,</span> <span class="n">en</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the D-Latch
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">d_latch</span> <span class="n">D1</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">en</span><span class="p">,</span> <span class="n">q</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Initial block for setting initial values and finishing the simulation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="n">en</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">d</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">40</span> <span class="nb">$finish</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Toggle `en` every 5 time units
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">always</span> <span class="p">#</span><span class="mh">5</span> <span class="n">en</span> <span class="o">=</span> <span class="o">~</span><span class="n">en</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Toggle `d` every 7 time units
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">always</span> <span class="p">#</span><span class="mh">7</span> <span class="n">d</span> <span class="o">=</span> <span class="o">~</span><span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><p>这里是在模拟的testbench中，不需要用到&quot; &lt;= &quot; 来写时钟信号变化，描述硬件行为的时候，要模拟硬件的并行行为，所以要用&quot; &lt;= &ldquo;，生成测试信号的时候，立即改变信号的值，用阻塞赋值的刺激是适当的。</p>
+<h3 id="d触发器的行为建模">D触发器的行为建模</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="c1">// D-ff 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">d_ff</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">rst</span><span class="p">,</span> <span class="n">q</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">clk</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">rst</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">always</span> <span class="p">@(</span><span class="k">posedge</span> <span class="n">clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">rst</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">rst</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">&lt;=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">end</span> <span class="k">else</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">&lt;=</span> <span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">end</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// D-ff testbench
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">d_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">clk</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">rst</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the D-FF
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">d_ff</span> <span class="n">D1</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">rst</span><span class="p">,</span> <span class="n">q</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Initialize signals and run the simulation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="n">clk</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">rst</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">d</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">5</span> <span class="n">rst</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">7</span> <span class="n">rst</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">13</span> <span class="n">rst</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">40</span> <span class="nb">$finish</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Toggle clock signal every 3 time units
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">always</span> <span class="p">#</span><span class="mh">3</span> <span class="n">clk</span> <span class="o">=</span> <span class="o">~</span><span class="n">clk</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Toggle data signal every 5 time units
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">always</span> <span class="p">#</span><span class="mh">5</span> <span class="n">d</span> <span class="o">=</span> <span class="o">~</span><span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h3 id="jk触发器的行为建模">JK触发器的行为建模</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">JK</span> <span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">q1</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">clk</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">clk</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">q</span><span class="p">,</span> <span class="n">q1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q1</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">always</span> <span class="p">@(</span><span class="k">posedge</span> <span class="n">clk</span><span class="p">)</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="p">({</span><span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">2</span><span class="mb">&#39;b00</span><span class="o">:</span> <span class="k">begin</span> <span class="n">q</span> <span class="o">=</span> <span class="n">q</span><span class="p">;</span> <span class="n">q1</span> <span class="o">=</span> <span class="n">q1</span><span class="p">;</span> <span class="k">end</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">2</span><span class="mb">&#39;b01</span><span class="o">:</span> <span class="k">begin</span> <span class="n">q</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span> <span class="n">q1</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span> <span class="k">end</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">2</span><span class="mb">&#39;b10</span><span class="o">:</span> <span class="k">begin</span> <span class="n">q</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span> <span class="n">q1</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span> <span class="k">end</span>
+</span></span><span class="line"><span class="cl">            <span class="mh">2</span><span class="mb">&#39;b11</span><span class="o">:</span> <span class="k">begin</span> <span class="n">q</span> <span class="o">=</span> <span class="o">~</span><span class="n">q</span><span class="p">;</span> <span class="n">q1</span> <span class="o">=</span> <span class="o">~</span><span class="n">q1</span><span class="p">;</span> <span class="k">end</span>
+</span></span><span class="line"><span class="cl">        <span class="k">endcase</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// testbench
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">module</span> <span class="n">JK_tb</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">clk</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">q</span><span class="p">,</span> <span class="n">q1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the JK flip-flop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">JK</span> <span class="n">J1</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">q1</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">clk</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Initialize signals and run the simulation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="n">clk</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">j</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="mh">25</span> <span class="nb">$finish</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Toggle clock signal every 2 time units
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">always</span> <span class="p">#</span><span class="mh">2</span> <span class="n">clk</span> <span class="o">=</span> <span class="o">~</span><span class="n">clk</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h3 id="使用jk触发器来完成d触发器的行为建模">使用JK触发器来完成D触发器的行为建模</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/c693ddbb5e7499b29e771.png"
+        data-srcset="https://tg-image.com/file/c693ddbb5e7499b29e771.png, https://tg-image.com/file/c693ddbb5e7499b29e771.png 1.5x, https://tg-image.com/file/c693ddbb5e7499b29e771.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/c693ddbb5e7499b29e771.png"
+        title="https://tg-image.com/file/c693ddbb5e7499b29e771.png" /></p>
+<p>输入 J 和 K 之间使用了一个反相器。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">d_ff</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">clk</span><span class="p">,</span> <span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">wire</span> <span class="n">w1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Inverting D to use as the K input for the JK flip-flop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">not</span> <span class="n">N_1</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiating the JK flip-flop with the D input wired to J,
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// the inverted D wired to K, and the clock.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// The Q and Q_bar outputs from the JK flip-flop will serve as the
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// D-type flip-flop&#39;s outputs.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">JK</span> <span class="n">JK_d</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">clk</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h3 id="使用jk触发器来完成t触发器的行为建模">使用JK触发器来完成T触发器的行为建模</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/947ca8c01a11e28379515.png"
+        data-srcset="https://tg-image.com/file/947ca8c01a11e28379515.png, https://tg-image.com/file/947ca8c01a11e28379515.png 1.5x, https://tg-image.com/file/947ca8c01a11e28379515.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/947ca8c01a11e28379515.png"
+        title="https://tg-image.com/file/947ca8c01a11e28379515.png" /></p>
+<p>JK短接在一起</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">T_ff</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">clk</span><span class="p">,</span> <span class="n">T</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">reg</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// q_bar is the inverse of q
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">wire</span> <span class="n">q_bar</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">assign</span> <span class="n">q_bar</span> <span class="o">=</span> <span class="o">~</span><span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the JK flip-flop with both J and K inputs tied to T
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// When J and K are both high, the JK flip-flop toggles - which is the behavior of T flip-flop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">JK</span> <span class="n">JK_d</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">clk</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h3 id="使用jk触发器对sr触发器建模">使用JK触发器对SR触发器建模</h3>
+<p>不可以SR同时为1</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/c26c7d08efcbd1701c997.png"
+        data-srcset="https://tg-image.com/file/c26c7d08efcbd1701c997.png, https://tg-image.com/file/c26c7d08efcbd1701c997.png 1.5x, https://tg-image.com/file/c26c7d08efcbd1701c997.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/c26c7d08efcbd1701c997.png"
+        title="https://tg-image.com/file/c26c7d08efcbd1701c997.png" /></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-verilog" data-lang="verilog"><span class="line"><span class="cl"><span class="k">module</span> <span class="n">SR_ff</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">input</span> <span class="n">clk</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">R</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="kt">reg</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">output</span> <span class="n">q_bar</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// q_bar is the complement of q
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">assign</span> <span class="n">q_bar</span> <span class="o">=</span> <span class="o">~</span><span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Instantiate the JK flip-flop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// The J and K inputs are connected to the S and R inputs respectively.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// Note that this JK instantiation assumes that the JK flip-flop has a 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// built-in mechanism to handle the invalid state when J and K are both high.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">JK</span> <span class="n">JK_SR</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">q_bar</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">clk</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">initial</span> <span class="k">begin</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q_bar</span> <span class="o">=</span> <span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">endmodule</span>
+</span></span></code></pre></div><h2 id="使用开关进行数字设计">使用开关进行数字设计</h2>
+<p>开关级模型相当复杂，电路是在晶体管级别设计的。设计可以使用开关进行，例如 p-通道金属-氧化物-半导体场效应晶体管 MOSFET（PMOS）、n-通道 MOSFET（NMOS）和传输门（TG）或互补 MOSFET（CMOS）。</p>
+<h3 id="开关门建模">开关门建模</h3>
+<p>出于对低功耗和高密度封装的需求，设计人员探索新型的低漏电电流和工作电压的MOSFET架构。</p>
+<h3 id="使用cmos技术的数字设计">使用CMOS技术的数字设计</h3>
+<p>MOSFET MOSFET 是一种四端器件。这四个端子是源极、漏极、栅极和基底，一般基底和源极连接，所以可以看作三端器件。用于开关和放大电子信号。 电压施加在栅极上，控制从源到漏的电流流动。</p>
+<p>电子的较高迁移率导致 NMOS 成为比 PMOS 更合适的选择，后者具有较低的空穴迁移率。电路网络可以概括的分为上拉和下拉网络，负责把信号拉到1和0，可以有多个pmos 或者nmos组成。具体取决于公式的实现。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://tg-image.com/file/36aa80306e58e1eaf083c.png"
+        data-srcset="https://tg-image.com/file/36aa80306e58e1eaf083c.png, https://tg-image.com/file/36aa80306e58e1eaf083c.png 1.5x, https://tg-image.com/file/36aa80306e58e1eaf083c.png 2x"
+        data-sizes="auto"
+        alt="https://tg-image.com/file/36aa80306e58e1eaf083c.png"
+        title="https://tg-image.com/file/36aa80306e58e1eaf083c.png" /></p>
+<p>For, $$( F = \overline{A \cdot B \cdot C \ldots} )$$</p>
+<p>NMOS will be series connected in a pull-down network and PMOS will, in parallel, be connected in a pull-up network.</p>
+<p>For, $$( F = \overline{(A + B + C \ldots)} )$$</p>
+<p>NMOS will be connected in parallel in the pull-down network and PMOS will be series connected in a pull-up network.</p>
+<h2 id="cmos-反相器">CMOS 反相器</h2>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
