@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>生活杂记 - Category - 一夔的小窝</title>
+        <link>http://maequeen.top/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/</link>
+        <description>生活杂记 - Category - 一夔的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Wed, 11 Jan 2023 22:04:45 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>关于少儿编程</title>
+    <link>http://maequeen.top/posts/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/</link>
+    <pubDate>Wed, 11 Jan 2023 22:04:45 &#43;0800</pubDate>
+    <author>龙山</author>
+    <guid>http://maequeen.top/posts/%E5%85%B3%E4%BA%8E%E5%B0%91%E5%84%BF%E7%BC%96%E7%A8%8B/</guid>
+    <description><![CDATA[xx，你上次问你们家小孩该不该上幼儿编程我没怎么敢妄下定论，首先这个事情本身就是有利有弊，再加上我的专业相对的是硬件方面的，软件编程方面只是]]></description>
+</item>
+</channel>
+</rss>

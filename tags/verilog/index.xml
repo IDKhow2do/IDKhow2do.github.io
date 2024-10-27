@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Verilog - Tag - 一夔的小窝</title>
+        <link>http://maequeen.top/tags/verilog/</link>
+        <description>Verilog - Tag - 一夔的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Thu, 20 Jul 2023 02:11:08 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/verilog/" rel="self" type="application/rss+xml" /><item>
+    <title>1-7:HDLBits刷题记录(持续更新中)</title>
+    <link>http://maequeen.top/posts/1-7hdlbits_record_1/</link>
+    <pubDate>Thu, 20 Jul 2023 02:11:08 &#43;0800</pubDate>
+    <author>龙山</author>
+    <guid>http://maequeen.top/posts/1-7hdlbits_record_1/</guid>
+    <description><![CDATA[前几天想要通过HDLBits刷题来熟练使用verilog语音，这几天想清楚一件事情，很多事情浅尝辄止都是只能停留在表面的很多东西也都不能深入]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>1-2-5,6:TMS观看记录5&#43;6 - 一夔的小窝</title><meta name="Description" content=""><meta property="og:title" content="1-2-5,6:TMS观看记录5&#43;6" />
+<meta property="og:description" content="Command-line Environment job control sleep :sleep 20,sleep后面跟一个数字表示休眠的时间，这个时候shell将会发送一个SIGINT的指令给当前的程序，means signal interrupt ^c发" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/" /><meta property="og:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-17T00:07:54+08:00" />
+<meta property="article:modified_time" content="2023-01-17T00:07:54+08:00" /><meta property="og:site_name" content="我的个人网站" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png" /><meta name="twitter:title" content="1-2-5,6:TMS观看记录5&#43;6"/>
+<meta name="twitter:description" content="Command-line Environment job control sleep :sleep 20,sleep后面跟一个数字表示休眠的时间，这个时候shell将会发送一个SIGINT的指令给当前的程序，means signal interrupt ^c发"/>
+      <meta name="twitter:site" content="@这不是我"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/" /><link rel="prev" href="http://maequeen.top/posts/1-2-4%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%954/" /><link rel="next" href="http://maequeen.top/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "1-2-5,6:TMS观看记录5+6",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/maequeen.top\/posts\/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955\u002b6\/"
+        },"genre": "posts","keywords": "linux, 前置知识, 基础命令, git","wordcount":  2019 ,
+        "url": "http:\/\/maequeen.top\/posts\/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955\u002b6\/","datePublished": "2023-01-17T00:07:54+08:00","dateModified": "2023-01-17T00:07:54+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "龙山"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="一夔的小窝"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        title="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="想写什么就写什么的文章"> 文章 </a><a class="menu-item" href="/tags/" title="不知道我会不会记得区分标签"> 标签 </a><a class="menu-item" href="/categories/" title="分类和标签，傻傻分不清楚"> 分类 </a><a class="menu-item" href="/photowall/" title="3D照片墙"> 照片墙 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="一夔的小窝"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        title="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="想写什么就写什么的文章">文章</a><a class="menu-item" href="/tags/" title="不知道我会不会记得区分标签">标签</a><a class="menu-item" href="/categories/" title="分类和标签，傻傻分不清楚">分类</a><a class="menu-item" href="/photowall/" title="3D照片墙">照片墙</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">1-2-5,6:TMS观看记录5+6</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>龙山</a></span>&nbsp;<span class="post-category">included in <a href="/categories/the-missing-semester/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>The Missing Semester</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-17">2023-01-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2019 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#job-control">job control</a></li>
+    <li><a href="#terminal-multiplexer">terminal multiplexer</a></li>
+    <li><a href="#remote-machine">Remote Machine</a></li>
+    <li><a href="#这里的内容还是挺实用的感觉但是目前没有这方面的需求希望我什么时候可以把我那个腾讯云的小服务器发挥用处吧">展示了如何通过ssh连接远程服务器，但是每次输入密码有点麻烦，所以通过命令生成公钥和私钥，向服务器申请公钥然后在本地验证私钥。
+这里的内容还是挺实用的感觉，但是目前没有这方面的需求，希望我什么时候可以把我那个腾讯云的小服务器发挥用处吧。</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#创建一个git">创建一个git</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="command-line-environment">Command-line Environment</h1>
+<h2 id="job-control">job control</h2>
+<p><code>sleep</code> :sleep 20,sleep后面跟一个数字表示休眠的时间，这个时候shell将会发送一个SIGINT的指令给当前的程序，means signal interrupt
+^c发送一个SIGINT信号，^\发送一个SIGQUIT信号
+如果你处于SSH状态，你log out将会发送一个SIGHUP信号，hang up
+^Z发送一个SIGSTOP信号
+运行之后跟一个&amp;意味着，将程序后台运行
+<code>jobs</code> 展示正在挂起的job
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_1.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_1.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_1.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_1.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_1.png"
+        title="The_Missing_Semester观看记录5_image_1" />
+nohup相当于是对这个job做了一个封装，所以忽略了hangup的信号，但是它无法忽略kill
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_2.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_2.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_2.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_2.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955_image_2.png"
+        title="The_Missing_Semester观看记录5_image_2" />
+BG means background， FG means foreground,一个显示后台，一个显示前台并恢复连接到你的标准输出</p>
+<h2 id="terminal-multiplexer">terminal multiplexer</h2>
+<p>tmux is a terminal multiplexer,</p>
+<ul>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> learn to use tmux
+sessions
+windows
+panes
+tmux,可以使用命令行操作，但是一般是使用键绑定，一个是tmux的预先输入，比如^A d,将会detatch一个新的窗口
+默认的是^B 但很多人会重新映射到^A
+<code>tmux new -t foobar</code> :重新创建一个为foobar的新的session，你可以使用<code>tmux ls</code> 查看你的session
+<code>^A c</code> 创建一个新的窗口，你可以使用<code>^A p</code> 回到上一个窗口
+新建窗格pane，将窗口分割<code>^A %</code> 垂直分割
+<code>^A z</code> 可以放大窗格，展开占据其他窗格的所有空间，同样的操作可以返回
+&gt; 在tmux中新建一个pane可以使用快捷键 <code>Ctrl-b &quot;</code> 或 <code>Ctrl-b %</code>。前者会将当前窗口平分成上下两个部分，后者会将当前窗口平分成左右两个部分。</li>
+<li>alias ll=&ldquo;ls -lah&rdquo;
+alias mv：will tell u what mv is short for.</li>
+<li>dotfiles:点文件，配置文件的编辑，可以在github上面找到很多人分享的内容，但是不建议直接copy，结果可能很漂亮但是你不知道发生了什么</li>
+<li>ln -s 建立软链接，将所有的操作转发给源文件</li>
+</ul>
+<h2 id="remote-machine">Remote Machine</h2>
+<h2 id="这里的内容还是挺实用的感觉但是目前没有这方面的需求希望我什么时候可以把我那个腾讯云的小服务器发挥用处吧">展示了如何通过ssh连接远程服务器，但是每次输入密码有点麻烦，所以通过命令生成公钥和私钥，向服务器申请公钥然后在本地验证私钥。
+这里的内容还是挺实用的感觉，但是目前没有这方面的需求，希望我什么时候可以把我那个腾讯云的小服务器发挥用处吧。</h2>
+<h1 id="version-controlgit">Version Control(git)</h1>
+<p>git使用有向无环图来模拟历史，不同与快照的线性历史
+git将不同的任务放在不同的平行时间线上来解决（创建分支然后合并）
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%956_image_1.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%956_image_1.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%956_image_1.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%956_image_1.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%956_image_1.png"
+        title="The_Missing_Semester观看记录6_image_1" />
+合并可能会出现冲突，这正是git做的事情，它帮你自动进行一些操作，但它感叹困惑的时候它会向你报告由你来决定
+<strong>理解git的存储理念很重要</strong></p>
+<ul>
+<li>git在存储的时候，以内容寻址的方式存储在磁盘上，并且会利用hash函数创建id，此后在git中保存的内容实际上是一种以hash为id的查找</li>
+</ul>
+<h2 id="创建一个git">创建一个git</h2>
+<p><code>git init</code> :初始化git存储库
+<code>git help</code> :git help init,tell u help about git init</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ <span class="nb">echo</span> <span class="s2">&#34;hello world&#34;</span> &gt; hello.txt
+</span></span><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ ls
+</span></span><span class="line"><span class="cl">hello.txt
+</span></span><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ git status
+</span></span><span class="line"><span class="cl">On branch master
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">No commits yet
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Untracked files:
+</span></span><span class="line"><span class="cl">  <span class="o">(</span>use <span class="s2">&#34;git add &lt;file&gt;...&#34;</span> to include in what will be committed<span class="o">)</span>
+</span></span><span class="line"><span class="cl">	hello.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">&#34;git add&#34;</span> to track<span class="o">)</span>
+</span></span></code></pre></div><p>创建一个文件之后，在你本地的git存储中，你需要使用git add 命令来添加到暂存区，为新的文件添加索引，我们使用git add 之后，再来查看git status</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ git add hello.txt 
+</span></span><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ git status
+</span></span><span class="line"><span class="cl">On branch master
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">No commits yet
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Changes to be committed:
+</span></span><span class="line"><span class="cl">  <span class="o">(</span>use <span class="s2">&#34;git rm --cached &lt;file&gt;...&#34;</span> to unstage<span class="o">)</span>
+</span></span><span class="line"><span class="cl">	new file:   hello.txt
+</span></span></code></pre></div><p><code>git commit</code> 会打开你的代码编辑器，让你为你的提交添加一个说明，当然你也可以使用-m选项，然后直接在后面“describe”，之后它会给你返回一个信息，其中包含你这次commit的hash值，hash值包含你提交的信息，你可以如下一步步操作找到关于你提交的所有内容</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ git commit
+</span></span><span class="line"><span class="cl"><span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> bddddac<span class="o">]</span> add hello world,txt
+</span></span><span class="line"><span class="cl"> <span class="m">1</span> file changed, <span class="m">1</span> insertion<span class="o">(</span>+<span class="o">)</span>
+</span></span><span class="line"><span class="cl"> create mode <span class="m">100644</span> hello.txt
+</span></span><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ git cat-file -p bddddac
+</span></span><span class="line"><span class="cl">tree 68aba62e560c0ebc3396e8ae9335232cd93a3f60
+</span></span><span class="line"><span class="cl">author 22050064-Ma Yue &lt;1486266477@qq.com&gt; <span class="m">1673777290</span> +0800
+</span></span><span class="line"><span class="cl">committer 22050064-Ma Yue &lt;1486266477@qq.com&gt; <span class="m">1673777290</span> +0800
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">add hello world,txt
+</span></span><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ git cat-file -p 68aba62e560c0ebc3396e8ae9335232cd93a3f60
+</span></span><span class="line"><span class="cl"><span class="m">100644</span> blob 3b18e512dba79e4c8300dd08aeb37f8e728b8dad	hello.txt
+</span></span><span class="line"><span class="cl">elong@dummy:~/temp/the-missing-semester/demo$ git cat-file -p 3b18e512dba79e4c8300dd08aeb37f8e728b8dad
+</span></span><span class="line"><span class="cl">hello world
+</span></span></code></pre></div><p><code>git log --all --graph --decorate</code> ，将你的git log可视化，查看历史记录，还可以加一个&ndash;oneline选项更精简</p>
+<p>git checkout ：切换本地版本
+git diff:show u what&rsquo;s changed since the last snapshot.</p>
+<ul>
+<li>git branch:查看本地分支，<code>git branch cat</code> 创建一个名为cat的分支,git branch -vv:详细信息</li>
+<li>git merge合并分支 (关于这部分，不熟悉也暂时用不到，看的比较跳跃)</li>
+<li>git remote add <!-- raw HTML omitted --> <!-- raw HTML omitted -->,比如我们这里git remote add origin ../remote,origin只是一个常用的名字</li>
+<li>git push <!-- raw HTML omitted --> <!-- raw HTML omitted --> 比如我们这里，git push origin master</li>
+<li>git clone <!-- raw HTML omitted --> &lt;name/position&gt;</li>
+<li>git fetch检索远程存储库的更改并且在本地计算机上获取更改，当你检索到不同的时候你可以使用<code>git merge</code> 来更新本地分支，以指向和远程同一个位置</li>
+<li>git pull：和git fetch加git merge差不多一样的工作内容</li>
+</ul>
+<hr>
+<p>git config:修改配置文件
+git blame:找到可以责怪的那个人，哪里的代码是谁修改的
+git stash:暂时隐藏，可以使用git stash pop恢复</p>
+<h2 id="总结">总结</h2>
+<p>git其实自己之前一直弄不明白，这也导致我第一次尝试搭建博客失败，长期以来只会git clone <!-- raw HTML omitted -->，但是谁能想到上次自己搭建博客，也就是这个博客的时候，居然对着那种手把手教程领悟了一些git 命令的作用，然后这堂课居然听的还比较轻松，但是当时是存在误区的，事实上git remote的remote还是代码托管中心，当时因为github显示的master便以为master是github那边</p>
+<p>在这堂课里，我觉得最精华的部分就是以文件tree的形式表达git，git在本地创建一个存储库，这个存储库默认名称为master，local的是master而remote常常默认为origin</p>
+<p>这便是<code>git push origin master=git push &lt;remote&gt; &lt;local&gt;</code></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-17</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/" data-title="1-2-5,6:TMS观看记录5&#43;6" data-via="这不是我" data-hashtags="linux,前置知识,基础命令,git"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/" data-hashtag="linux"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/" data-title="1-2-5,6:TMS观看记录5&#43;6"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/" data-title="1-2-5,6:TMS观看记录5&#43;6"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/" data-title="1-2-5,6:TMS观看记录5&#43;6"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/">前置知识</a>,&nbsp;<a href="/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">基础命令</a>,&nbsp;<a href="/tags/git/">Git</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/1-2-4%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%954/" class="prev" rel="prev" title="1-2-4观看记录4（未完成）"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>1-2-4观看记录4（未完成）</a>
+            <a href="/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/" class="next" rel="next" title="1-2-7TMS观看记录7">1-2-7TMS观看记录7<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">龙山</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=419596181&auto=1&height=66"></iframe>
+
+<a href="https://info.flagcounter.com/qhiN"><img src="https://s01.flagcounter.com/mini/qhiN/bg_FCF7FF/txt_000000/border_278FCC/flags_0/" alt="Flag Counter" border="0"></a>
+
+
+
+</div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"一夔的小窝","id-2":"一夔的小窝"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

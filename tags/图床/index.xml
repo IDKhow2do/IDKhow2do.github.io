@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>图床 - Tag - 一夔的小窝</title>
+        <link>http://maequeen.top/tags/%E5%9B%BE%E5%BA%8A/</link>
+        <description>图床 - Tag - 一夔的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 30 Apr 2023 23:59:53 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E5%9B%BE%E5%BA%8A/" rel="self" type="application/rss+xml" /><item>
+    <title>1_5_1：解放github pages 终于还是接触图床了</title>
+    <link>http://maequeen.top/posts/1-5-1%E5%9B%BE%E5%BA%8A/</link>
+    <pubDate>Sun, 30 Apr 2023 23:59:53 &#43;0800</pubDate>
+    <author>龙山</author>
+    <guid>http://maequeen.top/posts/1-5-1%E5%9B%BE%E5%BA%8A/</guid>
+    <description><![CDATA[缘起 我是在github pages上搭建的博客，然后域名做了个重定向，之前一股脑的把图片也上传上去，现在发现图片影响了网站的加载速度，所以想着]]></description>
+</item>
+</channel>
+</rss>

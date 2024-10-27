@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了) - 一夔的小窝</title><meta name="Description" content=""><meta property="og:title" content="1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)" />
+<meta property="og:description" content="CS61A-5:Environments Environments for Higher-Order 这里讲解了一下它们新推出的diagram特性,比如这里定义了一个global frame然后在调用的时候又创建了一个frame1,讲解" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://maequeen.top/posts/1-3-2cs61a-5678/" /><meta property="og:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-31T16:36:38+08:00" />
+<meta property="article:modified_time" content="2023-01-31T16:36:38+08:00" /><meta property="og:site_name" content="我的个人网站" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png" /><meta name="twitter:title" content="1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)"/>
+<meta name="twitter:description" content="CS61A-5:Environments Environments for Higher-Order 这里讲解了一下它们新推出的diagram特性,比如这里定义了一个global frame然后在调用的时候又创建了一个frame1,讲解"/>
+      <meta name="twitter:site" content="@这不是我"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://maequeen.top/posts/1-3-2cs61a-5678/" /><link rel="prev" href="http://maequeen.top/posts/1-3-1cs61a-1-2-3-4/" /><link rel="next" href="http://maequeen.top/posts/weekly-1annual-summary-part-1/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/maequeen.top\/posts\/1-3-2cs61a-5678\/"
+        },"genre": "posts","keywords": "基础知识, 踩坑记录, python","wordcount":  2974 ,
+        "url": "http:\/\/maequeen.top\/posts\/1-3-2cs61a-5678\/","datePublished": "2023-01-31T16:36:38+08:00","dateModified": "2023-01-31T16:36:38+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "龙山"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="一夔的小窝"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        title="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="想写什么就写什么的文章"> 文章 </a><a class="menu-item" href="/tags/" title="不知道我会不会记得区分标签"> 标签 </a><a class="menu-item" href="/categories/" title="分类和标签，傻傻分不清楚"> 分类 </a><a class="menu-item" href="/photowall/" title="3D照片墙"> 照片墙 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="一夔的小窝"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        title="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="想写什么就写什么的文章">文章</a><a class="menu-item" href="/tags/" title="不知道我会不会记得区分标签">标签</a><a class="menu-item" href="/categories/" title="分类和标签，傻傻分不清楚">分类</a><a class="menu-item" href="/photowall/" title="3D照片墙">照片墙</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>龙山</a></span>&nbsp;<span class="post-category">included in <a href="/categories/cs61a/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>CS61A</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-31">2023-01-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2974 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#environments-for-higher-order">Environments for Higher-Order</a></li>
+    <li><a href="#environments-for-nested-definitions">Environments for Nested Definitions</a></li>
+    <li><a href="#local-names">Local Names</a></li>
+    <li><a href="#function-composition">Function Composition</a></li>
+    <li><a href="#lambda-expressions">Lambda Expressions</a></li>
+    <li><a href="#funtion-currying">Funtion Currying</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#function-examplesound">Function Example:Sound</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#lambda-function-environments">Lambda Function Environments</a></li>
+    <li><a href="#return">Return</a></li>
+    <li><a href="#control">Control</a></li>
+    <li><a href="#control-expressions">Control Expressions</a></li>
+    <li><a href="#abstraction">Abstraction</a></li>
+    <li><a href="#errors--tracebacks">Errors &amp; Tracebacks</a>
+      <ul>
+        <li><a href="#三种错误">三种错误</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#midterm-1-review">Midterm 1 Review</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="cs61a-5environments">CS61A-5:Environments</h1>
+<h2 id="environments-for-higher-order">Environments for Higher-Order</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_1.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_1.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_1.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_1.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_1.png"
+        title="1_3_2CS61A-5,6,7,8_image_1" />
+这里讲解了一下它们新推出的diagram特性,比如这里定义了一个global frame然后在调用的时候又创建了一个frame1,讲解了整个的运算过程</p>
+<h2 id="environments-for-nested-definitions">Environments for Nested Definitions</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_2.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_2.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_2.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_2.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_2.png"
+        title="1_3_2CS61A-5,6,7,8_image_2" />
+这里重新讲解了这个代码，当时我没听懂下来自己跑到这里来测试了，在第四节末尾笔记有体现[[1_3_1CS61A-1,2,3,4#^32405e|笔记链接]]
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_3.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_3.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_3.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_3.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_3.png"
+        title="1_3_2CS61A-5,6,7,8_image_3" />
+为什么我们需要有父级frame，因为这便于我们从子级向上找到环境下的变量值</p>
+<h2 id="local-names">Local Names</h2>
+<p><strong>环境就是一系列的frame组成的工作条件</strong>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_4.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_4.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_4.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_4.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_4.png"
+        title="1_3_2CS61A-5,6,7,8_image_4" />
+这里介绍了当你离开pythontutor如何自己画environment diagram的方法，有时候这能帮你理解复杂的程序。
+不一定对，但是还是按照自己的理解写一下吧：
+我们定义一个函数的时候，就创建了一个frame，它的parent就是globle frame，我们除了嵌套定义的函数，都会出现在一个global frame里
+global frame不会和值绑定
+当它被调用的时候，就创建了一个local frame来运行，当local frame里出现函数调用的时候，会创建另一个frame，它的parent就是调用它的local frame，这便于我们从子级到parent逐级找到变量值</p>
+<p>比如上面的代码我们创建了一个嵌套的函数体，所以从上到下有三个frame:<strong>global frame;f1;f2</strong>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_5.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_5.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_5.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_5.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_5.png"
+        title="1_3_2CS61A-5,6,7,8_image_5" />
+这里我们定义了一个f函数，一个g函数，查看environment diagram我们可以发现g函数的parent是global frame
+我们从1到2查看y的值的时候，查不到y的值，便出现了报错<code>name 'y'is not defined</code>
+这也就是local name 的作用域</p>
+<h2 id="function-composition">Function Composition</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_6.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_6.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_6.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_6.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_6.png"
+        title="1_3_2CS61A-5,6,7,8_image_6" />
+这里定义了复合函数，通过environment diagram我们可以看出这里有两个运行环境，一个是compose1运行的时候，另一个是make_adder这里有一个嵌套，所以运行的时候，先是运行make_adder(2)(3)，然后运行错灭ose1（square,5）得出25</p>
+<h2 id="lambda-expressions">Lambda Expressions</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_7.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_7.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_7.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_7.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_7.png"
+        title="1_3_2CS61A-5,6,7,8_image_7" />
+可以直接用lambda 定义一个函数而不使用def，并且不能有statemrnt
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_8.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_8.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_8.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_8.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_8.png"
+        title="1_3_2CS61A-5,6,7,8_image_8" />
+lambda语句创建的函数一开始是没有名字的，通过<code>square = lambda x: x * x</code> 把函数赋值给square，def一开始就是把函数和名称绑定在一起的
+def的函数有一个固有名称</p>
+<h2 id="funtion-currying">Funtion Currying</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_9.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_9.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_9.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_9.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_9.png"
+        title="1_3_2CS61A-5,6,7,8_image_9" />
+柯西化是一种对函数的操作，将双操作数的函数转化为单操作数的高阶函数</p>
+<h1 id="cs61a-6sound">CS61A-6:Sound</h1>
+<h2 id="function-examplesound">Function Example:Sound</h2>
+<p>为什么需要higher-order function?而不是依次输入参数到函数里
+这里讲到一个关于声音的例子，创建了一系列的函数，并且利用这些函数来论证原因。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">wave</span> <span class="kn">import</span> <span class="nb">open</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">struct</span> <span class="kn">import</span> <span class="n">Struct</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">floor</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">frame_rate</span> <span class="o">=</span> <span class="mi">11025</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Encode float x bewteen -1 and 1 as two bytes.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    (See https://docs.python.org/3/library/struct.html)
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">16384</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Struct</span><span class="p">(</span><span class="s1">&#39;h&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="n">sampler</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;song.wav&#39;</span><span class="p">,</span> <span class="n">seconds</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Write the output of a sampler function as a wav file.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">setnchannels</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">setsampwidth</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">setframerate</span><span class="p">(</span><span class="n">frame_rate</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="n">seconds</span> <span class="o">*</span> <span class="n">frame_rate</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sample</span> <span class="o">=</span> <span class="n">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">out</span><span class="o">.</span><span class="n">writeframes</span><span class="p">(</span><span class="n">encode</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">t</span> <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">tri</span><span class="p">(</span><span class="n">frequency</span><span class="p">,</span> <span class="n">amplitute</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;A continuous triangle wave&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">period</span> <span class="o">=</span> <span class="n">frame_rate</span> <span class="o">//</span> <span class="n">frequency</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">saw_wave</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">period</span> <span class="o">-</span> <span class="n">floor</span><span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="n">period</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tri_wave</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">saw_wave</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">amplitute</span> <span class="o">*</span> <span class="n">tri_wave</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">sampler</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">c_freq</span> <span class="o">=</span> <span class="mf">261.63</span>
+</span></span></code></pre></div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_10.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_10.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_10.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_10.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_10.png"
+        title="1_3_2CS61A-5,6,7,8_image_10" />
+我们再运行play(c)就会把c波形写成一个wave文件，这就是三角波形的声音
+![[1_3_2CS61A-5,6,7,8_audio_1.wav]]
+我们添加其他的音调
+<code>c_freq, e_freq, g_freq = 261.63, 329.63, 392.00</code>
+接着添加代码来创造声音</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">both</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">g</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">g</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">play</span><span class="p">(</span><span class="n">both</span><span class="p">(</span><span class="n">tri</span><span class="p">(</span><span class="n">c_freq</span><span class="p">),</span><span class="n">tri</span><span class="p">(</span><span class="n">e_freq</span><span class="p">)))</span>
+</span></span></code></pre></div><p>现在我们得到了c和e的复合声音
+![[1_3_2CS61A-5,6,7,8_audio_2.wav]]
+我们还想要一个函数，只需要再规定的时间内播放声音,添加代码</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">note</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">		<span class="n">seconds</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">frame_rate</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">sampler</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">c_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">e_freq</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">play</span><span class="p">(</span><span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span></code></pre></div><p>我们得到了一个只播放1/4 s的声音
+![[1_3_2CS61A-5,6,7,8_audio_3.wav]]
+我们如果想要两个哔声，把play的代码改成<code>play(both(note(c, 0, 1/4),note(e,1/2,1)))</code> ，现在我们得到了一个c和一个e
+![[1_3_2CS61A-5,6,7,8_audio_4.wav]]
+它听起来有一点刺耳，因为不像是正常发出来的声音，所以我们添加一个淡入淡出的功能,将note函数改为</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">note</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">fade</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="k">def</span> <span class="nf">sampler</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">		<span class="n">seconds</span> <span class="o">=</span> <span class="n">t</span> <span class="o">/</span> <span class="n">frame_rate</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        	<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&lt;</span> <span class="n">start</span> <span class="o">+</span> <span class="n">fade</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            		<span class="k">return</span> <span class="p">(</span><span class="n">seconds</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span> <span class="o">/</span> <span class="n">fade</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        	<span class="k">elif</span> <span class="n">seconds</span> <span class="o">&gt;</span> <span class="n">end</span> <span class="o">-</span> <span class="n">fade</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">           		<span class="k">return</span> <span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">seconds</span><span class="p">)</span> <span class="o">/</span> <span class="n">fade</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">sampler</span>
+</span></span></code></pre></div><p>这里遇到问题，缩进在vscode里面和vim显示不同，<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_11.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_11.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_11.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_11.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_11.png"
+        title="1_3_2CS61A-5,6,7,8_image_11" />
+而在vim里可以elif并列
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_12.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_12.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_12.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_12.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_12.png"
+        title="1_3_2CS61A-5,6,7,8_image_12" />
+大概是vscode本身的原因，在vscode里后面两个elif是在前一个elif的条件下，所以需要多缩进，它的tab应该是灵活变通的有时候是4个空格，有时候是8个空格，来自动适应python解释器
+遇见缩进问题的时候我们可以交给ai处理，也可以放进记事本查看文件本来的样子
+好了运行结果出来![[1_3_2CS61A-5,6,7,8_audio_5.wav]]
+竟然有一种吹奏乐器的感觉了</p>
+<p>我们再添加一些内容，制作一个2s的音乐</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">g</span><span class="p">,</span> <span class="n">low_g</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">g_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">g_freq</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#z来判断我们播放到哪里</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">low_g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">play</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
+</span></span></code></pre></div><p>这是结果![[1_3_2CS61A-5,6,7,8_audio_6.wav]]
+打包函数并调用</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">mario_at</span><span class="p">(</span><span class="n">octave</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">c_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">e_freq</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">g</span><span class="p">,</span> <span class="n">low_g</span> <span class="o">=</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">g_freq</span><span class="p">),</span> <span class="n">tri</span><span class="p">(</span><span class="n">octave</span> <span class="o">*</span> <span class="n">g_freq</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">mario</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">low_g</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">mario</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">low_g</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#z来判断我们播放到哪里</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">song</span> <span class="o">=</span> <span class="n">both</span><span class="p">(</span><span class="n">song</span><span class="p">,</span> <span class="n">note</span><span class="p">(</span><span class="n">low_g</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">song</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">play</span><span class="p">(</span><span class="n">mario_at</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+</span></span></code></pre></div><p>![[1_3_2CS61A-5,6,7,8_audio_7.wav]]</p>
+<h1 id="cs61a-7functional-abstraction">CS61A-7:Functional Abstraction</h1>
+<h2 id="lambda-function-environments">Lambda Function Environments</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_13.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_13.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_13.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_13.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_13.png"
+        title="1_3_2CS61A-5,6,7,8_image_13" />
+lambda函数的作用域是它所在的创建的地方，所以上面的a=2仅限f内使用，在它之外是global的a=1
+这里的第五行相当于嵌套了一个lambda函数来运行加法，所以得到f(g)的参数为1+1=2,然后在函数f中，a*g=2*2=4</p>
+<h2 id="return">Return</h2>
+<p>return作为函数的结尾，把值赋值给这个函数，可以调用函数来进入一个新的函数来执行函数体，这里建立了一个简单的搜索代码</p>
+<h2 id="control">Control</h2>
+<p>控制语句比如if，while
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_14.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_14.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_14.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_14.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_14.png"
+        title="1_3_2CS61A-5,6,7,8_image_14" />
+可以用if_这个自定义的函数来替代if语句，但是他们还是有差别
+在call函数的之前会先对语句也就是这里的参数进行运算，会出现上下两图不同的结果，<strong>这也是为什么它们存在于语句中而不是以函数的形式存在</strong>，一些语句允许解释器跳过运算和操作步骤
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_15.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_15.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_15.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_15.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_15.png"
+        title="1_3_2CS61A-5,6,7,8_image_15" /></p>
+<h2 id="control-expressions">Control Expressions</h2>
+<p>讲了一下逻辑里面的and和or
+也就是short-circuit</p>
+<h2 id="abstraction">Abstraction</h2>
+<p>调用函数并运用的时候，不需要知道它是如何运行的，你只需要知道它做了什么，然后正确的调用，就像是api一样。
+后面讲解了一些函数好的取名方式，重复的工作可以从中间抽取一部分出来编写成有意义的函数
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_16.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_16.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_16.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_16.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_16.png"
+        title="1_3_2CS61A-5,6,7,8_image_16" />
+你不必完全按照要求做，因为编写程序是一种创造行为，只要是为了便于他人和自己理解或者其他的什么原因，让你觉得这样比较好，那你就直接那样做吧。</p>
+<h2 id="errors--tracebacks">Errors &amp; Tracebacks</h2>
+<h3 id="三种错误">三种错误</h3>
+<ol>
+<li>语法错误，在运行之前就可以检查出来，因为没有按照python规定的语法要求进行编写</li>
+<li>报错，会提示runtime bug</li>
+<li>运行结果不对，只有写测试找到bug
+讲解了一些debug的方法
+&lt;&lt;youtube BTGJ_esCPWI&raquo;
+好气啊，很努力去上2学分的选修课了，最后老师还是只给了88分，南寿寺了</li>
+</ol>
+<h1 id="cs61a-8function-examples">CS61A-8:Function Examples</h1>
+<h2 id="midterm-1-review">Midterm 1 Review</h2>
+<ul>
+<li><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_17.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_17.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_17.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_17.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_17.png"
+        title="1_3_2CS61A-5,6,7,8_image_17" />
+print得到的效果</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">delay</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;delayed&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">def</span> <span class="nf">g</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="n">arg</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">g</span>
+</span></span></code></pre></div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_18.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_18.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_18.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_18.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_18.png"
+        title="1_3_2CS61A-5,6,7,8_image_18" />
+这里delay(delay)()(6)()
+调用了delay，delay的函数，然后被调用的1delay里面的参数为6,不是none所以会在解释器interpreter打印出来，也就是delayed，deplayed，6
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_19.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_19.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_19.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_19.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_19.png"
+        title="1_3_2CS61A-5,6,7,8_image_19" />
+这里是print调用了delay，delay调用prit的值，然后调用4，
+这里print里的delay的两个参数是print和()，然后(4)作为print的参数
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_20.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_20.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_20.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_20.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_20.png"
+        title="1_3_2CS61A-5,6,7,8_image_20" />
+此处add里面的第一个参数，pirate(3)()(square)(4), 因为plunder函数里return的是最近帧的arggg，所以3对结果没有影响，arggg实际上是4的平方，16,然后16+1=17
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_21.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_21.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_21.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5%2c6%2c7%2c8_image_21.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/1_3_2CS61A-5,6,7,8_image_21.png"
+        title="1_3_2CS61A-5,6,7,8_image_21" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-31</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://maequeen.top/posts/1-3-2cs61a-5678/" data-title="1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)" data-via="这不是我" data-hashtags="基础知识,踩坑记录,python"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://maequeen.top/posts/1-3-2cs61a-5678/" data-hashtag="基础知识"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://maequeen.top/posts/1-3-2cs61a-5678/" data-title="1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://maequeen.top/posts/1-3-2cs61a-5678/" data-title="1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://maequeen.top/posts/1-3-2cs61a-5678/" data-title="1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</a>,&nbsp;<a href="/tags/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">踩坑记录</a>,&nbsp;<a href="/tags/python/">Python</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/1-3-1cs61a-1-2-3-4/" class="prev" rel="prev" title="1.3.1:自学CS61A的1、2、3、4节课程笔记"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>1.3.1:自学CS61A的1、2、3、4节课程笔记</a>
+            <a href="/posts/weekly-1annual-summary-part-1/" class="next" rel="next" title="周报1：年度总结（上）">周报1：年度总结（上）<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">龙山</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=419596181&auto=1&height=66"></iframe>
+
+<a href="https://info.flagcounter.com/qhiN"><img src="https://s01.flagcounter.com/mini/qhiN/bg_FCF7FF/txt_000000/border_278FCC/flags_0/" alt="Flag Counter" border="0"></a>
+
+
+
+</div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"一夔的小窝","id-2":"一夔的小窝"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

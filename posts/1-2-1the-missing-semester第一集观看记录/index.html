@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>1-2-1:The Missing Semester观看记录1 - 一夔的小窝</title><meta name="Description" content=""><meta property="og:title" content="1-2-1:The Missing Semester观看记录1" />
+<meta property="og:description" content="overview &amp; shell 链接第一集 介绍一些你必要学会的工具，而这些东西一般你在其他课程里是默认你会的 shell date echo echo $PATH which: show u the path of this program 讲解什么是path，绝对路径和相" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" /><meta property="og:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-09T22:30:06+08:00" />
+<meta property="article:modified_time" content="2023-01-09T22:30:06+08:00" /><meta property="og:site_name" content="我的个人网站" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305010204833.png" /><meta name="twitter:title" content="1-2-1:The Missing Semester观看记录1"/>
+<meta name="twitter:description" content="overview &amp; shell 链接第一集 介绍一些你必要学会的工具，而这些东西一般你在其他课程里是默认你会的 shell date echo echo $PATH which: show u the path of this program 讲解什么是path，绝对路径和相"/>
+      <meta name="twitter:site" content="@这不是我"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" /><link rel="prev" href="http://maequeen.top/posts/1-1/" /><link rel="next" href="http://maequeen.top/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "1-2-1:The Missing Semester观看记录1",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/maequeen.top\/posts\/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95\/"
+        },"genre": "posts","keywords": "linux, 前置知识, 基础命令","wordcount":  1088 ,
+        "url": "http:\/\/maequeen.top\/posts\/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95\/","datePublished": "2023-01-09T22:30:06+08:00","dateModified": "2023-01-09T22:30:06+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "龙山"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="一夔的小窝"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        title="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="想写什么就写什么的文章"> 文章 </a><a class="menu-item" href="/tags/" title="不知道我会不会记得区分标签"> 标签 </a><a class="menu-item" href="/categories/" title="分类和标签，傻傻分不清楚"> 分类 </a><a class="menu-item" href="/photowall/" title="3D照片墙"> 照片墙 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="一夔的小窝"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png"
+        title="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202307191619851.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="想写什么就写什么的文章">文章</a><a class="menu-item" href="/tags/" title="不知道我会不会记得区分标签">标签</a><a class="menu-item" href="/categories/" title="分类和标签，傻傻分不清楚">分类</a><a class="menu-item" href="/photowall/" title="3D照片墙">照片墙</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">1-2-1:The Missing Semester观看记录1</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>龙山</a></span>&nbsp;<span class="post-category">included in <a href="/categories/the-missing-semester/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>The Missing Semester</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-09">2023-01-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1088 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#shell">shell</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="overview--shell">overview &amp; shell</h1>
+<p>链接<a href="https://www.youtube.com/watch?v=Z56Jmr9Z34Q&amp;list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&amp;index=1&amp;t=1424s&amp;ab_channel=MissingSemester" target="_blank" rel="noopener noreffer ">第一集</a></p>
+<ul>
+<li>介绍一些你必要学会的工具，而这些东西一般你在其他课程里是默认你会的</li>
+</ul>
+<h2 id="shell">shell</h2>
+<ul>
+<li>date</li>
+<li>echo
+<ul>
+<li>echo $PATH</li>
+</ul>
+</li>
+<li>which: show u the path of this program
+讲解什么是path，绝对路径和相对路径</li>
+<li>pwd： print the present working directory</li>
+<li>cd;ls;cd -: go back to ur last directory</li>
+<li>~:means ru home</li>
+<li>ls -l：讲解了一部分关于文件权限的内容</li>
+<li>mv:move a file and u can change a file name through this way,old name and new name</li>
+<li>cp:just copy from and copy to</li>
+<li>rm:remove a file，删除的时候并不是递归的，所以当你需要删除整个文件夹的时候需要添加一个-r参数，rmidr允许你删除空文件夹</li>
+<li>mkdir:创建文件夹，比如mkdir hello world,会为你创建两个文件，hello和world,如果你想要创建hello world这一个文件，你可以使用转义字符\和&quot;&ldquo;引用字符串，比如我在temp下用<code>mkdir hello\ world</code></li>
+<li>man:tell u the manual of another program</li>
+<li>ctrl+l:clear the terminal and go to the top</li>
+</ul>
+<p><strong>输入信息流和输出信息流</strong></p>
+<p>程序会有一个标准的输入流，流入程序后会有一个输出流，可以用尖括号来引导流的输运，&lt;表示对于输入流的引导，把右边的内容作为输入提供给左边的程序&gt;表示对于输出流的向右引导，比如<code>echo hello &gt; hello.txt</code>,本来echo是会将hello输出到terminal的但是被&gt;引导到了hello.txt文件中，所以执行这条命令之后没有内容输出到屏幕<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%951_image_1.png"
+        data-srcset="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%951_image_1.png, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%951_image_1.png 1.5x, https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%951_image_1.png 2x"
+        data-sizes="auto"
+        alt="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/The_Missing_Semester%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%951_image_1.png"
+        title="The_Missing_Semester观看记录1_image_1" /></p>
+<ul>
+<li>|: 管道符，将左边程序的输出作为右边程序的输入</li>
+<li>tail：输出给予输入的最后一行，比如<code>ls -l / | tail -n1!</code> ,管道符的左右两个程序之间彼此并不知道对方，他们只是被管道符连通了输出作为tail的输入</li>
+<li>sudo:意味着do like su，而su命令就是切换到superuser
+/sys下的文件是内核文件，将硬件映射到操作系统中以文件的形式表现出来，这也就意味着，你可以<strong>通过操纵软件，来控制硬件</strong>![[Pasted image 20230109215717.png]]
+这里我们尝试通过sudo来调整背光亮度但是被拒绝了![[Pasted image 20230109220032.png]]
+<em>这里是因为，我们的重定向与输入输出的方向指定，是由shell指定的，我们这里运用sudo，但是sudo是用于echo这个程序，而打开brightness的是shell（因为&gt;指定输出）</em>
+![[Pasted image 20230109220451.png]]
+使用su切换到root用户</li>
+<li><code>echo 1060 | sudo tee brightness</code> tee将输入传给输出同时在终端也输出信息</li>
+<li>xdg-open:后面跟文件，它将会用特定的程序来打开该文件（maybe only works on linux,on macos it maybe just open）</li>
+</ul>
+<hr>
+<h1 id="总结">总结</h1>
+<p>其实这里面的内容很多自己此前都了解过，相对的比较熟悉吧，第一集比较基础，但是还是有很多思维上面的收获，比如关于标准输入和标准输出的哲学，融贯于shell中，是shell控制着信息流，而正是由于这个特性，程序之间不需要在意彼此的连通性，这部分工作交给了shell，这和windows下软件分立的体验是完全不同的</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-09</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" data-title="1-2-1:The Missing Semester观看记录1" data-via="这不是我" data-hashtags="linux,前置知识,基础命令"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" data-hashtag="linux"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" data-title="1-2-1:The Missing Semester观看记录1"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" data-title="1-2-1:The Missing Semester观看记录1"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" data-title="1-2-1:The Missing Semester观看记录1"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/">前置知识</a>,&nbsp;<a href="/tags/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">基础命令</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/1-1/" class="prev" rel="prev" title="1.1基于hugo搭建个人博客网站——（写完只想更名依托答辩）"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>1.1基于hugo搭建个人博客网站——（写完只想更名依托答辩）</a>
+            <a href="/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/" class="next" rel="next" title="1-2-2:TMS观看记录2">1-2-2:TMS观看记录2<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">龙山</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=419596181&auto=1&height=66"></iframe>
+
+<a href="https://info.flagcounter.com/qhiN"><img src="https://s01.flagcounter.com/mini/qhiN/bg_FCF7FF/txt_000000/border_278FCC/flags_0/" alt="Flag Counter" border="0"></a>
+
+
+
+</div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"一夔的小窝","id-2":"一夔的小窝"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
