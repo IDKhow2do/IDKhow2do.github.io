@@ -1,31 +1,31 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>基础知识 - Tag - 一夔的小窝</title>
-        <link>http://localhost:1313/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+        <link>http://maequeen.top/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
         <description>基础知识 - Tag - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
     <title>1_3_2CS61A 5,6,7,8(暂时告别，还有好多事，但是该复习了)</title>
-    <link>http://localhost:1313/posts/1-3-2cs61a-5678/</link>
+    <link>http://maequeen.top/posts/1-3-2cs61a-5678/</link>
     <pubDate>Tue, 31 Jan 2023 16:36:38 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-3-2cs61a-5678/</guid>
+    <guid>http://maequeen.top/posts/1-3-2cs61a-5678/</guid>
     <description><![CDATA[CS61A-5:Environments Environments for Higher-Order 这里讲解了一下它们新推出的diagram特性,比如这里定义了一个global frame然后在调用的时候又创建了一个frame1,讲解]]></description>
 </item>
 <item>
     <title>1.3.1:自学CS61A的1、2、3、4节课程笔记</title>
-    <link>http://localhost:1313/posts/1-3-1cs61a-1-2-3-4/</link>
+    <link>http://maequeen.top/posts/1-3-1cs61a-1-2-3-4/</link>
     <pubDate>Sat, 28 Jan 2023 01:51:32 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-3-1cs61a-1-2-3-4/</guid>
+    <guid>http://maequeen.top/posts/1-3-1cs61a-1-2-3-4/</guid>
     <description><![CDATA[CS61A-1:computer_science 计算机科学是一个很宏大的命题，每个人可能只是从事其中的一小块儿内容，但行业工作者都有一个共同的敌人，那就是复杂性，而我们的武器便是抽象 对于]]></description>
 </item>
 <item>
     <title>1-2-7TMS观看记录7</title>
-    <link>http://localhost:1313/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</link>
+    <link>http://maequeen.top/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</link>
     <pubDate>Thu, 26 Jan 2023 01:53:05 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</guid>
+    <guid>http://maequeen.top/posts/1-2-7tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%957/</guid>
     <description><![CDATA[Debugging and Profiling debugging printf log，可以通过设置重要级来筛选你要看的内容 debugger python -m ipdb bubble.py 打开python调试器 l:list s:step restart c:continue p arr:print array q:quit b:breakpoint(设置断点) G]]></description>
 </item>
 </channel>

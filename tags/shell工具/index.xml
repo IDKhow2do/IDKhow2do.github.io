@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Shell工具 - Tag - 一夔的小窝</title>
-        <link>http://localhost:1313/tags/shell%E5%B7%A5%E5%85%B7/</link>
+        <link>http://maequeen.top/tags/shell%E5%B7%A5%E5%85%B7/</link>
         <description>Shell工具 - Tag - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 10 Jan 2023 22:18:26 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/shell%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 10 Jan 2023 22:18:26 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/shell%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
     <title>1-2-2:TMS观看记录2</title>
-    <link>http://localhost:1313/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
+    <link>http://maequeen.top/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Tue, 10 Jan 2023 22:18:26 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
+    <guid>http://maequeen.top/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
     <description><![CDATA[shell tools &amp;scripting 链接 第一次学会插入视频，要把我最近最爱的歌放上去 youtube插件推荐 之前一直是用的油猴双语字幕脚本，昨天了解到原来有一个youtub]]></description>
 </item>
 </channel>

@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>烂尾 - Category - 一夔的小窝</title>
-        <link>http://localhost:1313/categories/%E7%83%82%E5%B0%BE/</link>
+        <link>http://maequeen.top/categories/%E7%83%82%E5%B0%BE/</link>
         <description>烂尾 - Category - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Thu, 12 Jan 2023 23:12:31 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%83%82%E5%B0%BE/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Thu, 12 Jan 2023 23:12:31 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/categories/%E7%83%82%E5%B0%BE/" rel="self" type="application/rss+xml" /><item>
     <title>1-2-4观看记录4（未完成）</title>
-    <link>http://localhost:1313/posts/1-2-4%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%954/</link>
+    <link>http://maequeen.top/posts/1-2-4%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%954/</link>
     <pubDate>Thu, 12 Jan 2023 23:12:31 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-2-4%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%954/</guid>
+    <guid>http://maequeen.top/posts/1-2-4%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%954/</guid>
     <description><![CDATA[xxxxxxxxxxxxxxxxxxxx 秋雅，这题太难了，我不会做 用到好多正则表达式，听的一头雾水，先占个萝卜坑，以后补充 Data Wrangling-正则表达式 这一集youtube不能]]></description>
 </item>
 </channel>

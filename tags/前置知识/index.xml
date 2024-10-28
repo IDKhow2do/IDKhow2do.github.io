@@ -1,39 +1,39 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>前置知识 - Tag - 一夔的小窝</title>
-        <link>http://localhost:1313/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/</link>
+        <link>http://maequeen.top/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/</link>
         <description>前置知识 - Tag - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 17 Jan 2023 00:07:54 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 17 Jan 2023 00:07:54 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/" rel="self" type="application/rss+xml" /><item>
     <title>1-2-5,6:TMS观看记录5&#43;6</title>
-    <link>http://localhost:1313/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</link>
+    <link>http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</link>
     <pubDate>Tue, 17 Jan 2023 00:07:54 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</guid>
+    <guid>http://maequeen.top/posts/1-2-5tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%955&#43;6/</guid>
     <description><![CDATA[Command-line Environment job control sleep :sleep 20,sleep后面跟一个数字表示休眠的时间，这个时候shell将会发送一个SIGINT的指令给当前的程序，means signal interrupt ^c发]]></description>
 </item>
 <item>
     <title>1-2-3TMS观看记录3</title>
-    <link>http://localhost:1313/posts/1-2-3tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%953/</link>
+    <link>http://maequeen.top/posts/1-2-3tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%953/</link>
     <pubDate>Wed, 11 Jan 2023 19:42:32 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-2-3tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%953/</guid>
+    <guid>http://maequeen.top/posts/1-2-3tms%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%953/</guid>
     <description><![CDATA[Editors(vim) 久仰vim大名，Carrie Anne老师口中的，“你不能否认，vim是世界上最好用的编辑器” vim 是一种mode editor，当你打开vim的]]></description>
 </item>
 <item>
     <title>1-2-2:TMS观看记录2</title>
-    <link>http://localhost:1313/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
+    <link>http://maequeen.top/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Tue, 10 Jan 2023 22:18:26 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
+    <guid>http://maequeen.top/posts/1-2-2tms%E7%AC%AC%E4%BA%8C%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
     <description><![CDATA[shell tools &amp;scripting 链接 第一次学会插入视频，要把我最近最爱的歌放上去 youtube插件推荐 之前一直是用的油猴双语字幕脚本，昨天了解到原来有一个youtub]]></description>
 </item>
 <item>
     <title>1-2-1:The Missing Semester观看记录1</title>
-    <link>http://localhost:1313/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
+    <link>http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</link>
     <pubDate>Mon, 09 Jan 2023 22:30:06 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://localhost:1313/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
+    <guid>http://maequeen.top/posts/1-2-1the-missing-semester%E7%AC%AC%E4%B8%80%E9%9B%86%E8%A7%82%E7%9C%8B%E8%AE%B0%E5%BD%95/</guid>
     <description><![CDATA[overview &amp; shell 链接第一集 介绍一些你必要学会的工具，而这些东西一般你在其他课程里是默认你会的 shell date echo echo $PATH which: show u the path of this program 讲解什么是path，绝对路径和相]]></description>
 </item>
 </channel>
