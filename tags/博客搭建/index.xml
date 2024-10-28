@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>博客搭建 - Tag - 一夔的小窝</title>
-        <link>http://maequeen.top/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+        <link>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
         <description>博客搭建 - Tag - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="self" type="application/rss+xml" /><item>
     <title>1.1基于hugo搭建个人博客网站——（写完只想更名依托答辩）</title>
-    <link>http://maequeen.top/posts/1-1/</link>
+    <link>http://localhost:1313/posts/1-1/</link>
     <pubDate>Sun, 08 Jan 2023 20:24:07 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/1-1/</guid>
+    <guid>http://localhost:1313/posts/1-1/</guid>
     <description><![CDATA[起因 最开始是我在网络上冲浪的时候，会看见很多大佬他们都有自己的个人网站，平时遇见的一些问题和心得体会，甚至是出去玩乐的内容都可以发在自己的个]]></description>
 </item>
 </channel>

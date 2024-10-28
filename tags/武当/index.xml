@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>武当 - Tag - 一夔的小窝</title>
-        <link>http://maequeen.top/tags/%E6%AD%A6%E5%BD%93/</link>
+        <link>http://localhost:1313/tags/%E6%AD%A6%E5%BD%93/</link>
         <description>武当 - Tag - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 07 Apr 2024 01:11:34 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E6%AD%A6%E5%BD%93/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 07 Apr 2024 01:11:34 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%AD%A6%E5%BD%93/" rel="self" type="application/rss+xml" /><item>
     <title>2-5 为笨蛋朋友的决策买单：清明游武当山</title>
-    <link>http://maequeen.top/posts/2-5-qingming-in-wudangs-not-a-good-idea/</link>
+    <link>http://localhost:1313/posts/2-5-qingming-in-wudangs-not-a-good-idea/</link>
     <pubDate>Sun, 07 Apr 2024 01:11:34 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-5-qingming-in-wudangs-not-a-good-idea/</guid>
+    <guid>http://localhost:1313/posts/2-5-qingming-in-wudangs-not-a-good-idea/</guid>
     <description><![CDATA[AI总结 ### 迷迷糊糊的决定 原本以为是与朋友共赴道教圣地的旅程，因一场误会，变成了与女朋友独享的武当山之行。这场开始于迷雾，充满意外转折的旅程，]]></description>
 </item>
 </channel>

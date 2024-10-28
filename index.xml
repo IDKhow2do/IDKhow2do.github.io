@@ -1,89 +1,89 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>一夔的小窝</title>
-        <link>http://maequeen.top/</link>
+        <link>http://localhost:1313/</link>
         <description>一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
             <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 27 Oct 2024 22:02:10 &#43;0800</lastBuildDate>
-            <atom:link href="http://maequeen.top/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>2-6 发现到追回，小伙儿 1.5h 极速追回遗失耳机</title>
-    <link>http://maequeen.top/posts/2-6%5C-young-man-reclaims-lost-headphones-in-1.5-hours/</link>
+    <link>http://localhost:1313/posts/2-6%5C-young-man-reclaims-lost-headphones-in-1.5-hours/</link>
     <pubDate>Sun, 27 Oct 2024 22:02:10 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-6%5C-young-man-reclaims-lost-headphones-in-1.5-hours/</guid>
+    <guid>http://localhost:1313/posts/2-6%5C-young-man-reclaims-lost-headphones-in-1.5-hours/</guid>
     <description><![CDATA[TL;DR 10月27日下午13:24，作者发现自己的蓝牙耳机不见了，常用的“Find My”应用显示耳机位于20公里外的北方，怀疑是被人捡走或偷窃。尽]]></description>
 </item>
 <item>
     <title>2-3 Weekly1&amp;2?halfYearReview!</title>
-    <link>http://maequeen.top/posts/2-3%5C6-weekly12halfyearreview/</link>
+    <link>http://localhost:1313/posts/2-3%5C6-weekly12halfyearreview/</link>
     <pubDate>Thu, 18 Jul 2024 22:08:11 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-3%5C6-weekly12halfyearreview/</guid>
+    <guid>http://localhost:1313/posts/2-3%5C6-weekly12halfyearreview/</guid>
     <description><![CDATA[AI总结 Hi，我回来了 由于今天只是想赶紧捡起来写周报这个习惯，所以我就不那么规规矩矩了，先开启再说。 点击播放感受我的音乐品味 缘由 今天听同事说]]></description>
 </item>
 <item>
     <title>2-5 为笨蛋朋友的决策买单：清明游武当山</title>
-    <link>http://maequeen.top/posts/2-5-qingming-in-wudangs-not-a-good-idea/</link>
+    <link>http://localhost:1313/posts/2-5-qingming-in-wudangs-not-a-good-idea/</link>
     <pubDate>Sun, 07 Apr 2024 01:11:34 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-5-qingming-in-wudangs-not-a-good-idea/</guid>
+    <guid>http://localhost:1313/posts/2-5-qingming-in-wudangs-not-a-good-idea/</guid>
     <description><![CDATA[AI总结 ### 迷迷糊糊的决定 原本以为是与朋友共赴道教圣地的旅程，因一场误会，变成了与女朋友独享的武当山之行。这场开始于迷雾，充满意外转折的旅程，]]></description>
 </item>
 <item>
     <title>2-4 Digital IC Learning</title>
-    <link>http://maequeen.top/posts/2-4-digitaliclearning/</link>
+    <link>http://localhost:1313/posts/2-4-digitaliclearning/</link>
     <pubDate>Wed, 03 Apr 2024 01:49:23 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-4-digitaliclearning/</guid>
+    <guid>http://localhost:1313/posts/2-4-digitaliclearning/</guid>
     <description><![CDATA[参考书籍 Digital VLSI Design and Simulation with Verilog 组合逻辑电路 与门 或门 非门 通用门 可以构建任何逻辑的门 NAND NOR 组合逻辑电路 输出只和输入有关，没有可用的记忆元件的电路，并且可能]]></description>
 </item>
 <item>
     <title>2-2 快说感谢赛博活菩萨ehco，用上免费的gpt4了</title>
-    <link>http://maequeen.top/posts/2-2-say-thank-you-to-ehco-the-free-gpt4/</link>
+    <link>http://localhost:1313/posts/2-2-say-thank-you-to-ehco-the-free-gpt4/</link>
     <pubDate>Tue, 05 Mar 2024 15:48:37 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-2-say-thank-you-to-ehco-the-free-gpt4/</guid>
+    <guid>http://localhost:1313/posts/2-2-say-thank-you-to-ehco-the-free-gpt4/</guid>
     <description><![CDATA[感谢 首先让我们说感谢ehco，让我们免费用上了gpt4 教程 好了，接下来是教程，希望大家都能在学习和生活上体验gpt带来的便利 注册 首先是访问这]]></description>
 </item>
 <item>
     <title>2-1 回老家，享受观影自由</title>
-    <link>http://maequeen.top/posts/2-1-go-home-and-enjoy-movies-freely/</link>
+    <link>http://localhost:1313/posts/2-1-go-home-and-enjoy-movies-freely/</link>
     <pubDate>Sun, 21 Jan 2024 16:44:57 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-1-go-home-and-enjoy-movies-freely/</guid>
+    <guid>http://localhost:1313/posts/2-1-go-home-and-enjoy-movies-freely/</guid>
     <description><![CDATA[AI总结 ⭐️一，讲了什么：—— 这篇文章详细介绍了作者在家中遇到的电视观看问题以及解决方法。作者回到老家后发现，电视上的节目大多需要付费，导致]]></description>
 </item>
 <item>
     <title>2-0：2023年终总结：反正世界都是个草台班子，那我菜一菜应该也没事</title>
-    <link>http://maequeen.top/posts/2-0-2023the-world-sucks-and-i-dont-care/</link>
+    <link>http://localhost:1313/posts/2-0-2023the-world-sucks-and-i-dont-care/</link>
     <pubDate>Thu, 04 Jan 2024 17:23:43 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/2-0-2023the-world-sucks-and-i-dont-care/</guid>
+    <guid>http://localhost:1313/posts/2-0-2023the-world-sucks-and-i-dont-care/</guid>
     <description><![CDATA[先起个整体的调调吧，去年就是很蠢的一年，都觉得没什么可以值得回顾的。之所以还是决定写这个年终总结，单纯是因为去年立下了今年要写年终总结的fl]]></description>
 </item>
 <item>
     <title>1-8：世界需要普罗米修斯（找书）</title>
-    <link>http://maequeen.top/posts/1-8-the-world-needs-prometheus-looking-for-book/</link>
+    <link>http://localhost:1313/posts/1-8-the-world-needs-prometheus-looking-for-book/</link>
     <pubDate>Sun, 03 Sep 2023 02:11:19 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/1-8-the-world-needs-prometheus-looking-for-book/</guid>
+    <guid>http://localhost:1313/posts/1-8-the-world-needs-prometheus-looking-for-book/</guid>
     <description><![CDATA[AI总结 # 找书办法失效 ## 纵览 以前主要通过zlibrary和读秀找书。读秀利用超星资源,提供大学教材。后来发现大学生读书联盟更便宜。 ## 读秀的找]]></description>
 </item>
 <item>
     <title>1-7:HDLBits刷题记录(持续更新中)</title>
-    <link>http://maequeen.top/posts/1-7hdlbits_record_1/</link>
+    <link>http://localhost:1313/posts/1-7hdlbits_record_1/</link>
     <pubDate>Thu, 20 Jul 2023 02:11:08 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/1-7hdlbits_record_1/</guid>
+    <guid>http://localhost:1313/posts/1-7hdlbits_record_1/</guid>
     <description><![CDATA[前几天想要通过HDLBits刷题来熟练使用verilog语音，这几天想清楚一件事情，很多事情浅尝辄止都是只能停留在表面的很多东西也都不能深入]]></description>
 </item>
 <item>
     <title>1-6:我与whisper打架到半夜</title>
-    <link>http://maequeen.top/posts/1-6-fought-with-whisper-until-midnight/</link>
+    <link>http://localhost:1313/posts/1-6-fought-with-whisper-until-midnight/</link>
     <pubDate>Thu, 20 Jul 2023 01:52:30 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/1-6-fought-with-whisper-until-midnight/</guid>
+    <guid>http://localhost:1313/posts/1-6-fought-with-whisper-until-midnight/</guid>
     <description><![CDATA[AI总结 # 起因 1. 最近我通过ChatGPT的iOS端语音输入功能,发现它的语音识别准确度非常高。 2. 我很想知道它为什么识别这么准确,经过了解,是]]></description>
 </item>
 </channel>
